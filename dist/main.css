@@ -1,0 +1,21 @@
+.darkcolorfont {
+  background-color: black;
+}
+.darkcolortext {
+  color: rgb(34, 30, 113);
+}
+
+.lightcolorfont {
+  background-color: lightgray;
+}
+.lightcolortext {
+  color: rgb(255, 0, 0);
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,17 @@
+.dark{
+    &colorfont{
+        background-color: $darkfont
+    }
+    &colortext{
+        color : $darkcolor;
+    }
+}
+
+.light{
+    &colorfont{
+        background-color: $lightfont
+    }
+    &colortext{
+        color : $lightcolor;
+    }   
+}
