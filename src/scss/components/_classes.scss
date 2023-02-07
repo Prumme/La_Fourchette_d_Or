@@ -1,34 +1,3 @@
-.dark {
-    &colorfont {
-        background-color: $darkfont
-    }
-
-    &colortext {
-        color: $darkcolor;
-    }
-}
-
-.light {
-    &colorfont {
-        background-color: $lightfont
-    }
-
-    &colortext {
-        color: $lightcolor;
-    }
-}
-
-//DARKMODE BUTTON CLASS CONTAINER
-main div.container {
-    position: fixed;
-    z-index: 10;
-    bottom: 10%;
-    right: 5%;
-    width: 5%;
-    height: 5%;
-
-}
-
 // SECTION 1
 .section1 {
 

@@ -10,7 +10,7 @@
 
 <body>
 
-    <header id="scroll-header">
+    <header class="header bg-black-50">
         <div class="navbar">
             <a href="#" id="logo-link">
                 <img src="src/images/forks.svg" alt="">
@@ -26,23 +26,15 @@
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <button id="darkmode" class="button button-darkmode dark darkcolorfont">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Sun_white_icon.svg/1200px-Sun_white_icon.svg.png"
-                    alt="">
-            </button>
-        </div>
+    <main class="w-full">
+        <section id="section1" class="w-full">
 
+            <div class="w-full relative">
+                <img class="w-full" src="src/images/restaurant.png" alt="">
 
-        <section id="section1">
-
-            <div class="section1 section1-container">
-                <img src="src/images/restaurant.png" alt="">
-
-                <div id="section1-buttons">
-                    <button class="button button-transparent">Réservation</button>
-                    <button class="button button-transparent">Appeler</button>
+                <div class="w-full flex justify-evenly absolute bottom-5">
+                    <button class="button button-transparent cursor-pointer">Réservation</button>
+                    <button class="button button-transparent cursor-pointer">Appeler</button>
                 </div>
             </div>
         </section>

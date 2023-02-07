@@ -1,0 +1,29 @@
+.cursor {
+    &-pointer {
+        cursor: pointer;
+    }
+
+    &-default {
+        cursor: default;
+    }
+
+    &-text {
+        cursor: text;
+    }
+
+    &-wait {
+        cursor: wait;
+    }
+
+    &-move {
+        cursor: move;
+    }
+
+    &-help {
+        cursor: help;
+    }
+
+    &-not-allowed {
+        cursor: not-allowed;
+    }
+}
