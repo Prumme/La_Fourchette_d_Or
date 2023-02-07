@@ -14,7 +14,7 @@
     position: sticky;
 }
 
-@for $i from 1 through 50 {
+@for $i from 0 through 50 {
     .top-#{$i} {
         top: $i * 1rem;
     }
@@ -30,4 +30,11 @@
     .right-#{$i} {
         right: $i * 1rem;
     }
+}
+
+@for $i from 1 through 10 {
+    .z-#{$i} {
+        z-index: $i;
+    }
+
 }
