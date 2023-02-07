@@ -175,17 +175,17 @@ iframe {
   height: 450px;
 }
 
+.button {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
 footer {
   background-color: #252525;
   color: #FFFFFF;
   padding: 1rem 0;
   text-align: center;
-}
-
-.button {
-  border: none;
-  padding: 0.5rem;
-  border-radius: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */
