@@ -32,64 +32,6 @@
   box-sizing: border-box;
 }
 
-.darkcolorfont {
-  background-color: black;
-}
-.darkcolortext {
-  color: rgb(38, 38, 38);
-}
-
-.lightcolorfont {
-  background-color: lightgray;
-}
-.lightcolortext {
-  color: rgb(244, 244, 244);
-}
-
-main div.container {
-  position: fixed;
-  z-index: 10;
-  bottom: 10%;
-  right: 5%;
-  width: 5%;
-  height: 5%;
-}
-
-.section1-container {
-  height: 80vh;
-  width: 100%;
-  position: relative;
-  right: 0;
-  z-index: 2;
-}
-.section1-container img {
-  position: absolute;
-  height: 80vh;
-  width: 100%;
-  background-size: cover;
-}
-
-#section1-buttons {
-  position: absolute;
-  width: 100vw;
-  top: 68vh;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.restaurant {
-  padding-top: 1%;
-}
-.restaurant h2 {
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-bottom: 1%;
-}
-.restaurant p {
-  padding-right: 9%;
-  padding-left: 9%;
-}
-
 .carousel {
   max-width: 600px;
   position: relative;
