@@ -14,15 +14,33 @@
 
 main div.container {
   position: fixed;
+  z-index: 10;
   bottom: 10%;
   right: 5%;
   width: 5%;
   height: 5%;
 }
 
-.login {
-  background-color: #FFD700;
-  border-radius: 4px;
+.section1-container {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  right: 0;
+  z-index: 2;
+}
+.section1-container img {
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+  background-size: cover;
+}
+
+#section1-buttons {
+  position: absolute;
+  width: 100vw;
+  top: 68vh;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .restaurant {
@@ -109,56 +127,69 @@ main div.container {
   }
 }
 @font-face {
-  font-family: "BespokeSlab", sans-serif;
-  src: url("../../../fonts/BespokeSlab-Regular.eot");
+
+  font-family: BespokeSlab;
+  src: url("../fonts/BespokeSlab-Regular.woff2") format("woff2");
+  src: url("../fonts/BespokeSlab-Regular.woff") format("woff");
+
 }
 body {
   box-sizing: border-box;
   margin: 0;
-  font-family: "BespokeSlab", sans-serif;
+  font-family: BespokeSlab;
 }
 
-div > button > img {
+div button img {
   max-width: 100%;
   max-height: 100%;
 }
+
 
 header ul > li > a {
   text-decoration: none;
   padding: 0.5em;
   color: rgb(244, 244, 244);
-  font-size: 1.6rem;
 }
 
 header {
-  padding: 1rem 0;
   width: 100%;
-  z-index: 9;
-  background-color: black;
+  z-index: 10;
+  position: fixed;
+  font-weight: 400;
 }
-
-header .navbar {
+header > .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-header nav {
-  right: 0;
+header div a {
+  color: rgb(244, 244, 244);
+  transition: 0.5s;
 }
-
-header nav ul {
-  margin: 0;
+header div a img {
+  height: 50%;
+  width: 50%;
+}
+header div nav ul {
+  display: flex;
+  font-size: 1.6rem;
   padding: 0 2rem;
   list-style: none;
-  display: flex;
 }
-
-header nav ul li {
-  padding: 0 1rem;
+header div nav ul li:not(:last-child) {
+  padding: 0 0.75rem;
 }
-
-header nav a {
+header div nav ul li:not(:last-child) :hover {
+  color: #FFD700;
+}
+header div nav ul .li-yellow {
+  background-color: #FFD700;
+  border-radius: 4px;
+}
+header div nav ul .li-yellow:hover {
+  background-color: black;
+}
+header div nav ul a {
   padding: 0.5em;
   display: block;
 }
@@ -176,9 +207,42 @@ iframe {
 }
 
 .button {
+  font-size: 1.6rem;
+  border: none;
+  color: rgb(244, 244, 244);
+}
+.button-yellow {
+  background-color: #FFD700;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin: 0 0.8rem;
+  transition: 0.5s;
+}
+.button-yellow:hover {
+  border-radius: 4px;
+  color: rgb(244, 244, 244);
+  background-color: black;
+}
+.button-darkmode {
   border: none;
   padding: 0.5rem;
   border-radius: 50%;
+}
+.button-transparent {
+  width: 244px;
+  background-color: transparent;
+  color: rgb(244, 244, 244);
+  border: solid 1px rgb(244, 244, 244);
+  border-radius: 20px;
+  font-size: 2rem;
+  z-index: 3;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+  font-family: BespokeSlab;
+}
+.button-transparent:hover {
+  background-color: #ffffff;
+  color: rgb(38, 38, 38);
 }
 
 footer {

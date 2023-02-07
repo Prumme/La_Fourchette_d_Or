@@ -3,7 +3,8 @@ var text = document.getElementsByTagName("p");
 
 colorChange.addEventListener('click', function () {
     console.log("JS");
-    colorChange.style.transition = "background-color 1s";
+    colorChange.style.transition="all 1s";
+
 
     if (colorChange.classList.contains("dark")) {
         colorChange.classList.remove('dark', 'darkcolorfont');
