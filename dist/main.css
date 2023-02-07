@@ -127,23 +127,20 @@ main div.container {
   }
 }
 @font-face {
-
-  font-family: BespokeSlab;
+  font-family: "Bespoke Slab", sans-serif;
   src: url("../fonts/BespokeSlab-Regular.woff2") format("woff2");
   src: url("../fonts/BespokeSlab-Regular.woff") format("woff");
-
 }
 body {
   box-sizing: border-box;
   margin: 0;
-  font-family: BespokeSlab;
+  font-family: "Bespoke Slab", sans-serif;
 }
 
 div button img {
   max-width: 100%;
   max-height: 100%;
 }
-
 
 header ul > li > a {
   text-decoration: none;
@@ -252,30 +249,59 @@ footer {
   text-align: center;
 }
 
-body > footer {
+body footer {
   padding: 1rem 0;
 }
-
-body > footer .container {
+body footer a {
+  font-size: 16px;
+}
+body footer .news-media {
+  width: 100%;
+  display: flex;
+}
+body footer .news-media form {
+  margin-left: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: 0%;
+}
+body footer .news-media form input[type=email] {
+  border: 1px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0);
+  text-align: center;
+  height: 1.6rem;
+  font-size: 1em;
+  font-family: "Bespoke Slab", sans-serif;
+  width: 60%;
+  margin-top: 3%;
+}
+body footer .news-media form input[type=submit] {
+  height: 2.8rem;
+  border-radius: 3em;
+  width: 4rem;
+  margin-left: 1.3rem;
+  border: 0;
+  background-color: #FFFFFF;
+  font-family: "Bespoke Slab", sans-serif;
+}
+body footer h5 {
+  font-size: 22px;
+  font-family: "Bespoke Slab", sans-serif;
+}
+body footer .container {
   display: flex;
   align-items: center;
 }
-
-body > footer ul {
+body footer ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-
-body > footer li a {
+body footer li a {
   padding: 0.5em;
   display: block;
   text-decoration: none;
-}
-
-footer a {
-  font-size: 16px;
 }
 
 /*# sourceMappingURL=main.css.map */

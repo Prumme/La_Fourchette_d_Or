@@ -1,32 +1,78 @@
 footer {
-    background-color: #252525;
-    color: #FFFFFF;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-body > footer {
+	background-color: #252525;
+	color: #FFFFFF;
 	padding: 1rem 0;
+	text-align: center;
 }
 
-body > footer .container {
-	display: flex;
-	align-items: center;
-}
+body {
 
-body > footer ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
+	footer {
 
-body > footer li a{
-	padding: 0.5em;
-	display: block;
-	text-decoration: none;
-}
+		padding: 1rem 0;
 
-footer a {
-    font-size: 16px;
+		a {
+			font-size: 16px;
+		}
+
+		.news-media {
+			width: 100%;
+			display: flex;
+
+			form {
+				margin-left: 2%;
+				margin-top: auto;
+				margin-bottom: auto;
+				background: 0%;
+
+				input[type="email"] {
+					border: 1px solid #FFFFFF;
+					background: rgba(255, 255, 255, 0);
+					text-align: center;
+					height: 1.6rem;
+					font-size: 1em;
+					font-family: $policemain;
+					width: 60%;
+					margin-top: 3%;
+				}
+
+				input[type="submit"] {
+					height: 2.8rem;
+					border-radius: 3em;
+					width: 4rem;
+					margin-left: 1.3rem;
+					border: 0;
+					background-color: #FFFFFF;
+					font-family: $policemain;
+				}
+			}
+		}
+
+		h5 {
+			font-size: 22px;
+			font-family: $policemain;
+		}
+
+		.container {
+			display: flex;
+			align-items: center;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+
+		li {
+			a {
+				padding: 0.5em;
+				display: block;
+				text-decoration: none;
+			}
+		}
+
+	}
+
 }
