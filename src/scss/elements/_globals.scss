@@ -1,12 +1,12 @@
 @font-face {
     font-family: "BespokeSlab";
     src: url("../../../fonts/BespokeSlab-Regular.eot");
-    src: url("../../../fonts/BespokeSlab-Regular.woff") format("woff"),
-    url("../../../fonts/BespokeSlab-Regular.otf") format("opentype");
     }
 
 body{
     box-sizing: border-box;
+    margin:0;
+    font-family: "BespokeSlab",  sans-serif;
 }
 
 div > button > img {
@@ -18,16 +18,43 @@ ul > li > a {
     text-decoration: none;
     padding : 0 1rem;
     color: $lightcolor;
-    font-family: "BespokeSlab", Arial, sans-serif;
+    font-size:1.6rem;
 }
 
-nav ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style:none;
-    text-decoration: none;
+header{
+	padding: 1rem 0;
+	width: 100%;
+	z-index: 9;
+    background-color: $darkfont;
 }
 
-.navbar {
-    margin: auto;
+header .navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav{
+	right: 0;
+}
+
+header nav ul{
+	margin: 0;
+	padding: 0 2rem;
+	list-style: none;
+	display: flex;
+}
+
+header nav ul li {
+    padding : 0 1rem;
+}
+
+header nav a{
+	padding: 0.5em;
+	display:block;
+}
+
+header div a img {
+    height:50%;
+    width:50%;
 }

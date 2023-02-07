@@ -9,7 +9,7 @@
   background-color: lightgray;
 }
 .lightcolortext {
-  color: rgb(140, 140, 140);
+  color: rgb(244, 244, 244);
 }
 
 div.container {
@@ -20,13 +20,19 @@ div.container {
   height: 5%;
 }
 
+.login {
+  background-color: #FFD700;
+  border-radius: 4px;
+}
+
 @font-face {
   font-family: "BespokeSlab";
   src: url("../../../fonts/BespokeSlab-Regular.eot");
-  src: url("../../../fonts/BespokeSlab-Regular.woff") format("woff"), url("../../../fonts/BespokeSlab-Regular.otf") format("opentype");
 }
 body {
   box-sizing: border-box;
+  margin: 0;
+  font-family: "BespokeSlab", sans-serif;
 }
 
 div > button > img {
@@ -37,19 +43,46 @@ div > button > img {
 ul > li > a {
   text-decoration: none;
   padding: 0 1rem;
-  color: rgb(140, 140, 140);
-  font-family: "BespokeSlab", Arial, sans-serif;
+  color: rgb(244, 244, 244);
+  font-size: 1.6rem;
 }
 
-nav ul {
+header {
+  padding: 1rem 0;
+  width: 100%;
+  z-index: 9;
+  background-color: black;
+}
+
+header .navbar {
   display: flex;
-  justify-content: flex-end;
-  list-style: none;
-  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar {
-  margin: auto;
+header nav {
+  right: 0;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0 2rem;
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  padding: 0 1rem;
+}
+
+header nav a {
+  padding: 0.5em;
+  display: block;
+}
+
+header div a img {
+  height: 50%;
+  width: 50%;
 }
 
 .button {
