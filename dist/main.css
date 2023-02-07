@@ -21,41 +21,6 @@ div.container {
   height: 5%;
 }
 
-.login {
-  background-color: #FFD700;
-  border-radius: 4px;
-  margin: 0 0.8rem;
-}
-.login :hover {
-  border-radius: 4px;
-  color: rgb(244, 244, 244);
-  background-color: black;
-}
-
-.section1-button {
-  position: absolute;
-  width: 244px;
-  background-color: transparent;
-  color: rgb(244, 244, 244);
-  border: solid 1px rgb(244, 244, 244);
-  border-radius: 20px;
-  font-size: 2rem;
-  z-index: 3;
-  padding: 1rem 2rem;
-  transition: 0.5s;
-}
-.section1-button-left {
-  top: 68vh;
-  left: 23%;
-}
-.section1-button-right {
-  top: 68vh;
-  left: 60%;
-}
-.section1-button:hover {
-  background-color: #ffffff;
-  color: rgb(38, 38, 38);
-}
 .section1-container {
   height: 80vh;
   width: 100%;
@@ -65,20 +30,28 @@ div.container {
 }
 .section1-container img {
   position: absolute;
+  height: 80vh;
   width: 100%;
   background-size: cover;
-  aspect-ratio: 2.5;
+}
+
+#section1-buttons {
+  position: absolute;
+  width: 100vw;
+  top: 68vh;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @font-face {
-  font-family: "BespokeSlab";
-  src: url("../../../fonts/BespokeSlab-Regular.eot");
-  src: url("../../../fonts/BespokeSlab-Regular.woff") format("woff");
+  font-family: BespokeSlab;
+  src: url("../fonts/BespokeSlab-Regular.woff2") format("woff2");
+  src: url("../fonts/BespokeSlab-Regular.woff") format("woff");
 }
 body {
   box-sizing: border-box;
   margin: 0;
-  font-family: "BespokeSlab", sans-serif;
+  font-family: BespokeSlab;
 }
 
 div button img {
@@ -86,11 +59,16 @@ div button img {
   max-height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(244, 244, 244);
+}
+
 header {
-  padding: 1rem 0;
   width: 100%;
-  z-index: 9;
+  z-index: 10;
   position: fixed;
+  font-weight: 400;
 }
 header > .navbar {
   display: flex;
@@ -98,7 +76,6 @@ header > .navbar {
   align-items: center;
 }
 header div a {
-  text-decoration: none;
   color: rgb(244, 244, 244);
   transition: 0.5s;
 }
@@ -108,15 +85,22 @@ header div a img {
 }
 header div nav ul {
   display: flex;
-  padding: 0 1rem;
   font-size: 1.6rem;
   padding: 0 2rem;
-}
-header div nav ul li {
   list-style: none;
 }
-header div nav ul li :hover {
+header div nav ul li:not(:last-child) {
+  padding: 0 0.75rem;
+}
+header div nav ul li:not(:last-child) :hover {
   color: #FFD700;
+}
+header div nav ul .li-yellow {
+  background-color: #FFD700;
+  border-radius: 4px;
+}
+header div nav ul .li-yellow:hover {
+  background-color: black;
 }
 header div nav ul a {
   padding: 0.5em;
@@ -124,9 +108,42 @@ header div nav ul a {
 }
 
 .button {
+  font-size: 1.6rem;
+  border: none;
+  color: rgb(244, 244, 244);
+}
+.button-yellow {
+  background-color: #FFD700;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin: 0 0.8rem;
+  transition: 0.5s;
+}
+.button-yellow:hover {
+  border-radius: 4px;
+  color: rgb(244, 244, 244);
+  background-color: black;
+}
+.button-darkmode {
   border: none;
   padding: 0.5rem;
   border-radius: 50%;
+}
+.button-transparent {
+  width: 244px;
+  background-color: transparent;
+  color: rgb(244, 244, 244);
+  border: solid 1px rgb(244, 244, 244);
+  border-radius: 20px;
+  font-size: 2rem;
+  z-index: 3;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+  font-family: BespokeSlab;
+}
+.button-transparent:hover {
+  background-color: #ffffff;
+  color: rgb(38, 38, 38);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,45 @@
 .button{
+    font-size: 1.6rem;
     border:none;
-    padding : 0.5rem;
-    border-radius: 50%;
+    color:$lightcolor;
+    //LOGIN BUTTON
+    &-yellow {
+        background-color: $yellowbutton;
+        padding:0.75rem 1rem;
+        border-radius: 4px;
+        margin: 0 0.8rem;
+        transition: 0.5s;
+
+        &:hover {
+            border-radius: 4px;
+            color: $lightcolor;
+            background-color: $darkfont;
+        }
+    }
+
+    &-darkmode {
+        border:none;
+        padding : 0.5rem;
+        border-radius: 50%;
+        
+    }
+
+    &-transparent {
+        width: 244px;
+        background-color: $transparent;
+        color: $lightcolor;
+        border: solid 1px $lightcolor;
+        border-radius: 20px;
+        font-size: 2rem;
+        z-index: 3;
+        padding: 1rem 2rem;
+        transition: 0.5s;
+        font-family: BespokeSlab;
+
+        &:hover {
+            background-color: $lightbutton;
+            color: $darkcolor;
+        }
+    }
+
 }

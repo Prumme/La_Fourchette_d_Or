@@ -28,53 +28,8 @@ div.container {
     height: 5%;
 }
 
-
-//LOGIN BUTTON
-.login {
-    background-color: $loginbutton;
-    border-radius: 4px;
-    margin: 0 0.8rem;
-
-    :hover {
-        border-radius: 4px;
-        color: $lightcolor;
-        background-color: $darkfont;
-    }
-}
-
-//LOGIN BUTTON
-
-
 // SECTION 1
 .section1 {
-
-    &-button {
-        position: absolute;
-        width: 244px;
-        background-color: $transparent;
-        color: $lightcolor;
-        border: solid 1px $lightcolor;
-        border-radius: 20px;
-        font-size: 2rem;
-        z-index: 3;
-        padding: 1rem 2rem;
-        transition: 0.5s;
-
-        &-left {
-            top: 68vh;
-            left: 23%;
-        }
-
-        &-right {
-            top: 68vh;
-            left: 60%;
-        }
-
-        &:hover {
-            background-color: $lightbutton;
-            color: $darkcolor;
-        }
-    }
 
     &-container {
         height: 80vh;
@@ -85,9 +40,17 @@ div.container {
 
         img {
             position: absolute;
+            height:80vh;
             width: 100%;
             background-size: cover;
-            aspect-ratio:  2.5;
         }
     }
+}
+
+#section1-buttons{
+    position: absolute;
+    width: 100vw;
+    top: 68vh;
+    display:flex;
+    justify-content: space-evenly;
 }

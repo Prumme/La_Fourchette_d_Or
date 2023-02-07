@@ -13,13 +13,14 @@
     <header id="scroll-header">
         <div class="navbar">
             <a href="#" id="logo-link">
-                <img src="src/images/forks.png" alt="">
+                <img src="src/images/forks.svg" alt="">
             </a>
             <nav>
                 <ul>
+                    <li><a href="#">Accueil</a></li>
                     <li><a href="#">La carte</a></li>
                     <li><a href="#">A propos</a></li>
-                    <li class="login"><a href="#">Réservation</a></li>
+                    <li><a class="li li-yellow" href="#">Réservation</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,7 +28,7 @@
 
     <main>
         <div class="container">
-            <button id="darkmode" class="button dark darkcolorfont">
+            <button id="darkmode" class="button button-darkmode dark darkcolorfont">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Sun_white_icon.svg/1200px-Sun_white_icon.svg.png"
                     alt="">
             </button>
@@ -37,10 +38,12 @@
 
             <div class="section1 section1-container">
                 <img src="src/images/restaurant.png" alt="">
-                <button class="section1 section1-button section1-button-left">Réservation</button>
-                <button class="section1 section1-button section1-button-right">Appeler</button>
-            </div>
 
+                <div id="section1-buttons">
+                    <button class="button button-transparent">Réservation</button>
+                    <button class="button button-transparent">Appeler</button>
+                </div>
+            </div>
         </section>
     </main>
     

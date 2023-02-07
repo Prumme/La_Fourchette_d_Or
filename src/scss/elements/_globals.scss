@@ -1,14 +1,16 @@
 @font-face {
-    font-family: "BespokeSlab";
-    src: url("../../../fonts/BespokeSlab-Regular.eot");
-    src: url("../../../fonts/BespokeSlab-Regular.woff") format("woff");
+    font-family: BespokeSlab;
+    src: url($regularWoff2) format("woff2");
+    src: url($regularWoff) format("woff");
 }
+
+
 
 // BODY
 body {
     box-sizing: border-box;
     margin: 0;
-    font-family: "BespokeSlab", sans-serif;
+    font-family: BespokeSlab;
 }
 
 //DARKMODE BUTTON
@@ -21,12 +23,18 @@ div {
     }
 }
 
+a{
+    text-decoration: none;
+    color: $lightcolor;
+
+}
+
 // HEADER
 header {
-    padding: 1rem 0;
     width: 100%;
-    z-index: 9;
+    z-index: 10;
     position: fixed;
+    font-weight: 400;
 
     &>.navbar {
         display: flex;
@@ -37,7 +45,6 @@ header {
     div {
 
         a {
-            text-decoration: none;
             color: $lightcolor;
             transition: 0.5s;
 
@@ -50,15 +57,25 @@ header {
         nav {
             ul {
                 display: flex;
-                padding: 0 1rem;
                 font-size: 1.6rem;
                 padding: 0 2rem;
+                list-style: none;
 
-                li {
-                    list-style: none;
 
+                li:not(:last-child) {
+                    padding : 0 0.75rem;
                     :hover {
-                        color: $loginbutton;
+                        color: $yellowbutton;
+                    }
+                }
+
+                .li {
+                    &-yellow {
+                        background-color: $yellowbutton;
+                        border-radius : 4px;
+                        &:hover {
+                            background-color : $darkfont;
+                        }
                     }
                 }
 
