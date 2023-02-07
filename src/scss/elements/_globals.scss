@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "BespokeSlab";
+    font-family: $policemain;
     src: url("../../../fonts/BespokeSlab-Regular.eot");
     }
 
 body{
     box-sizing: border-box;
     margin:0;
-    font-family: "BespokeSlab",  sans-serif;
+    font-family: $policemain;
 }
 
 div > button > img {
@@ -57,4 +57,18 @@ header nav a{
 header div a img {
     height:50%;
     width:50%;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 450px;
+}
+
+footer {
+    background-color: #252525;
+    color: #FFFFFF;
+    padding: 1rem 0;
+    text-align: center;
 }
