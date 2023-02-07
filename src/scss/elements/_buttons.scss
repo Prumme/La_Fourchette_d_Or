@@ -1,5 +1,6 @@
 .button {
     font-size: 1.6rem;
+
     border: none;
     color: $lightcolor;
 
@@ -16,6 +17,23 @@
             color: $lightcolor;
             background-color: $darkfont;
         }
+    }
+
+    &-lightyellow {
+        background-color: $lightyellowbutton;
+        color: $darkcolor;
+        padding: 1rem 2.5rem;
+        border: solid 1px lightgrey;
+        font-size: 1em;
+        font-weight: 800;
+        transition: 0.5s;
+
+
+        &:hover {
+            background-color: $darkcolor;
+            color: $yellowbutton;
+        }
+
     }
 
     &-darkmode {
@@ -35,7 +53,7 @@
         z-index: 3;
         padding: 1rem 2rem;
         transition: 0.5s;
-        font-family: BespokeSlab;
+        font-family: Bespoke Slab;
 
         &:hover {
             background-color: $lightbutton;

@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: $main_police;
     font-weight: $regular;
+
 }
 
 //DARKMODE BUTTON
@@ -66,7 +67,9 @@ header {
 
                 .li {
                     &-yellow {
+
                         background-color: $yellow;
+
                         border-radius: 4px;
 
                         &:hover {
@@ -87,6 +90,12 @@ header {
 header div a img {
     height: 50%;
     width: 50%;
+
+}
+
+header div a img {
+    height: 50%;
+    width: 50%;
 }
 
 iframe {
@@ -94,4 +103,11 @@ iframe {
     margin: auto;
     width: 100%;
     height: 450px;
+}
+
+hr {
+    width: 600px;
+    height: 2px;
+    border: none;
+    background-color: $yellowbutton;
 }

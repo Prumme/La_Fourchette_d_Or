@@ -39,4 +39,15 @@
         padding-right: 9%;
         padding-left: 9%;
     }
+
+
+    .bg {
+        &-instagram {
+            background-color: $instagrambg;
+        }
+
+        &-twitter {
+            background-color: $twitterbg;
+        }
+    }
 }

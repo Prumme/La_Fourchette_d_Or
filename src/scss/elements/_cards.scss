@@ -1,0 +1,28 @@
+.cardlist {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    &-element {
+        border : solid 1px $darkfont;
+        border-radius:15px;
+        flex-direction : column;
+        width:310px;
+        height:460px;
+
+        img:not(:first-child){
+            width:310px;
+            height:265px;
+        }
+    }
+
+    &-row {
+        display:flex;
+        flex-direction: row;
+    }
+
+    &-title{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
