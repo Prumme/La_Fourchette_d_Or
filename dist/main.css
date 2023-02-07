@@ -127,23 +127,20 @@ main div.container {
   }
 }
 @font-face {
-
-  font-family: BespokeSlab;
+  font-family: Bespoke Slab;
   src: url("../fonts/BespokeSlab-Regular.woff2") format("woff2");
   src: url("../fonts/BespokeSlab-Regular.woff") format("woff");
-
 }
 body {
   box-sizing: border-box;
   margin: 0;
-  font-family: BespokeSlab;
+  font-family: "Bespoke Slab";
 }
 
 div button img {
   max-width: 100%;
   max-height: 100%;
 }
-
 
 header ul > li > a {
   text-decoration: none;
@@ -206,6 +203,13 @@ iframe {
   height: 450px;
 }
 
+hr {
+  width: 600px;
+  height: 2px;
+  border: none;
+  background-color: #FFD700;
+}
+
 .button {
   font-size: 1.6rem;
   border: none;
@@ -223,6 +227,19 @@ iframe {
   color: rgb(244, 244, 244);
   background-color: black;
 }
+.button-lightyellow {
+  background-color: rgba(255, 215, 0, 0.5);
+  color: rgb(38, 38, 38);
+  padding: 1rem 2.5rem;
+  border: solid 1px lightgrey;
+  font-size: 1em;
+  font-weight: 800;
+  transition: 0.5s;
+}
+.button-lightyellow:hover {
+  background-color: rgb(38, 38, 38);
+  color: #FFD700;
+}
 .button-darkmode {
   border: none;
   padding: 0.5rem;
@@ -238,11 +255,26 @@ iframe {
   z-index: 3;
   padding: 1rem 2rem;
   transition: 0.5s;
-  font-family: BespokeSlab;
+  font-family: Bespoke Slab;
 }
 .button-transparent:hover {
   background-color: #ffffff;
   color: rgb(38, 38, 38);
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.menu-textinput {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu-textinput p {
+  padding: 4rem;
 }
 
 footer {
