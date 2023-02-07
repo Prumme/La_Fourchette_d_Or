@@ -1,15 +1,8 @@
-@font-face {
-    font-family: $policemain;
-    src: url($regularWoff2) format("woff2");
-    src: url($regularWoff) format("woff");
-    }
-
-
 // BODY
 body {
-    box-sizing: border-box;
-    margin:0;
-    font-family: $policemain;
+    margin: 0;
+    font-family: $main_police;
+    font-weight: $bold;
 }
 
 //DARKMODE BUTTON
@@ -22,9 +15,9 @@ div {
     }
 }
 
-header ul > li > a {
+header ul>li>a {
     text-decoration: none;
-    padding : 0.5em;
+    padding: 0.5em;
     color: $lightcolor;
 
 }
@@ -64,18 +57,20 @@ header {
 
 
                 li:not(:last-child) {
-                    padding : 0 0.75rem;
+                    padding: 0 0.75rem;
+
                     :hover {
-                        color: $yellowbutton;
+                        color: $yellow;
                     }
                 }
 
                 .li {
                     &-yellow {
-                        background-color: $yellowbutton;
-                        border-radius : 4px;
+                        background-color: $yellow;
+                        border-radius: 4px;
+
                         &:hover {
-                            background-color : $darkfont;
+                            background-color: $darkfont;
                         }
                     }
                 }
@@ -87,10 +82,11 @@ header {
             }
         }
     }
+}
 
 header div a img {
-    height:50%;
-    width:50%;
+    height: 50%;
+    width: 50%;
 }
 
 iframe {
