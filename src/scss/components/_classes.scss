@@ -144,3 +144,27 @@ main div.container {
         opacity: 1;
     }
 }
+
+.center{
+    display:flex;
+    justify-content:center;
+}
+
+.flex-reseau {
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    width:1033px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bg {
+    &-instagram {
+        background-color: $instagrambg;
+    }
+
+    &-twitter {
+        background-color: $twitterbg;
+    }
+}
