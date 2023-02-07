@@ -1,0 +1,35 @@
+@for $i from 1 through 1 {
+    .w-#{$i}-2 {
+        width: percentage($i * 50);
+    }
+}
+
+@for $i from 1 through 2 {
+    .w-#{$i}-3 {
+        width: percentage($i * 33);
+    }
+}
+
+@for $i from 1 through 3 {
+    .w-#{$i}-4 {
+        width: percentage($i * 25);
+    }
+}
+
+@for $i from 1 through 4 {
+    .w-#{$i}-5 {
+        width: percentage($i * 20);
+    }
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-screen {
+    width: 100vw;
+}
+
+.w-min {
+    width: min-content;
+}

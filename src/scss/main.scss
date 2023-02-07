@@ -1,11 +1,24 @@
+//Variables
+@import "partials/fonts";
+@import "partials/variables";
+@import "partials/functions";
+@import "partials/globals";
+
 //Components
 @import "components/colors";
-@import "components/fonts";
-@import "components/classes.scss";
-@import "components/fonts.scss";
+@import "components/carousel";
+@import "components/background";
+@import "components/width";
+@import "components/height";
+@import "components/flex";
+@import "components/position";
+@import "components/cursor";
+@import "components/font";
 
 //Elements
 @import "elements/globals";
 @import "elements/buttons";
 @import "elements/footer";
-
+@import "elements/menus";
+@import "elements/footer";
+@import "elements/cards"

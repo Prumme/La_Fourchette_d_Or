@@ -10,39 +10,31 @@
 
 <body>
 
-    <header id="scroll-header">
-        <div class="navbar">
-            <a href="#" id="logo-link">
+    <header class="z-5 sticky top-0 w-full ">
+        <div class="flex justify-between items-center w-full absolute top-0 bg-black-50">
+            <a href="#" alt="logo-la_fourchette_d'or" class="cursor-pointer">
                 <img src="src/images/forks.svg" alt="">
             </a>
             <nav>
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">La carte</a></li>
-                    <li><a href="#">A propos</a></li>
-                    <li><a class="li li-yellow" href="#">Réservation</a></li>
+                    <li><a href="#" class="font-medium">Accueil</a></li>
+                    <li><a href="#" class="font-medium">La carte</a></li>
+                    <li><a href="#" class="font-medium">A propos</a></li>
+                    <li><a class="li li-yellow font-medium" href="#">Réservation</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <button id="darkmode" class="button button-darkmode dark darkcolorfont">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Sun_white_icon.svg/1200px-Sun_white_icon.svg.png"
-                    alt="">
-            </button>
-        </div>
+    <main class="w-full">
+        <section id="section1" class="w-full">
 
+            <div class="w-full relative">
+                <img class="w-full" src="src/images/restaurant.png" alt="">
 
-        <section id="section1">
-
-            <div class="section1 section1-container">
-                <img src="src/images/restaurant.png" alt="">
-
-                <div id="section1-buttons">
-                    <button class="button button-transparent">Réservation</button>
-                    <button class="button button-transparent">Appeler</button>
+                <div class="w-full flex justify-evenly absolute bottom-5">
+                    <button class="button button-transparent cursor-pointer">Réservation</button>
+                    <button class="button button-transparent cursor-pointer">Appeler</button>
                 </div>
             </div>
         </section>
@@ -68,9 +60,8 @@
                         alt="Zombie pumpkin" />
                 </div>
                 <div class="carousel-actions">
-                    <button id="carousel-button-prev" aria-label="Previous">
-                        << /button>
-                            <button id="carousel-button-next" aria-label="Next">></button>
+                    <button id="carousel-button-prev" aria-label="Previous"></button>
+                    <button id="carousel-button-next" aria-label="Next">></button>
                 </div>
                 <div class="carousel-dots">
                     <input class="dot selected-dot" type="radio" name="dot" checked />
@@ -80,6 +71,94 @@
             </div>
 
         </section>
+
+        <hr>
+
+        <section id="menu">
+
+            <div class="menu">
+                <div class="menu menu-textinput">
+                    <p><b>Découvrez nos savoureux petits déjeuners pour bien commencer la journée</b></p>
+                    <button class="button button-lightyellow">Découvrir</button>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
+                    alt="">
+            </div>
+
+            <div class="menu">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
+                    alt="">
+                <div class="menu menu-textinput">
+                    <p><b>Découvrez nos savoureux petits déjeuners pour bien commencer la journée</b></p>
+                    <button class="button button-lightyellow">Découvrir</button>
+                </div>
+            </div>
+
+            <div class="menu">
+                <div class="menu menu-textinput">
+                    <p><b>Découvrez nos savoureux petits déjeuners pour bien commencer la journée</b></p>
+                    <button class="button button-lightyellow">Découvrir</button>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
+                    alt="">
+            </div>
+        </section>
+
+        <div class="center"><h2>Nos réseaux</h2></div>
+
+        <div class="flex-reseau">
+            <img class="bg bg-twitter" src="./src/images/twitter.svg" alt="logo" label="test">
+            <img class="bg bg-instagram" src="./src/images/instagram.svg" alt="logo">
+        </div>
+
+        <section id="cards">
+            <div class="cardlist">
+                <div class="cardlist cardlist-element">
+                    <div class="cardlist cardlist-row">
+                        <img class="bg bg-instagram" src="./src/images/instagram.svg" alt="logo">
+                        <div class="cardlist cardlist-title">
+                            <h2>La fourchette d'or</h2>
+                            <h4>07/02/23</h4>
+                        </div>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
+                        alt="">
+                    <h3>Notre nouveau plat de la saison</h3>
+                </div>
+
+                <div class="cardlist cardlist-element">
+                    <div class="cardlist cardlist-row">
+                        <img class="bg bg-instagram" src="./src/images/instagram.svg" alt="logo">
+                        <div class="cardlist cardlist-title">
+                            <h2>La fourchette d'or</h2>
+                            <h4>07/02/23</h4>
+                        </div>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
+                        alt="">
+                    <h3>On vous attend avec plaisir</h3>
+                </div>
+
+                <div class="cardlist cardlist-element">
+                    <div class="cardlist cardlist-row">
+                        <img class="bg bg-instagram" src="./src/images/instagram.svg" alt="logo">
+                        <div class="cardlist cardlist-title">
+                            <h2>La fourchette d'or</h2>
+                            <h4>07/02/23</h4>
+                        </div>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
+                        alt="">
+                    <h3>Regardez comment notre...</h3>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <div class="center">
+            <h2>Où nous trouver ?</h2>
+        </div>
 
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.474236839809!2d2.3875456155322388!3d48.84916657928667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6720d9c7af387%3A0x5891d8d62e8535c7!2sESGI%2C%20%C3%89cole%20Sup%C3%A9rieure%20de%20G%C3%A9nie%20Informatique!5e0!3m2!1sfr!2sfr!4v1675766450044!5m2!1sfr!2sfr"

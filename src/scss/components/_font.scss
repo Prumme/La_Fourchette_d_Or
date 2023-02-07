@@ -1,0 +1,22 @@
+.font {
+    &-bold {
+        font-weight: $bold;
+    }
+
+    &-extrabold {
+        font-weight: $extrabold;
+    }
+
+    &-light {
+        font-weight: $light;
+    }
+
+    &-medium {
+        font-weight: $medium;
+    }
+
+    &-regular {
+        font-weight: $regular;
+    }
+
+}
