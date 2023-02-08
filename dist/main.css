@@ -1,18 +1,1495 @@
-/* Error: Undefined variable.
- *    ,
- * 34 |                     font-family: $policemain;
- *    |                                  ^^^^^^^^^^^
- *    '
- *   src/scss/elements/_footer.scss 34:19  @import
- *   src/scss/main.scss 21:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 34 \2502                      font-family: $policemain;\a    \2502                                   ^^^^^^^^^^^\a    \2575 \a   src/scss/elements/_footer.scss 34:19  @import\a   src/scss/main.scss 21:9               root stylesheet";
+@font-face {
+  src: url("../../../fonts/BespokeSlab-Regular.woff2") format("woff2");
+  src: url("../../../fonts/BespokeSlab-Regular.woff") format("woff");
+  font-family: "BespokeSlab";
+  font-weight: 400;
 }
+@font-face {
+  src: url("../../../fonts/BespokeSlab-Bold.woff2") format("woff2");
+  src: url("../../../fonts/BespokeSlab-Bold.woff") format("woff");
+  font-family: "BespokeSlab";
+  font-weight: 700;
+}
+@font-face {
+  src: url("../../../fonts/BespokeSlab-Light.woff2") format("woff2");
+  src: url("../../../fonts/BespokeSlab-Light.woff") format("woff");
+  font-family: "BespokeSlab";
+  font-weight: 300;
+}
+@font-face {
+  src: url("../../../fonts/BespokeSlab-Extrabold.woff2") format("woff2");
+  src: url("../../../fonts/BespokeSlab-Extrabold.woff") format("woff");
+  font-family: "BespokeSlab";
+  font-weight: 800;
+}
+@font-face {
+  src: url("../../../fonts/BespokeSlab-Medium.woff2") format("woff2");
+  src: url("../../../fonts/BespokeSlab-Medium.woff") format("woff");
+  font-family: "BespokeSlab";
+  font-weight: 500;
+}
+* {
+  box-sizing: border-box;
+}
+
+.carousel {
+  max-width: 600px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+  display: none;
+}
+
+.carousel .carousel-item-visible {
+  display: block;
+  animation: fadeVisibility 0.5s;
+}
+
+.carousel .carousel-item img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.carousel .carousel-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel .carousel-actions button {
+  border-radius: 50px;
+  background-color: white;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+  margin-left: 20px;
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+  margin-right: 20px;
+}
+
+.carousel-dots {
+  text-align: center;
+}
+
+.dot {
+  opacity: 0.7;
+}
+
+.dot:focus {
+  border: 1px solid black;
+}
+
+@keyframes fadeVisibility {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.bg-black-50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.w-1-2 {
+  width: 50%;
+}
+
+.w-1-3 {
+  width: 33%;
+}
+
+.w-2-3 {
+  width: 66%;
+}
+
+.w-1-4 {
+  width: 25%;
+}
+
+.w-2-4 {
+  width: 50%;
+}
+
+.w-3-4 {
+  width: 75%;
+}
+
+.w-1-5 {
+  width: 20%;
+}
+
+.w-2-5 {
+  width: 40%;
+}
+
+.w-3-5 {
+  width: 60%;
+}
+
+.w-4-5 {
+  width: 80%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-min {
+  width: min-content;
+}
+
+.h-1-2 {
+  height: 50%;
+}
+
+.h-1-3 {
+  height: 33%;
+}
+
+.h-2-3 {
+  height: 66%;
+}
+
+.h-1-4 {
+  height: 25%;
+}
+
+.h-2-4 {
+  height: 50%;
+}
+
+.h-3-4 {
+  height: 75%;
+}
+
+.h-1-5 {
+  height: 20%;
+}
+
+.h-2-5 {
+  height: 40%;
+}
+
+.h-3-5 {
+  height: 60%;
+}
+
+.h-4-5 {
+  height: 80%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-screen {
+  height: 100vw;
+}
+
+.h-min {
+  height: min-content;
+}
+
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+.items-end {
+  align-items: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.items-baseline {
+  align-items: baseline;
+}
+.items-stretch {
+  align-items: stretch;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.sticky {
+  position: sticky;
+}
+
+.top-0 {
+  top: 0rem;
+}
+
+.bottom-0 {
+  bottom: 0rem;
+}
+
+.left-0 {
+  left: 0rem;
+}
+
+.right-0 {
+  right: 0rem;
+}
+
+.top-1 {
+  top: 1rem;
+}
+
+.bottom-1 {
+  bottom: 1rem;
+}
+
+.left-1 {
+  left: 1rem;
+}
+
+.right-1 {
+  right: 1rem;
+}
+
+.top-2 {
+  top: 2rem;
+}
+
+.bottom-2 {
+  bottom: 2rem;
+}
+
+.left-2 {
+  left: 2rem;
+}
+
+.right-2 {
+  right: 2rem;
+}
+
+.top-3 {
+  top: 3rem;
+}
+
+.bottom-3 {
+  bottom: 3rem;
+}
+
+.left-3 {
+  left: 3rem;
+}
+
+.right-3 {
+  right: 3rem;
+}
+
+.top-4 {
+  top: 4rem;
+}
+
+.bottom-4 {
+  bottom: 4rem;
+}
+
+.left-4 {
+  left: 4rem;
+}
+
+.right-4 {
+  right: 4rem;
+}
+
+.top-5 {
+  top: 5rem;
+}
+
+.bottom-5 {
+  bottom: 5rem;
+}
+
+.left-5 {
+  left: 5rem;
+}
+
+.right-5 {
+  right: 5rem;
+}
+
+.top-6 {
+  top: 6rem;
+}
+
+.bottom-6 {
+  bottom: 6rem;
+}
+
+.left-6 {
+  left: 6rem;
+}
+
+.right-6 {
+  right: 6rem;
+}
+
+.top-7 {
+  top: 7rem;
+}
+
+.bottom-7 {
+  bottom: 7rem;
+}
+
+.left-7 {
+  left: 7rem;
+}
+
+.right-7 {
+  right: 7rem;
+}
+
+.top-8 {
+  top: 8rem;
+}
+
+.bottom-8 {
+  bottom: 8rem;
+}
+
+.left-8 {
+  left: 8rem;
+}
+
+.right-8 {
+  right: 8rem;
+}
+
+.top-9 {
+  top: 9rem;
+}
+
+.bottom-9 {
+  bottom: 9rem;
+}
+
+.left-9 {
+  left: 9rem;
+}
+
+.right-9 {
+  right: 9rem;
+}
+
+.top-10 {
+  top: 10rem;
+}
+
+.bottom-10 {
+  bottom: 10rem;
+}
+
+.left-10 {
+  left: 10rem;
+}
+
+.right-10 {
+  right: 10rem;
+}
+
+.top-11 {
+  top: 11rem;
+}
+
+.bottom-11 {
+  bottom: 11rem;
+}
+
+.left-11 {
+  left: 11rem;
+}
+
+.right-11 {
+  right: 11rem;
+}
+
+.top-12 {
+  top: 12rem;
+}
+
+.bottom-12 {
+  bottom: 12rem;
+}
+
+.left-12 {
+  left: 12rem;
+}
+
+.right-12 {
+  right: 12rem;
+}
+
+.top-13 {
+  top: 13rem;
+}
+
+.bottom-13 {
+  bottom: 13rem;
+}
+
+.left-13 {
+  left: 13rem;
+}
+
+.right-13 {
+  right: 13rem;
+}
+
+.top-14 {
+  top: 14rem;
+}
+
+.bottom-14 {
+  bottom: 14rem;
+}
+
+.left-14 {
+  left: 14rem;
+}
+
+.right-14 {
+  right: 14rem;
+}
+
+.top-15 {
+  top: 15rem;
+}
+
+.bottom-15 {
+  bottom: 15rem;
+}
+
+.left-15 {
+  left: 15rem;
+}
+
+.right-15 {
+  right: 15rem;
+}
+
+.top-16 {
+  top: 16rem;
+}
+
+.bottom-16 {
+  bottom: 16rem;
+}
+
+.left-16 {
+  left: 16rem;
+}
+
+.right-16 {
+  right: 16rem;
+}
+
+.top-17 {
+  top: 17rem;
+}
+
+.bottom-17 {
+  bottom: 17rem;
+}
+
+.left-17 {
+  left: 17rem;
+}
+
+.right-17 {
+  right: 17rem;
+}
+
+.top-18 {
+  top: 18rem;
+}
+
+.bottom-18 {
+  bottom: 18rem;
+}
+
+.left-18 {
+  left: 18rem;
+}
+
+.right-18 {
+  right: 18rem;
+}
+
+.top-19 {
+  top: 19rem;
+}
+
+.bottom-19 {
+  bottom: 19rem;
+}
+
+.left-19 {
+  left: 19rem;
+}
+
+.right-19 {
+  right: 19rem;
+}
+
+.top-20 {
+  top: 20rem;
+}
+
+.bottom-20 {
+  bottom: 20rem;
+}
+
+.left-20 {
+  left: 20rem;
+}
+
+.right-20 {
+  right: 20rem;
+}
+
+.top-21 {
+  top: 21rem;
+}
+
+.bottom-21 {
+  bottom: 21rem;
+}
+
+.left-21 {
+  left: 21rem;
+}
+
+.right-21 {
+  right: 21rem;
+}
+
+.top-22 {
+  top: 22rem;
+}
+
+.bottom-22 {
+  bottom: 22rem;
+}
+
+.left-22 {
+  left: 22rem;
+}
+
+.right-22 {
+  right: 22rem;
+}
+
+.top-23 {
+  top: 23rem;
+}
+
+.bottom-23 {
+  bottom: 23rem;
+}
+
+.left-23 {
+  left: 23rem;
+}
+
+.right-23 {
+  right: 23rem;
+}
+
+.top-24 {
+  top: 24rem;
+}
+
+.bottom-24 {
+  bottom: 24rem;
+}
+
+.left-24 {
+  left: 24rem;
+}
+
+.right-24 {
+  right: 24rem;
+}
+
+.top-25 {
+  top: 25rem;
+}
+
+.bottom-25 {
+  bottom: 25rem;
+}
+
+.left-25 {
+  left: 25rem;
+}
+
+.right-25 {
+  right: 25rem;
+}
+
+.top-26 {
+  top: 26rem;
+}
+
+.bottom-26 {
+  bottom: 26rem;
+}
+
+.left-26 {
+  left: 26rem;
+}
+
+.right-26 {
+  right: 26rem;
+}
+
+.top-27 {
+  top: 27rem;
+}
+
+.bottom-27 {
+  bottom: 27rem;
+}
+
+.left-27 {
+  left: 27rem;
+}
+
+.right-27 {
+  right: 27rem;
+}
+
+.top-28 {
+  top: 28rem;
+}
+
+.bottom-28 {
+  bottom: 28rem;
+}
+
+.left-28 {
+  left: 28rem;
+}
+
+.right-28 {
+  right: 28rem;
+}
+
+.top-29 {
+  top: 29rem;
+}
+
+.bottom-29 {
+  bottom: 29rem;
+}
+
+.left-29 {
+  left: 29rem;
+}
+
+.right-29 {
+  right: 29rem;
+}
+
+.top-30 {
+  top: 30rem;
+}
+
+.bottom-30 {
+  bottom: 30rem;
+}
+
+.left-30 {
+  left: 30rem;
+}
+
+.right-30 {
+  right: 30rem;
+}
+
+.top-31 {
+  top: 31rem;
+}
+
+.bottom-31 {
+  bottom: 31rem;
+}
+
+.left-31 {
+  left: 31rem;
+}
+
+.right-31 {
+  right: 31rem;
+}
+
+.top-32 {
+  top: 32rem;
+}
+
+.bottom-32 {
+  bottom: 32rem;
+}
+
+.left-32 {
+  left: 32rem;
+}
+
+.right-32 {
+  right: 32rem;
+}
+
+.top-33 {
+  top: 33rem;
+}
+
+.bottom-33 {
+  bottom: 33rem;
+}
+
+.left-33 {
+  left: 33rem;
+}
+
+.right-33 {
+  right: 33rem;
+}
+
+.top-34 {
+  top: 34rem;
+}
+
+.bottom-34 {
+  bottom: 34rem;
+}
+
+.left-34 {
+  left: 34rem;
+}
+
+.right-34 {
+  right: 34rem;
+}
+
+.top-35 {
+  top: 35rem;
+}
+
+.bottom-35 {
+  bottom: 35rem;
+}
+
+.left-35 {
+  left: 35rem;
+}
+
+.right-35 {
+  right: 35rem;
+}
+
+.top-36 {
+  top: 36rem;
+}
+
+.bottom-36 {
+  bottom: 36rem;
+}
+
+.left-36 {
+  left: 36rem;
+}
+
+.right-36 {
+  right: 36rem;
+}
+
+.top-37 {
+  top: 37rem;
+}
+
+.bottom-37 {
+  bottom: 37rem;
+}
+
+.left-37 {
+  left: 37rem;
+}
+
+.right-37 {
+  right: 37rem;
+}
+
+.top-38 {
+  top: 38rem;
+}
+
+.bottom-38 {
+  bottom: 38rem;
+}
+
+.left-38 {
+  left: 38rem;
+}
+
+.right-38 {
+  right: 38rem;
+}
+
+.top-39 {
+  top: 39rem;
+}
+
+.bottom-39 {
+  bottom: 39rem;
+}
+
+.left-39 {
+  left: 39rem;
+}
+
+.right-39 {
+  right: 39rem;
+}
+
+.top-40 {
+  top: 40rem;
+}
+
+.bottom-40 {
+  bottom: 40rem;
+}
+
+.left-40 {
+  left: 40rem;
+}
+
+.right-40 {
+  right: 40rem;
+}
+
+.top-41 {
+  top: 41rem;
+}
+
+.bottom-41 {
+  bottom: 41rem;
+}
+
+.left-41 {
+  left: 41rem;
+}
+
+.right-41 {
+  right: 41rem;
+}
+
+.top-42 {
+  top: 42rem;
+}
+
+.bottom-42 {
+  bottom: 42rem;
+}
+
+.left-42 {
+  left: 42rem;
+}
+
+.right-42 {
+  right: 42rem;
+}
+
+.top-43 {
+  top: 43rem;
+}
+
+.bottom-43 {
+  bottom: 43rem;
+}
+
+.left-43 {
+  left: 43rem;
+}
+
+.right-43 {
+  right: 43rem;
+}
+
+.top-44 {
+  top: 44rem;
+}
+
+.bottom-44 {
+  bottom: 44rem;
+}
+
+.left-44 {
+  left: 44rem;
+}
+
+.right-44 {
+  right: 44rem;
+}
+
+.top-45 {
+  top: 45rem;
+}
+
+.bottom-45 {
+  bottom: 45rem;
+}
+
+.left-45 {
+  left: 45rem;
+}
+
+.right-45 {
+  right: 45rem;
+}
+
+.top-46 {
+  top: 46rem;
+}
+
+.bottom-46 {
+  bottom: 46rem;
+}
+
+.left-46 {
+  left: 46rem;
+}
+
+.right-46 {
+  right: 46rem;
+}
+
+.top-47 {
+  top: 47rem;
+}
+
+.bottom-47 {
+  bottom: 47rem;
+}
+
+.left-47 {
+  left: 47rem;
+}
+
+.right-47 {
+  right: 47rem;
+}
+
+.top-48 {
+  top: 48rem;
+}
+
+.bottom-48 {
+  bottom: 48rem;
+}
+
+.left-48 {
+  left: 48rem;
+}
+
+.right-48 {
+  right: 48rem;
+}
+
+.top-49 {
+  top: 49rem;
+}
+
+.bottom-49 {
+  bottom: 49rem;
+}
+
+.left-49 {
+  left: 49rem;
+}
+
+.right-49 {
+  right: 49rem;
+}
+
+.top-50 {
+  top: 50rem;
+}
+
+.bottom-50 {
+  bottom: 50rem;
+}
+
+.left-50 {
+  left: 50rem;
+}
+
+.right-50 {
+  right: 50rem;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
+.z-4 {
+  z-index: 4;
+}
+
+.z-5 {
+  z-index: 5;
+}
+
+.z-6 {
+  z-index: 6;
+}
+
+.z-7 {
+  z-index: 7;
+}
+
+.z-8 {
+  z-index: 8;
+}
+
+.z-9 {
+  z-index: 9;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.cursor-default {
+  cursor: default;
+}
+.cursor-text {
+  cursor: text;
+}
+.cursor-wait {
+  cursor: wait;
+}
+.cursor-move {
+  cursor: move;
+}
+.cursor-help {
+  cursor: help;
+}
+.cursor-not-allowed {
+  cursor: not-allowed;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+.font-light {
+  font-weight: 300;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-regular {
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  font-family: "BespokeSlab", sans-serif;
+  font-weight: 400;
+}
+
+div button img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+header ul > li > a {
+  text-decoration: none;
+  padding: 0.5em;
+  color: rgb(244, 244, 244);
+}
+
+header > .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div a {
+  color: rgb(244, 244, 244);
+  transition: 0.5s;
+}
+header div a img {
+  height: 50%;
+  width: 50%;
+}
+header div nav ul {
+  display: flex;
+  font-size: 1.6rem;
+  padding: 0 2rem;
+  list-style: none;
+}
+header div nav ul li:not(:last-child) {
+  padding: 0 0.75rem;
+}
+header div nav ul li:not(:last-child) :hover {
+  color: #FFD700;
+}
+header div nav ul .li-yellow {
+  background-color: #FFD700;
+  border-radius: 4px;
+}
+header div nav ul .li-yellow:hover {
+  background-color: black;
+}
+header div nav ul a {
+  padding: 0.5em;
+  display: block;
+}
+
+header div a img {
+  height: 50%;
+  width: 50%;
+}
+
+header div a img {
+  height: 50%;
+  width: 50%;
+}
+
+iframe {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: 450px;
+}
+
+hr {
+  width: 600px;
+  height: 2px;
+  border: none;
+  background-color: #FFD700;
+}
+
+.button {
+  font-size: 1.6rem;
+  border: none;
+  color: rgb(244, 244, 244);
+}
+.button-yellow {
+  background-color: #FFD700;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin: 0 0.8rem;
+  transition: 0.5s;
+}
+.button-yellow:hover {
+  border-radius: 4px;
+  color: rgb(244, 244, 244);
+  background-color: black;
+}
+.button-lightyellow {
+  background-color: rgba(255, 215, 0, 0.5);
+  color: rgb(38, 38, 38);
+  padding: 1rem 2.5rem;
+  border: solid 1px lightgrey;
+  font-size: 1em;
+  font-weight: 800;
+  transition: 0.5s;
+}
+.button-lightyellow:hover {
+  background-color: rgb(38, 38, 38);
+  color: #FFD700;
+}
+.button-darkmode {
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.button-transparent {
+  width: 244px;
+  background-color: transparent;
+  color: rgb(244, 244, 244);
+  border: solid 1px rgb(244, 244, 244);
+  border-radius: 20px;
+  font-size: 2rem;
+  z-index: 3;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+  font-family: Bespoke Slab;
+}
+.button-transparent:hover {
+  background-color: #ffffff;
+  color: rgb(38, 38, 38);
+}
+
+footer {
+  background-color: #252525;
+  color: #FFFFFF;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+body footer {
+  padding: 1rem 0;
+}
+body footer nav {
+  width: 90%;
+  margin: auto;
+}
+body footer hr {
+  width: 90%;
+  background-color: #FFFFFF;
+}
+body footer a {
+  font-size: 16px;
+}
+body footer .news-media {
+  width: 100%;
+  display: flex;
+}
+body footer .news-media form {
+  margin-left: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: 0%;
+}
+body footer .news-media form input[type=email] {
+  border: 1px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0);
+  text-align: center;
+  height: 1.6rem;
+  font-size: 1em;
+  font-family: "BespokeSlab", sans-serif;
+  width: 60%;
+  margin-top: 3%;
+}
+body footer .news-media form input[type=submit] {
+  height: 2.8rem;
+  border-radius: 3em;
+  width: 4rem;
+  margin-left: 1.3rem;
+  border: 0;
+  background-color: #FFFFFF;
+  font-family: "BespokeSlab", sans-serif;
+}
+body footer h5 {
+  font-size: 22px;
+  font-family: "BespokeSlab", sans-serif;
+}
+body footer .container {
+  display: flex;
+  align-items: center;
+}
+body footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+body footer li a {
+  padding: 0.5em;
+  display: block;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.menu-textinput {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.menu-textinput p {
+  padding: 4rem;
+}
+
+footer {
+  background-color: #252525;
+  color: #FFFFFF;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+body footer {
+  padding: 1rem 0;
+}
+body footer nav {
+  width: 90%;
+  margin: auto;
+}
+body footer hr {
+  width: 90%;
+  background-color: #FFFFFF;
+}
+body footer a {
+  font-size: 16px;
+}
+body footer .news-media {
+  width: 100%;
+  display: flex;
+}
+body footer .news-media form {
+  margin-left: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: 0%;
+}
+body footer .news-media form input[type=email] {
+  border: 1px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0);
+  text-align: center;
+  height: 1.6rem;
+  font-size: 1em;
+  font-family: "BespokeSlab", sans-serif;
+  width: 60%;
+  margin-top: 3%;
+}
+body footer .news-media form input[type=submit] {
+  height: 2.8rem;
+  border-radius: 3em;
+  width: 4rem;
+  margin-left: 1.3rem;
+  border: 0;
+  background-color: #FFFFFF;
+  font-family: "BespokeSlab", sans-serif;
+}
+body footer h5 {
+  font-size: 22px;
+  font-family: "BespokeSlab", sans-serif;
+}
+body footer .container {
+  display: flex;
+  align-items: center;
+}
+body footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+body footer li a {
+  padding: 0.5em;
+  display: block;
+  text-decoration: none;
+}
+
+.cardlist {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cardlist-element {
+  border: solid 1px black;
+  border-radius: 15px;
+  flex-direction: column;
+  width: 310px;
+  height: 460px;
+}
+.cardlist-element img:not(:first-child) {
+  width: 310px;
+  height: 265px;
+}
+.cardlist-row {
+  display: flex;
+  flex-direction: row;
+}
+.cardlist-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=main.css.map */
