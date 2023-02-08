@@ -22,6 +22,12 @@
     }
 }
 
+@for $i from 1 through 9 {
+    .w-#{$i}-10 {
+        width: percentage($i * 0.10);
+    }
+}
+
 .w-full {
     width: 100%;
 }
