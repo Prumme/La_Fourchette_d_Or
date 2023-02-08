@@ -11,6 +11,16 @@ body {
 
 		padding: 1rem 0;
 
+		nav {
+			width: 90%;
+			margin: auto;
+		}
+
+		hr {
+			width: 90%;
+			background-color: #FFFFFF;
+		}
+
 		a {
 			font-size: 16px;
 		}
@@ -31,7 +41,7 @@ body {
 					text-align: center;
 					height: 1.6rem;
 					font-size: 1em;
-					font-family: $policemain;
+					font-family: $main_police;
 					width: 60%;
 					margin-top: 3%;
 				}
@@ -43,14 +53,14 @@ body {
 					margin-left: 1.3rem;
 					border: 0;
 					background-color: #FFFFFF;
-					font-family: $policemain;
+					font-family: $main_police;
 				}
 			}
 		}
 
 		h5 {
 			font-size: 22px;
-			font-family: $policemain;
+			font-family: $main_police;
 		}
 
 		.container {
