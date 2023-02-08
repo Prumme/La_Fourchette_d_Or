@@ -8,24 +8,24 @@
         flex-direction : column;
         width:310px;
         height:460px;
+        transition: 0.5s;
 
         img:not(:first-child){
             width:309px;
             height:265px;
         }
-    }
 
-    &-row {
-        display:flex;
-        flex-direction: row;
-    }
-
-    &-subtitle{
-        text-overflow: ellipsis;
-        font-weight:400;
+        &:hover {
+            box-shadow: 0px 5px 12px $darkhover;
+        }
     }
 }
 
 .title{
     font-size:1.6rem;
+}
+
+.subtitle{
+    text-overflow: ellipsis;
+    font-weight:400;
 }

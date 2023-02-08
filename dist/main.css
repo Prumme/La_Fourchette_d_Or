@@ -5946,22 +5946,23 @@ body footer li a {
   flex-direction: column;
   width: 310px;
   height: 460px;
+  transition: 0.5s;
 }
 .cardlist-element img:not(:first-child) {
   width: 309px;
   height: 265px;
 }
-.cardlist-row {
-  display: flex;
-  flex-direction: row;
-}
-.cardlist-subtitle {
-  text-overflow: ellipsis;
-  font-weight: 400;
+.cardlist-element:hover {
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.5);
 }
 
 .title {
   font-size: 1.6rem;
+}
+
+.subtitle {
+  text-overflow: ellipsis;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=main.css.map */
