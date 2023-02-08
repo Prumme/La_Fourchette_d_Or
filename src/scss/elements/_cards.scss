@@ -3,7 +3,7 @@
     justify-content: space-evenly;
     align-items: center;
     &-element {
-        border : solid 1px $darkfont;
+        border : solid 1.5px $darkfont;
         border-radius:15px;
         flex-direction : column;
         width:310px;
@@ -21,8 +21,11 @@
     }
 
     &-title{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
+        font-size:1.6rem;
+    }
+
+    &-subtitle{
+        text-overflow: ellipsis;
+        font-weight:400;
     }
 }

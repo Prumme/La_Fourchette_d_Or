@@ -39,20 +39,37 @@
             </div>
         </section>
 
-        <section class="container-75">
+        <section class="restaurant">
             <div class="flex justify-center w-full">
                 <h1>Le restaurant</h1>
             </div>
-            <p class="text-center w-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis orci
-                molestie,
-                tincidunt enim sed,
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis orci molestie, tincidunt enim sed,
                 tempor purus. Aliquam turpis tellus, accumsan sed turpis id, rutrum egestas risus. Suspendisse interdum
                 nulla non nunc convallis faucibus. Nunc ac nisi justo. Vivamus mauris ex, euismod ut risus ac, maximus
                 ultricies nunc. Ut viverra euismod quam ut laoreet.</p>
 
-
-            <div class="">
-
+            <div class="carousel">
+                <div class="carousel-item carousel-item-visible">
+                    <img src="https://images.unsplash.com/photo-1537211261771-e525b9e4049b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=450&q=80"
+                        alt="Squirrel zombie" />
+                </div>
+                <div class="carousel-item carousel-item-visible">
+                    <img src="https://images.unsplash.com/photo-1503925802536-c9451dcd87b5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=450&q=80"
+                        alt="Zombie hands" />
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1509558567730-6c838437b06b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=450&q=80"
+                        alt="Zombie pumpkin" />
+                </div>
+                <div class="carousel-actions">
+                    <button id="carousel-button-prev" aria-label="Previous"></button>
+                    <button id="carousel-button-next" aria-label="Next">></button>
+                </div>
+                <div class="carousel-dots">
+                    <input class="dot selected-dot" type="radio" name="dot" checked />
+                    <input class="dot" type="radio" name="dot" />
+                    <input class="dot" type="radio" name="dot" />
+                </div>
             </div>
 
         </section>
@@ -98,45 +115,61 @@
             <img class="bg bg-instagram" src="./src/images/instagram.svg" alt="logo">
         </div>
 
+        <div class="container-70 flex flex-row justify-between">
+            <div class="flex items-start">
+                <img src="./src/images/colored_twitter.svg" alt="logo">
+                <p class="pl-1">@La_Fourchette_d'Or</p>
+            </div>
+            <div class="flex items-end">
+                <img src="./src/images/colored_instagram.svg" alt="logo">
+                <p class="pl-1">@La_Fourchette_d'Or</p>
+            </div>
+        </div>
+
+
         <section id="cards">
-            <div class="cardlist">
-                <div class="cardlist cardlist-element">
-                    <div class="cardlist cardlist-row">
-                        <img class="bg bg-instagram" src="./src/images/colored_instagram.svg" alt="logo">
-                        <div class="cardlist cardlist-title">
-                            <h2>La fourchette d'or</h2>
-                            <h4>07/02/23</h4>
+            <div class="container-80">
+                <div class="flex justify-evenly">
+                    <div class="cardlist cardlist-element">
+                        <div class="flex flex-row items-center justify-center">
+                            <img src="./src/images/colored_twitter.svg" alt="logo">
+                            <div class="flex flex-column p-5">
+                                <span class="cardlist cardlist-title">La fourchette d'or</span>
+                                <span class="font-light">07/02/23</span>
+                            </div>
+    
                         </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
+                            alt="">
+                        <h2 class="pl-5 cardlist cardlist-subtitle">Notre nouveau plat de la saison</h2>
                     </div>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
-                        alt="">
-                    <h3>Notre nouveau plat de la saison</h3>
-                </div>
-
-                <div class="cardlist cardlist-element">
-                    <div class="cardlist cardlist-row">
-                        <img class="bg bg-instagram" src="./src/images/colored_twitter.svg" alt="logo">
-                        <div class="cardlist cardlist-title">
-                            <h2>La fourchette d'or</h2>
-                            <h4>07/02/23</h4>
+    
+                    <div class="cardlist cardlist-element">
+                        <div class="flex flex-row items-center justify-center">
+                            <img src="./src/images/colored_twitter.svg" alt="logo">
+                            <div class="flex flex-column p-5">
+                                <span class="cardlist cardlist-title">La fourchette d'or</span>
+                                <span class="font-light">07/02/23</span>
+                            </div>
+    
                         </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
+                            alt="">
+                        <h2 class="pl-5 cardlist cardlist-subtitle">On vous attend avec plaisir</h2>
                     </div>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
-                        alt="">
-                    <h3>On vous attend avec plaisir</h3>
-                </div>
-
-                <div class="cardlist cardlist-element">
-                    <div class="cardlist cardlist-row">
-                        <img class="bg bg-instagram" src="./src/images/colored_instagram.svg" alt="logo">
-                        <div class="cardlist cardlist-title">
-                            <h2>La fourchette d'or</h2>
-                            <h4>07/02/23</h4>
+    
+                    <div class="cardlist cardlist-element">
+                        <div class="flex flex-row items-center justify-center">
+                            <img src="./src/images/colored_twitter.svg" alt="logo">
+                            <div class="flex flex-column p-5">
+                                <span class="cardlist cardlist-title">La fourchette d'or</span>
+                                <span class="font-light">07/02/23</span>
+                            </div>
                         </div>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
+                            alt="">
+                        <h2 class="pl-5 cardlist cardlist-subtitle">Regardez comment notre...</h2>
                     </div>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png"
-                        alt="">
-                    <h3>Regardez comment notre...</h3>
                 </div>
             </div>
         </section>
@@ -157,7 +190,7 @@
 
         <img src="./src/images/logo.svg" alt="logo">
 
-        <div class="container w-9-10">
+        <div class="container">
             <div class="news-media">
                 <h5>Suivez la fourchette d’or</h5>
                 <img src="./src/images/facebook.svg" alt="logo">
@@ -179,17 +212,17 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li class="foottext"><a href="">La fourchette d’or, 2023</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">Politique de confidentialité</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">242 avenue du faubourd Saint-Antoine 75012</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">Gérer mes cookies</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">Mentions légal</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">Contact : Fourchetteor@gmail.com</a></li>
+                    <li><a href="">La fourchette d’or, 2023</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Politique de confidentialité</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">242 avenue du faubourd Saint-Antoine 75012</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Gérer mes cookies</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Mentions légal</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Contact : Fourchetteor@gmail.com</a></li>
                 </ul>
             </nav>
         </div>

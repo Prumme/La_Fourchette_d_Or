@@ -1189,7 +1189,6 @@
   font-weight: 400;
 }
 
-<<<<<<< HEAD
 .rounded-none {
   border-radius: 0px;
 }
@@ -5508,7 +5507,8 @@
 
 .mgr-100 {
   margin-right: 25rem;
-=======
+}
+
 .container-5 {
   width: 5%;
   margin: 0 auto;
@@ -5620,7 +5620,6 @@
 }
 .text-justify {
   text-align: justify;
->>>>>>> feature/carousel
 }
 
 body {
@@ -5936,7 +5935,7 @@ body footer li a {
   align-items: center;
 }
 .cardlist-element {
-  border: solid 1px black;
+  border: solid 1.5px black;
   border-radius: 15px;
   flex-direction: column;
   width: 310px;
@@ -5951,9 +5950,11 @@ body footer li a {
   flex-direction: row;
 }
 .cardlist-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  font-size: 1.6rem;
+}
+.cardlist-subtitle {
+  text-overflow: ellipsis;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=main.css.map */
