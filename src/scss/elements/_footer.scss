@@ -9,12 +9,11 @@ body {
 
 	footer {
 
-		padding: 1rem 0;
-
 		nav {
-			width: 90%;
+			width: 100%;
 			margin: auto;
 			margin-top: 0.5%;
+			padding: 1.5% 0 1.5% 0;
 		}
 
 		ul {
@@ -22,32 +21,31 @@ body {
 		}
 
 		.foottext {
-			width: auto;
+			width: 100%;
 		}
 
 		.hyphen {
-			width: 3%;
-		}
-
-		hr {
-			width: 90%;
-			background-color: #FFFFFF;
+			width: 100%;
 		}
 
 		a {
 			color: #FFFFFF;
-			font-size: 12px;
+			font-size: 13px;
 		}
 
 		.news-media {
-			width: 100%;
+			width: min-content;
 			display: flex;
+			flex-wrap: nowrap;
+
+			img {
+				margin-right: 0.6rem;
+			}
 
 			form {
-				margin-left: 2%;
-				margin-top: auto;
-				margin-bottom: auto;
-				background: 0%;
+				display: flex;
+				margin: auto;
+				align-items: center;
 
 				input[type="email"] {
 					border: 1px solid #FFFFFF;
@@ -55,26 +53,27 @@ body {
 					text-align: center;
 					height: 1.6rem;
 					font-size: 1em;
-					font-family: $main_police;
-					width: 60%;
-					margin-top: 3%;
+					width: auto;
+					margin-right: 1.5rem;
 				}
 
 				input[type="submit"] {
-					height: 2.8rem;
+					height: auto;
 					border-radius: 3em;
 					width: 4rem;
-					margin-left: 1.3rem;
 					border: 0;
+					padding: 4%;
 					background-color: #FFFFFF;
-					font-family: $main_police;
 				}
 			}
 		}
 
 		h5 {
-			font-size: 22px;
+			font-size: 25px;
 			font-family: $main_police;
+			white-space: nowrap;
+			height: auto;
+			margin-right: 1.5rem;
 		}
 
 		.container {
@@ -91,9 +90,9 @@ body {
 
 		li {
 			a {
-				padding: 0.5em;
 				display: block;
 				text-decoration: none;
+				white-space: nowrap;
 			}
 		}
 
