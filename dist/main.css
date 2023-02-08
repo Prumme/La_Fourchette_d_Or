@@ -1553,6 +1553,26 @@
   border-bottom-left-radius: 9999px;
 }
 
+.p-0 {
+  padding: 0rem;
+}
+
+.pt-0 {
+  padding-top: 0rem;
+}
+
+.pb-0 {
+  padding-bottom: 0rem;
+}
+
+.pl-0 {
+  padding-left: 0rem;
+}
+
+.pr-0 {
+  padding-right: 0rem;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -3551,6 +3571,26 @@
 
 .pr-100 {
   padding-right: 25rem;
+}
+
+.mg-0 {
+  margin: 0rem;
+}
+
+.mgt-0 {
+  margin-top: 0rem;
+}
+
+.mgb-0 {
+  margin-bottom: 0rem;
+}
+
+.mgl-0 {
+  margin-left: 0rem;
+}
+
+.mgr-0 {
+  margin-right: 0rem;
 }
 
 .mg-1 {
