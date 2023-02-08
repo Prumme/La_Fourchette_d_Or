@@ -1398,6 +1398,11 @@
   /* 40px */
 }
 
+.image-decouverte {
+  width: 900px;
+  height: 480px;
+}
+
 body {
   margin: 0;
   font-family: "BespokeSlab", sans-serif;
