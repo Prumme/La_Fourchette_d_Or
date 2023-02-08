@@ -111,43 +111,43 @@
 }
 
 .w-1-2 {
-  width: 5000%;
+  width: 50%;
 }
 
 .w-1-3 {
-  width: 3300%;
+  width: 33%;
 }
 
 .w-2-3 {
-  width: 6600%;
+  width: 66%;
 }
 
 .w-1-4 {
-  width: 2500%;
+  width: 25%;
 }
 
 .w-2-4 {
-  width: 5000%;
+  width: 50%;
 }
 
 .w-3-4 {
-  width: 7500%;
+  width: 75%;
 }
 
 .w-1-5 {
-  width: 2000%;
+  width: 20%;
 }
 
 .w-2-5 {
-  width: 4000%;
+  width: 40%;
 }
 
 .w-3-5 {
-  width: 6000%;
+  width: 60%;
 }
 
 .w-4-5 {
-  width: 8000%;
+  width: 80%;
 }
 
 .w-full {
@@ -163,43 +163,43 @@
 }
 
 .h-1-2 {
-  height: 5000%;
+  height: 50%;
 }
 
 .h-1-3 {
-  height: 3300%;
+  height: 33%;
 }
 
 .h-2-3 {
-  height: 6600%;
+  height: 66%;
 }
 
 .h-1-4 {
-  height: 2500%;
+  height: 25%;
 }
 
 .h-2-4 {
-  height: 5000%;
+  height: 50%;
 }
 
 .h-3-4 {
-  height: 7500%;
+  height: 75%;
 }
 
 .h-1-5 {
-  height: 2000%;
+  height: 20%;
 }
 
 .h-2-5 {
-  height: 4000%;
+  height: 40%;
 }
 
 .h-3-5 {
-  height: 6000%;
+  height: 60%;
 }
 
 .h-4-5 {
-  height: 8000%;
+  height: 80%;
 }
 
 .h-full {
@@ -1318,30 +1318,67 @@ footer {
   text-align: center;
 }
 
-body > footer {
+body footer {
   padding: 1rem 0;
 }
-
-body > footer .container {
+body footer nav {
+  width: 90%;
+  margin: auto;
+}
+body footer hr {
+  width: 90%;
+  background-color: #FFFFFF;
+}
+body footer a {
+  font-size: 16px;
+}
+body footer .news-media {
+  width: 100%;
+  display: flex;
+}
+body footer .news-media form {
+  margin-left: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: 0%;
+}
+body footer .news-media form input[type=email] {
+  border: 1px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0);
+  text-align: center;
+  height: 1.6rem;
+  font-size: 1em;
+  font-family: "BespokeSlab", sans-serif;
+  width: 60%;
+  margin-top: 3%;
+}
+body footer .news-media form input[type=submit] {
+  height: 2.8rem;
+  border-radius: 3em;
+  width: 4rem;
+  margin-left: 1.3rem;
+  border: 0;
+  background-color: #FFFFFF;
+  font-family: "BespokeSlab", sans-serif;
+}
+body footer h5 {
+  font-size: 22px;
+  font-family: "BespokeSlab", sans-serif;
+}
+body footer .container {
   display: flex;
   align-items: center;
 }
-
-body > footer ul {
+body footer ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-
-body > footer li a {
+body footer li a {
   padding: 0.5em;
   display: block;
   text-decoration: none;
-}
-
-footer a {
-  font-size: 16px;
 }
 
 .menu {
@@ -1366,30 +1403,67 @@ footer {
   text-align: center;
 }
 
-body > footer {
+body footer {
   padding: 1rem 0;
 }
-
-body > footer .container {
+body footer nav {
+  width: 90%;
+  margin: auto;
+}
+body footer hr {
+  width: 90%;
+  background-color: #FFFFFF;
+}
+body footer a {
+  font-size: 16px;
+}
+body footer .news-media {
+  width: 100%;
+  display: flex;
+}
+body footer .news-media form {
+  margin-left: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: 0%;
+}
+body footer .news-media form input[type=email] {
+  border: 1px solid #FFFFFF;
+  background: rgba(255, 255, 255, 0);
+  text-align: center;
+  height: 1.6rem;
+  font-size: 1em;
+  font-family: "BespokeSlab", sans-serif;
+  width: 60%;
+  margin-top: 3%;
+}
+body footer .news-media form input[type=submit] {
+  height: 2.8rem;
+  border-radius: 3em;
+  width: 4rem;
+  margin-left: 1.3rem;
+  border: 0;
+  background-color: #FFFFFF;
+  font-family: "BespokeSlab", sans-serif;
+}
+body footer h5 {
+  font-size: 22px;
+  font-family: "BespokeSlab", sans-serif;
+}
+body footer .container {
   display: flex;
   align-items: center;
 }
-
-body > footer ul {
+body footer ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-
-body > footer li a {
+body footer li a {
   padding: 0.5em;
   display: block;
   text-decoration: none;
-}
-
-footer a {
-  font-size: 16px;
 }
 
 .cardlist {
