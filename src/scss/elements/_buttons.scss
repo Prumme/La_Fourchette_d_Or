@@ -44,7 +44,9 @@
     }
 
     &-transparent {
-        width: 244px;
+        width: 314px;
+        height:70px;
+        backdrop-filter: blur(5px);
         background-color: $transparent;
         color: $lightcolor;
         border: solid 1px $lightcolor;
