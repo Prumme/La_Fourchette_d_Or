@@ -1,6 +1,6 @@
 @for $i from 1 through 1 {
     .h-#{$i}-2 {
-        height: percentage($i * 50);
+        height: percentage($i * 0.5);
     }
 }
 
@@ -12,19 +12,19 @@
 
     .h-#{$i}-3 {
 
-        height: percentage($i * 33);
+        height: percentage($i * 0.33);
     }
 }
 
 @for $i from 1 through 3 {
     .h-#{$i}-4 {
-        height: percentage($i * 25);
+        height: percentage($i * 0.25);
     }
 }
 
 @for $i from 1 through 4 {
     .h-#{$i}-5 {
-        height: percentage($i * 20);
+        height: percentage($i * 0.2);
     }
 }
 
