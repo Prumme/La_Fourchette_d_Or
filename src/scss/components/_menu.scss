@@ -1,0 +1,17 @@
+.menu {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 6rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ellipse {
+    width: 830px;
+    height: 1096px;
+    margin: 4% auto;
+    shape-outside: ellipse(70% 20%);
+    clip-path: ellipse(50% 50%);
+    background: rgba(#DADADA, 0.25);
+}
