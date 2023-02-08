@@ -5942,19 +5942,20 @@ body footer li a {
   height: 460px;
 }
 .cardlist-element img:not(:first-child) {
-  width: 310px;
+  width: 309px;
   height: 265px;
 }
 .cardlist-row {
   display: flex;
   flex-direction: row;
 }
-.cardlist-title {
-  font-size: 1.6rem;
-}
 .cardlist-subtitle {
   text-overflow: ellipsis;
   font-weight: 400;
+}
+
+.title {
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=main.css.map */

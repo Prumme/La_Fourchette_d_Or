@@ -10,7 +10,7 @@
         height:460px;
 
         img:not(:first-child){
-            width:310px;
+            width:309px;
             height:265px;
         }
     }
@@ -20,12 +20,12 @@
         flex-direction: row;
     }
 
-    &-title{
-        font-size:1.6rem;
-    }
-
     &-subtitle{
         text-overflow: ellipsis;
         font-weight:400;
     }
+}
+
+.title{
+    font-size:1.6rem;
 }
