@@ -1619,21 +1619,6 @@ body footer li a {
   white-space: nowrap;
 }
 
-.menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 3rem;
-}
-.menu-textinput {
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-.menu-textinput p {
-  padding: 4rem;
-}
-
 footer {
   background-color: #252525;
   color: #FFFFFF;
