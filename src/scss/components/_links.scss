@@ -1,0 +1,16 @@
+.link {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &-yellow {
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
