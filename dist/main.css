@@ -5965,4 +5965,14 @@ body footer li a {
   font-weight: 400;
 }
 
+.img {
+  width: 521px;
+  height: 729px;
+}
+.img-small {
+  width: 190px;
+  height: 269px;
+  padding-left: 30px;
+}
+
 /*# sourceMappingURL=main.css.map */
