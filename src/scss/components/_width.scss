@@ -1,3 +1,9 @@
+@for $i from 1 through 9 {
+    .w-#{$i}-10 {
+        width: percentage($i * 0.10);
+    }
+}
+
 @for $i from 1 through 1 {
     .w-#{$i}-2 {
         width: percentage($i * 0.50);
