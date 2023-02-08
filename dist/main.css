@@ -210,6 +210,11 @@
   width: min-content;
 }
 
+.w-quart {
+  width: 25%;
+  height: 25%;
+}
+
 .h-1-2 {
   height: 50%;
 }
