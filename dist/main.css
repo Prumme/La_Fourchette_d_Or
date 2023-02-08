@@ -1302,6 +1302,20 @@
   text-align: justify;
 }
 
+.hr-white {
+  height: 2px;
+  border: none;
+  width: 90%;
+  background-color: #FFFFFF;
+}
+.hr-yellow {
+  width: 600px;
+  height: 2px;
+  border: none;
+  background-color: #FFD700;
+  margin: 5% auto;
+}
+
 body {
   margin: 0;
   font-family: "BespokeSlab", sans-serif;
@@ -1373,13 +1387,6 @@ iframe {
   height: 450px;
 }
 
-hr {
-  width: 600px;
-  height: 2px;
-  border: none;
-  background-color: #FFD700;
-}
-
 .button {
   font-size: 1.6rem;
   border: none;
@@ -1439,40 +1446,37 @@ footer {
   text-align: center;
 }
 
-body footer {
-  padding: 1rem 0;
-}
 body footer nav {
-  width: 90%;
+  width: 100%;
   margin: auto;
   margin-top: 0.5%;
+  padding: 1.5% 0 1.5% 0;
 }
 body footer ul {
   justify-content: center;
 }
 body footer .foottext {
-  width: auto;
+  width: 100%;
 }
 body footer .hyphen {
-  width: 3%;
-}
-body footer hr {
-  width: 90%;
-  background-color: #FFFFFF;
+  width: 100%;
 }
 body footer a {
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 13px;
 }
 body footer .news-media {
-  width: 100%;
+  width: min-content;
   display: flex;
+  flex-wrap: nowrap;
+}
+body footer .news-media img {
+  margin-right: 0.6rem;
 }
 body footer .news-media form {
-  margin-left: 2%;
-  margin-top: auto;
-  margin-bottom: auto;
-  background: 0%;
+  display: flex;
+  margin: auto;
+  align-items: center;
 }
 body footer .news-media form input[type=email] {
   border: 1px solid #FFFFFF;
@@ -1480,22 +1484,23 @@ body footer .news-media form input[type=email] {
   text-align: center;
   height: 1.6rem;
   font-size: 1em;
-  font-family: "BespokeSlab", sans-serif;
-  width: 60%;
-  margin-top: 3%;
+  width: auto;
+  margin-right: 1.5rem;
 }
 body footer .news-media form input[type=submit] {
-  height: 2.8rem;
+  height: auto;
   border-radius: 3em;
   width: 4rem;
-  margin-left: 1.3rem;
   border: 0;
+  padding: 4%;
   background-color: #FFFFFF;
-  font-family: "BespokeSlab", sans-serif;
 }
 body footer h5 {
-  font-size: 22px;
+  font-size: 25px;
   font-family: "BespokeSlab", sans-serif;
+  white-space: nowrap;
+  height: auto;
+  margin-right: 1.5rem;
 }
 body footer .container {
   display: flex;
@@ -1508,9 +1513,9 @@ body footer ul {
   display: flex;
 }
 body footer li a {
-  padding: 0.5em;
   display: block;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .menu {
@@ -1535,40 +1540,37 @@ footer {
   text-align: center;
 }
 
-body footer {
-  padding: 1rem 0;
-}
 body footer nav {
-  width: 90%;
+  width: 100%;
   margin: auto;
   margin-top: 0.5%;
+  padding: 1.5% 0 1.5% 0;
 }
 body footer ul {
   justify-content: center;
 }
 body footer .foottext {
-  width: auto;
+  width: 100%;
 }
 body footer .hyphen {
-  width: 3%;
-}
-body footer hr {
-  width: 90%;
-  background-color: #FFFFFF;
+  width: 100%;
 }
 body footer a {
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 13px;
 }
 body footer .news-media {
-  width: 100%;
+  width: min-content;
   display: flex;
+  flex-wrap: nowrap;
+}
+body footer .news-media img {
+  margin-right: 0.6rem;
 }
 body footer .news-media form {
-  margin-left: 2%;
-  margin-top: auto;
-  margin-bottom: auto;
-  background: 0%;
+  display: flex;
+  margin: auto;
+  align-items: center;
 }
 body footer .news-media form input[type=email] {
   border: 1px solid #FFFFFF;
@@ -1576,22 +1578,23 @@ body footer .news-media form input[type=email] {
   text-align: center;
   height: 1.6rem;
   font-size: 1em;
-  font-family: "BespokeSlab", sans-serif;
-  width: 60%;
-  margin-top: 3%;
+  width: auto;
+  margin-right: 1.5rem;
 }
 body footer .news-media form input[type=submit] {
-  height: 2.8rem;
+  height: auto;
   border-radius: 3em;
   width: 4rem;
-  margin-left: 1.3rem;
   border: 0;
+  padding: 4%;
   background-color: #FFFFFF;
-  font-family: "BespokeSlab", sans-serif;
 }
 body footer h5 {
-  font-size: 22px;
+  font-size: 25px;
   font-family: "BespokeSlab", sans-serif;
+  white-space: nowrap;
+  height: auto;
+  margin-right: 1.5rem;
 }
 body footer .container {
   display: flex;
@@ -1604,9 +1607,9 @@ body footer ul {
   display: flex;
 }
 body footer li a {
-  padding: 0.5em;
   display: block;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .cardlist {
