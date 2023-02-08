@@ -5788,6 +5788,12 @@
   height: 480px;
 }
 
+.logo-media-card {
+  width: 60px;
+  height: 60px;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
 .mg-0 {
   margin: 0rem;
 }
@@ -10193,7 +10199,7 @@ body footer li a {
   transition: 0.5s;
 }
 .cardlist-element img:not(:first-child) {
-  width: 309px;
+  width: 100%;
   height: 265px;
 }
 .cardlist-element:hover {
