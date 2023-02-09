@@ -1,9 +1,42 @@
 .img{
+    position:relative;
+    overflow:auto;
     width:521px;
     height:729px;
     &-small{
-        width:220px;
+        width:196px;
         height:269px;
-        padding-left: 30px;
+    }
+}
+
+.history {
+    &-title {
+        font-size: 2rem;
+    }
+
+    &-subtitle{
+        font-size: 1.25rem;
+        font-weight:400;
+    }
+
+    &-width {
+        width:61%;
+    }
+
+    &-hr{
+        border:none;
+        background-color: $yellowbutton;
+        height:1.5px;
+        width:54%;
+    }
+}
+
+.space {
+    &-title {
+        font-size:2.5rem;
+    }
+
+    &-width {
+        width:75%;
     }
 }
