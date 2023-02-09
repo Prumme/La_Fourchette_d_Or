@@ -33,7 +33,7 @@
 }
 
 .container-carousel {
-  height: 150px;
+  height: 199px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -76,6 +76,11 @@
   height: 100%;
   aspect-ratio: 1/1;
   transition: all 0.3s ease-in-out;
+}
+
+.carousel-item-hidden {
+  width: 0px;
+  height: 0%;
 }
 
 .bg-black-50 {
