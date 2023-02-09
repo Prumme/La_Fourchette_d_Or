@@ -1,31 +1,31 @@
 @charset "UTF-8";
 @font-face {
-  src: url("../../../fonts/BespokeSlab-Regular.woff2") format("woff2");
-  src: url("../../../fonts/BespokeSlab-Regular.woff") format("woff");
+  src: url("../fonts/BespokeSlab-Regular.woff2") format("woff2");
+  src: url("../fonts/BespokeSlab-Regular.woff") format("woff");
   font-family: "BespokeSlab";
   font-weight: 400;
 }
 @font-face {
-  src: url("../../../fonts/BespokeSlab-Bold.woff2") format("woff2");
-  src: url("../../../fonts/BespokeSlab-Bold.woff") format("woff");
+  src: url("../fonts/BespokeSlab-Bold.woff2") format("woff2");
+  src: url("../fonts/BespokeSlab-Bold.woff") format("woff");
   font-family: "BespokeSlab";
   font-weight: 700;
 }
 @font-face {
-  src: url("../../../fonts/BespokeSlab-Light.woff2") format("woff2");
-  src: url("../../../fonts/BespokeSlab-Light.woff") format("woff");
+  src: url("../fonts/BespokeSlab-Light.woff2") format("woff2");
+  src: url("../fonts/BespokeSlab-Light.woff") format("woff");
   font-family: "BespokeSlab";
   font-weight: 300;
 }
 @font-face {
-  src: url("../../../fonts/BespokeSlab-Extrabold.woff2") format("woff2");
-  src: url("../../../fonts/BespokeSlab-Extrabold.woff") format("woff");
+  src: url("../fonts/BespokeSlab-Extrabold.woff2") format("woff2");
+  src: url("../fonts/BespokeSlab-Extrabold.woff") format("woff");
   font-family: "BespokeSlab";
   font-weight: 800;
 }
 @font-face {
-  src: url("../../../fonts/BespokeSlab-Medium.woff2") format("woff2");
-  src: url("../../../fonts/BespokeSlab-Medium.woff") format("woff");
+  src: url("../fonts/BespokeSlab-Medium.woff2") format("woff2");
+  src: url("../fonts/BespokeSlab-Medium.woff") format("woff");
   font-family: "BespokeSlab";
   font-weight: 500;
 }
@@ -10039,7 +10039,7 @@
 
 body {
   margin: 0;
-  font-family: "BespokeSlab", sans-serif;
+  font-family: "BespokeSlab";
   font-weight: 400;
 }
 
@@ -10241,7 +10241,7 @@ body footer .news-media form input[type=submit] {
 }
 body footer h5 {
   font-size: 25px;
-  font-family: "BespokeSlab", sans-serif;
+  font-family: "BespokeSlab";
   white-space: nowrap;
   height: auto;
   margin-right: 1.5rem;
@@ -10320,7 +10320,7 @@ body footer .news-media form input[type=submit] {
 }
 body footer h5 {
   font-size: 25px;
-  font-family: "BespokeSlab", sans-serif;
+  font-family: "BespokeSlab";
   white-space: nowrap;
   height: auto;
   margin-right: 1.5rem;
@@ -10369,6 +10369,41 @@ body footer li a {
 .subtitle {
   text-overflow: ellipsis;
   font-weight: 400;
+}
+
+.img {
+  position: relative;
+  overflow: auto;
+  width: 521px;
+  height: 729px;
+}
+.img-small {
+  width: 196px;
+  height: 269px;
+}
+
+.history-title {
+  font-size: 2rem;
+}
+.history-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.history-width {
+  width: 61%;
+}
+.history-hr {
+  border: none;
+  background-color: #FFD700;
+  height: 1.5px;
+  width: 54%;
+}
+
+.space-title {
+  font-size: 2.5rem;
+}
+.space-width {
+  width: 75%;
 }
 
 /*# sourceMappingURL=main.css.map */
