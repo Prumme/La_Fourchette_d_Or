@@ -1,0 +1,40 @@
+.option-card {
+
+    background-color: $opinioncard;
+    border: 1px solid $black;
+    border-radius: 1rem;
+    padding: 2%;
+    min-width: 500px;
+    height: auto;
+    margin-right: 5%;
+
+    img {
+        width: 55px;
+        height: 55px;
+        border: 1px solid $black;
+        -moz-border-radius: 26px;
+        -webkit-border-radius: 26px;
+        border-radius: 26px;
+    }
+
+    p {
+        text-align: left;
+    }
+
+}
+
+.star {
+
+    margin: 0;
+    font-size: 35px;
+    margin-top: -6.5%;
+
+    &-filled {
+        color: $yellowstar;
+    }
+
+    &-empty {
+        color: $greystart;
+    }
+
+}
