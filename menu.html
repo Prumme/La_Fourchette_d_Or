@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dist/main.css">
     <title>Document</title>
+    <script src="./src/js/menu.js"></script>
 </head>
 
 <body>
@@ -36,16 +37,53 @@
 
         <section>
             <div class="menu">
-                <p class="uppercase link link-yellow text-3xl">matin</p>
-                <p class="uppercase link link-yellow text-3xl">midi</p>
-                <p class="uppercase link link-yellow text-3xl">soir</p>
+                <p id="link-matin" class="uppercase link link-yellow text-3xl link-selected"
+                    onclick="change_menu('matin')">matin</p>
+                <p id="link-midi" class="uppercase link link-yellow text-3xl" onclick="change_menu('midi')">midi</p>
+                <p id="link-soir" class="uppercase link link-yellow text-3xl" onclick="change_menu('soir')">soir</p>
             </div>
 
             <div class="relative">
                 <div class="ellipse">
                 </div>
 
-                <div class="absolute top-4 left-10 bg-black-50 w-1-5 h-1-5"></div>
+                <img id="image-menu-1" class="image-absolute-menu-1 image-carré-menu"
+                    src="src/images/menu/wartermelon-juice.jpg">
+                <img id="image-menu-2" class="image-absolute-menu-2 image-rond-menu"
+                    src="src/images/menu/fruit-salade.jpg">
+                <img id="image-menu-3" class="image-absolute-menu-3 image-carré-menu"
+                    src="src/images/menu/lemon pie.jpg">
+                <img id="image-menu-4" class="image-absolute-menu-4 image-rond-menu" src="src/images/menu/ham.jpg">
+
+                <div class="text-menu">
+                    <div>
+                        <h2 id="title-menu-1" class="title-menu">Nos Boissson</h2>
+                        <p id="food-menu-1">Le jus de fruit du jour <span class="price-menu">11</span></p>
+                        <p id="food-menu-2">Le café tonic <span class="price-menu">9</span></p>
+                        <p id="food-menu-3">Le thé fruité de la saison <span class="price-menu">8</span></p>
+                    </div>
+
+                    <div class="hr-menu"></div>
+
+                    <div>
+                        <h2 id="title-menu-2" class="title-menu">Nos plats sucres</h2>
+                        <p id="food-menu-4">Notre moelleux au chocolat <span class="price-menu">21</span></p>
+                        <p id="food-menu-5">La salade de fruits de saison <span class="price-menu">28</span></p>
+                        <p id="food-menu-6">Le tarte au citron <span class="price-menu">18</span></p>
+
+                    </div>
+
+                    <div class="hr-menu"></div>
+
+                    <div>
+                        <h2 id="title-menu-3" class="title-menu">Nos plat sales</h2>
+                        <p id="food-menu-7">Notre foie gras végétal <span class="price-menu">13</span></p>
+                        <p id="food-menu-8">Le déjeuner anglais <span class="price-menu">28</span></p>
+                        <p id="food-menu-9">Le plateau de charcuterie <span class="price-menu">39</span></p>
+
+                    </div>
+                </div>
+
             </div>
         </section>
 

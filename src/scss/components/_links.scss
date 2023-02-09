@@ -13,4 +13,9 @@
             color: $yellow;
         }
     }
+
+    &-selected {
+        color: $yellow;
+        text-decoration: underline;
+    }
 }

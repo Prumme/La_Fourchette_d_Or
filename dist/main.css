@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   src: url("../../../fonts/BespokeSlab-Regular.woff2") format("woff2");
   src: url("../../../fonts/BespokeSlab-Regular.woff") format("woff");
@@ -5719,6 +5720,39 @@
   background-color: #FFD700;
   margin: 5% auto;
 }
+.hr-menu {
+  width: 70%;
+  height: 3px;
+  border: none;
+  background-color: #FFD700;
+  margin: 10% auto;
+  position: relative;
+}
+.hr-menu::before {
+  content: "";
+  position: absolute;
+  left: -0.5rem;
+  z-index: 2;
+  top: -0.5rem;
+  width: 10%;
+  height: 4px;
+  border-left: 12px solid #FFD700;
+  border-right: 0px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-top: 7px solid transparent;
+}
+.hr-menu::after {
+  content: "";
+  position: absolute;
+  right: -0.5rem;
+  z-index: 2;
+  top: -0.5rem;
+  width: 10%;
+  height: 4px;
+  border-right: 12px solid #FFD700;
+  border-bottom: 7px solid transparent;
+  border-top: 7px solid transparent;
+}
 
 .link {
   cursor: pointer;
@@ -5730,6 +5764,10 @@
 }
 .link-yellow:hover {
   color: #FFD700;
+}
+.link-selected {
+  color: #FFD700;
+  text-decoration: underline;
 }
 
 .text-xs {
@@ -5835,6 +5873,19 @@
     transform: scale(1.3);
   }
 }
+.image-carré-menu {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.image-rond-menu {
+  width: 250px;
+  height: 250px;
+  border-radius: 200px;
+  object-fit: cover;
+}
+
 .menu {
   display: flex;
   width: 60%;
@@ -5851,6 +5902,59 @@
   shape-outside: ellipse(70% 20%);
   clip-path: ellipse(50% 50%);
   background: rgba(218, 218, 218, 0.25);
+}
+
+.text-menu {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.title-menu {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 1s;
+}
+
+.image-absolute-menu-1 {
+  position: absolute;
+  top: 13%;
+  left: 19%;
+}
+.image-absolute-menu-2 {
+  position: absolute;
+  top: 20%;
+  right: 19%;
+}
+.image-absolute-menu-3 {
+  position: absolute;
+  top: 60%;
+  right: 17%;
+}
+.image-absolute-menu-4 {
+  position: absolute;
+  top: 70%;
+  left: 20%;
+}
+
+.price-menu {
+  font-weight: 500;
+}
+
+.transparent {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 0.5s;
 }
 
 .mg-0 {
