@@ -34,6 +34,14 @@
     }
 }
 
+@for $i from 1 through 19 {
+    .w-#{$i}-20 {
+        width: percentage($i * 0.05);
+    }
+
+
+}
+
 .w-full {
     width: 100%;
 }

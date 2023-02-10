@@ -28,14 +28,34 @@
     }
 }
 
+@for $i from 1 through 9 {
+    .h-#{$i}-10 {
+        height: percentage($i * 0.10);
+    }
+
+
+}
+
+@for $i from 1 through 19 {
+    .h-#{$i}-20 {
+        height: percentage($i * 0.5);
+    }
+
+
+}
+
 .h-full {
     height: 100%;
 }
 
 .h-screen {
-    height: 100vw;
+    height: 100vh;
 }
 
 .h-min {
     height: min-content;
+}
+
+.max-h-screen {
+    max-height: 100vh;
 }
