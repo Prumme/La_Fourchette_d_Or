@@ -1,11 +1,12 @@
-.img{
-    position:relative;
-    overflow:auto;
-    width:521px;
-    height:729px;
-    &-small{
-        width:196px;
-        height:269px;
+.img {
+    position: relative;
+    overflow: auto;
+    width: 521px;
+    height: 729px;
+
+    &-small {
+        width: 186px;
+        height: 269px;
     }
 }
 
@@ -14,29 +15,29 @@
         font-size: 2rem;
     }
 
-    &-subtitle{
+    &-subtitle {
         font-size: 1.25rem;
-        font-weight:400;
+        font-weight: 400;
     }
 
     &-width {
-        width:61%;
+        width: 61%;
     }
 
-    &-hr{
-        border:none;
+    &-hr {
+        border: none;
         background-color: $yellowbutton;
-        height:1.5px;
-        width:54%;
+        height: 1.5px;
+        width: 54%;
     }
 }
 
 .space {
     &-title {
-        font-size:2.5rem;
+        font-size: 2.5rem;
     }
 
     &-width {
-        width:75%;
+        width: 75%;
     }
 }
