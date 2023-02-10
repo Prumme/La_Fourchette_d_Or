@@ -55,3 +55,12 @@ daysTag.addEventListener("click", (e) => {
         console.log("waf");
     }
 });
+
+
+function close_reservation() {
+    document.getElementById("modal_reservation").className = "closed";
+}
+
+function open_reservation() {
+    document.getElementById("modal_reservation").className = "w-screen flex  h-screen bg-black-50 fixed top-0 z-6 justify-center items-center";
+}

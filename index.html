@@ -23,14 +23,18 @@
                     <li><a href="./index.html" class="font-medium link link-yellow">Accueil</a></li>
                     <li><a href="./menu.html" class="font-medium link link-yellow">La carte</a></li>
                     <li><a href="./history.html" class="font-medium link link-yellow">A propos</a></li>
-                    <li><a class="button-yellow font-medium" href="#">Réservation</a></li>
+                    <li>
+                        <p onclick="open_reservation()" class="button-yellow font-medium cursor-pointer" href="#">
+                            Réservation</p>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="w-screen flex  h-screen bg-black-50 fixed top-0 z-6 justify-center items-center">
+    <div id="modal_reservation" class="closed">
 
-        <div class="bg-white h-9-10 w-9-10 flex calendar ">
+        <div class="bg-white h-9-10 w-9-10 flex calendar relative ">
+            <div onclick="close_reservation()" class="close-modal">X</div>
             <div class="flex flex-column w-full">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg"
                     class="image-banner">

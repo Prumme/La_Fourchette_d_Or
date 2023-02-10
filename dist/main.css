@@ -10503,6 +10503,23 @@
   cursor: pointer;
 }
 
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.close-modal:hover {
+  color: #FFEB80;
+}
+
+.closed {
+  display: none;
+}
+
 body {
   margin: 0;
   font-family: "BespokeSlab";
