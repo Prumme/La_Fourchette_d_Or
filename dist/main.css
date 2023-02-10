@@ -10351,7 +10351,7 @@ iframe {
 }
 .button-yellow:hover {
   border-radius: 4px;
-  color: rgb(244, 244, 244);
+  color: #FFD700;
   background-color: black;
 }
 .button-lightyellow {
