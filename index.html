@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <title>La Fourchette d'Or</title>
     <link rel="stylesheet" href="dist/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <script src="./src/js/carousel.js"></script>
 </head>
 
 <body>
@@ -54,17 +55,29 @@
 
             <div class="container-carousel">
                 <div class="">
-                    <img id="carousel-button-prev" class="arrow-carrousel arrow-carrousel-left" src="./src/images/carousel/arrow.svg">
+                    <img onclick="left()" id="carousel-button-prev"
+                        class="arrow-carrousel arrow-carrousel-left carousel-arrow-disabled"
+                        src="./src/images/carousel/arrow.svg">
                 </div>
-                <div class="images-carrousel flex items-end">
-                    <img class=" carousel-item images-carrousel-img dot" src="./src/images/carousel/carousel-1.jpg" alt="">
-                    <img class=" carousel-item images-carrousel-img dot" src="./src/images/carousel/carousel-2.jpg" alt="">
-                    <img class=" carousel-item images-carrousel-img dot" src="./src/images/carousel/carousel-3.jpg" alt="">
-                    <img class=" carousel-item images-carrousel-img dot" src="./src/images/carousel/carousel-4.jpg" alt="">
-                    <img class="carousel-item-hidden carousel-item images-carrousel-img dot" src="./src/images/carousel/carousel-4.jpg" alt="">
+                <div class="images-carousel-container">
+                    <div id="images-carousel" class="images-carrousel flex items-end">
+                        <img class=" carousel-item images-carrousel-img dot" src="./src/images/carousel/carousel-1.jpg"
+                            alt="">
+                        <img class=" carousel-item images-carrousel-img dot" src="./src/images/carousel/carousel-2.jpg"
+                            alt="">
+                        <img class=" carousel-item images-carrousel-img dot" src="./src/images/carousel/carousel-3.jpg"
+                            alt="">
+                        <img class=" carousel-item images-carrousel-img dot" src="./src/images/carousel/carousel-4.jpg"
+                            alt="">
+                        <img class=" carousel-item images-carrousel-img dot" src="./src/images/carousel/carousel-5.jpg"
+                            alt="">
+                        <img class=" carousel-item images-carrousel-img dot" src="./src/images/carousel/carousel-6.jpg"
+                            alt="">
+                    </div>
                 </div>
                 <div class="">
-                    <img id="carousel-button-next" class="arrow-carrousel arrow-carrousel-right" src="./src/images/carousel/arrow.svg">
+                    <img onclick="right()" id="carousel-button-next" class="arrow-carrousel arrow-carrousel-right"
+                        src="./src/images/carousel/arrow.svg">
                 </div>
             </div>
 
@@ -207,7 +220,7 @@
     </footer>
 
 
-    <script src="src/js/index.js"></script>
+    <!-- <script src="src/js/index.js"></script> -->
 </body>
 
 </html>
