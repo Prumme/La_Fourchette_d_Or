@@ -14,5 +14,41 @@
         background-color: $yellowbutton;
         margin: 5% auto;
     }
-    
+
+    &-menu {
+        width: 70%;
+        height: 3px;
+        border: none;
+        background-color: $yellowbutton;
+        margin: 10% auto;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -0.5rem;
+            z-index: 2;
+            top: -0.5rem;
+            width: 10%;
+            height: 4px;
+            border-left: 12px solid $yellowbutton;
+            border-right: 00px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-top: 7px solid transparent;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            right: -0.5rem;
+            z-index: 2;
+            top: -0.5rem;
+            width: 10%;
+            height: 4px;
+            border-right: 12px solid $yellowbutton;
+            border-bottom: 7px solid transparent;
+            border-top: 7px solid transparent;
+        }
+    }
+
 }

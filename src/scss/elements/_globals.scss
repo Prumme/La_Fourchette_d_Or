@@ -55,15 +55,6 @@ header {
                 list-style: none;
 
 
-
-                li:not(:last-child) {
-                    padding: 0 0.75rem;
-
-                    :hover {
-                        color: $yellow;
-                    }
-                }
-
                 .li {
                     &-yellow {
 
