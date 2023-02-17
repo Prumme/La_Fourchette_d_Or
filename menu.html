@@ -8,30 +8,49 @@
     <link rel="stylesheet" href="dist/main.css">
     <title>Notre carte</title>
     <script src="./src/js/menu.js"></script>
+    <script src="./src/js/header.js"></script>
 </head>
 
 <body>
     <header class="z-5 sticky top-0 w-full ">
-        <div class="flex justify-between items-center w-full absolute top-0 bg-black-50">
+        <nav class="flex justify-between items-center w-full absolute top-0 bg-black-50">
             <a href="#" alt="logo-la_fourchette_d'or" class="cursor-pointer">
                 <img src="src/images/forks.svg" alt="">
             </a>
-            <nav>
-                <ul>
-                    <li><a href="./index.html" class="font-medium link link-yellow">Accueil</a></li>
-                    <li><a href="./menu.html" class="font-medium link link-yellow">La carte</a></li>
-                    <li><a href="./history.html" class="font-medium link link-yellow">A propos</a></li>
-                    <li><a class="li li-yellow font-medium" href="#">Réservation</a></li>
-                </ul>
-            </nav>
-        </div>
+
+            <ul onclick="openNav()" class="ul ul-header">
+                <li><a href="./index.html" class="font-medium link link-yellow link-default-white text-2xl">Accueil</a>
+                </li>
+                <li><a href="./menu.html" class="font-medium link link-yellow link-default-white text-2xl">La carte</a>
+                </li>
+                <li><a href="./history.html" class="font-medium link link-yellow link-default-white text-2xl">A
+                        propos</a></li>
+                <li><a class="button button-yellow" href="#">Réservation</a></li>
+            </ul>
+
+        </nav>
+
+        <nav id="nav-mobile" class="nav-mobile">
+            <ul class="ul-header-mobile">
+                <li><a href="./index.html" class="font-medium link link-yellow link-default-white ">Accueil</a>
+                </li>
+                <hr class="hr-white-mini">
+                <li><a href="./menu.html" class="font-medium link link-yellow link-default-white ">La carte</a>
+                </li>
+                <hr class="hr-white-mini">
+                <li><a href="./history.html" class="font-medium link link-yellow link-default-white ">A
+                        propos</a></li>
+                <hr class="hr-white-mini">
+                <li><a class="font-medium link link-yellow link-default-white " href="#">Réservation</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section id="section1" class="w-full">
 
             <div class="w-full relative image-screen">
-                <img class="image-screen" src="src/images/menu/menu.png" alt="">
+                <img class="" src="src/images/menu/menu.png" alt="">
             </div>
         </section>
 
@@ -89,7 +108,7 @@
 
     </main>
 
-    <footer>
+    <!-- <footer>
         <img src="./src/images/logo.svg" alt="logo">
         <div class="container-90 flex justify-between">
             <div class="news-media">
@@ -125,7 +144,7 @@
                 </ul>
             </nav>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>
