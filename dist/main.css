@@ -10214,24 +10214,13 @@ body footer li a {
   font-weight: 400;
 }
 
-.img {
-  position: relative;
-  overflow: auto;
-  width: 521px;
-  height: 729px;
-}
-.img-small {
-  width: 196px;
-  height: 269px;
-}
-
 .history-title {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .history-subtitle {
   font-weight: 400;
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2000px) {
   .history-subtitle {
     font-size: 1.5rem;
   }
@@ -10253,17 +10242,33 @@ body footer li a {
 }
 @media screen and (max-width: 769px) {
   .history-subtitle {
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 481px) {
   .history-subtitle {
-    font-size: 0.25rem;
+    font-size: 1.2rem;
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
   }
 }
-@media screen and (max-width: 320px) {
-  .history-subtitle {
-    font-size: 1.25rem;
+.history-story {
+  margin: auto;
+}
+@media screen and (max-width: 1920px) {
+  .history-story {
+    width: 61%;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .history-story {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 481px) {
+  .history-story {
+    width: 100%;
   }
 }
 .history-width {
@@ -10274,6 +10279,45 @@ body footer li a {
   background-color: #FFD700;
   height: 1.5px;
   width: 54%;
+}
+@media screen and (max-width: 481px) {
+  .history-hr {
+    width: 90%;
+  }
+}
+.history-img {
+  position: relative;
+  overflow: auto;
+  width: 521px;
+  height: 729px;
+}
+.history-img-small {
+  width: 30%;
+  height: 100%;
+}
+@media screen and (max-width: 481px) {
+  .history-responsive {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding: 0;
+    width: 90%;
+  }
+  .history-responsive .image-grid {
+    order: 1;
+  }
+  .history-responsive .history-title {
+    font-size: 1.75rem;
+  }
+  .history-responsive img {
+    flex-grow: 3;
+  }
+  .history-responsive div {
+    width: 100%;
+  }
+  .history-responsive .history-img-small {
+    padding: 0.25rem 0.25rem 3rem 0.25rem;
+  }
 }
 
 .space-title {
