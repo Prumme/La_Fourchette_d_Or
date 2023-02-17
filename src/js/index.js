@@ -1,33 +1,33 @@
-var colorChange = document.getElementById("darkmode");
-var text = document.getElementsByTagName("p");
+// var colorChange = document.getElementById("darkmode");
+// var text = document.getElementsByTagName("p");
 
-colorChange.addEventListener('click', function () {
-    console.log("JS");
-    colorChange.style.transition="all 1s";
+// colorChange.addEventListener('click', function () {
+//     console.log("JS");
+//     colorChange.style.transition="all 1s";
 
 
-    if (colorChange.classList.contains("dark")) {
-        colorChange.classList.remove('dark', 'darkcolorfont');
-        colorChange.classList.add('light', 'lightcolorfont');
-        colorChange.innerHTML = '<img src="https://www.svgrepo.com/download/79251/crescent-moon.svg" alt="">';
-    } else {
-        colorChange.classList.remove('light', 'lightcolorfont');
-        colorChange.classList.add('dark', 'darkcolorfont');
-        colorChange.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Sun_white_icon.svg/1200px-Sun_white_icon.svg.png" alt="">';
-    }
+//     if (colorChange.classList.contains("dark")) {
+//         colorChange.classList.remove('dark', 'darkcolorfont');
+//         colorChange.classList.add('light', 'lightcolorfont');
+//         colorChange.innerHTML = '<img src="https://www.svgrepo.com/download/79251/crescent-moon.svg" alt="">';
+//     } else {
+//         colorChange.classList.remove('light', 'lightcolorfont');
+//         colorChange.classList.add('dark', 'darkcolorfont');
+//         colorChange.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Sun_white_icon.svg/1200px-Sun_white_icon.svg.png" alt="">';
+//     }
 
-    for (let i = 0; i < text.length; i++) {
-        text[i].style.transition = "color 1s"
-        if (text[i].classList.contains("dark")) {
-            text[i].classList.remove('dark', 'darkcolortext');
-            text.item(i).classList.add('light', 'lightcolortext');
-        } else {
-            text[i].classList.remove('light', 'lightcolortext');
-            text.item(i).classList.add('dark', 'darkcolortext');
+//     for (let i = 0; i < text.length; i++) {
+//         text[i].style.transition = "color 1s"
+//         if (text[i].classList.contains("dark")) {
+//             text[i].classList.remove('dark', 'darkcolortext');
+//             text.item(i).classList.add('light', 'lightcolortext');
+//         } else {
+//             text[i].classList.remove('light', 'lightcolortext');
+//             text.item(i).classList.add('dark', 'darkcolortext');
 
-        }
-    }
-})
+//         }
+//     }
+// })
 
 
 const slides = document.getElementsByClassName("carousel-item");
@@ -45,9 +45,18 @@ function hideAllSlides() {
     }
 }
 
+function showAllSlides() {
+    // remove all slides not currently being viewed
+    for (const slide of slides) {
+        slide.classList.remove("carousel-item-hidden");
+        slide.classList.add("carousel-item-visible");
+    }
+}
+
+console.log(dots);
 
 const handleMoveToNextSlide = function(e) {
-    hideAllSlides();
+    // hideAllSlides();
   
     // check if last slide has been reached
     if (position === numberOfSlides - 1) {
@@ -57,7 +66,11 @@ const handleMoveToNextSlide = function(e) {
         position++;
     }
     // make current slide visible
-    slides[position].classList.add("carousel-item-visible");
+    showAllSlides();
+    slides[position].classList.add("carousel-item-hidden");
+    // slides[position].classList.add("carousel-item-visible");
+
+    console.log(position);
   
     // update dot to represent current slide
     dots[position].classList.add("selected-dot");

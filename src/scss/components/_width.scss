@@ -29,9 +29,23 @@
 }
 
 @for $i from 1 through 9 {
-    .w-#{$i}-10 {
-        width: percentage($i * 0.10);
+    .w-#{$i}-015 {
+        width: percentage($i * 0.1535);
     }
+}
+
+@for $i from 1 through 40 {
+    .w-#{$i}-02 {
+        width: percentage($i * 0.02);
+    }
+}
+
+@for $i from 1 through 19 {
+    .w-#{$i}-20 {
+        width: percentage($i * 0.05);
+    }
+
+
 }
 
 .w-full {

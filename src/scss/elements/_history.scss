@@ -1,115 +1,138 @@
+.img {
+    position: relative;
+    overflow: auto;
+    width: 521px;
+    height: 729px;
 
+    &-small {
+        width: 186px;
+        height: 269px;
+    }
+}
 
 .history {
     &-title {
         font-size: 2.5rem;
     }
-    &-subtitle{
-        font-weight:400;
+
+    &-subtitle {
+        font-weight: 400;
 
         @media screen and (max-width: 2000px) {
-            font-size : 1.5rem;
+            font-size: 1.5rem;
         }
 
         @media screen and (max-width: 1630px) {
-            font-size : 1.25rem;
+            font-size: 1.25rem;
         }
 
         @media screen and (max-width: 1360px) {
-            font-size : 1rem;
+            font-size: 1rem;
         }
 
         @media screen and (max-width: 1090px) {
-            font-size : 0.75rem;
+            font-size: 0.75rem;
         }
 
         @media screen and (max-width: 769px) {
-            font-size : 1rem;
+            font-size: 1rem;
         }
 
         @media screen and (max-width: 481px) {
-            font-size : 1.2rem;
-            width:100%;
+            font-size: 1.2rem;
+            width: 100%;
             padding-top: 1rem;
             padding-bottom: 5rem;
         }
     }
 
-    &-story{
+    &-story {
         @media screen and (max-width: 1920px) {
-            width:61%;
-        }
-        @media screen and (max-width: 1360px) {
-            width:70%;
-        }
-        @media screen and (max-width: 481px) {
-            width:100%;
-        }
-        margin:auto;
-    }
+            width: 61%;
 
-    &-width {
-        width:61%;
-    }
-
-    &-hr{
-        border:none;
-        background-color: $yellowbutton;
-        height:1.5px;
-        width:54%;
-
-        @media screen and (max-width: 481px) {
-            width:90%;
-        }
-
-    }
-
-    &-img{
-        position:relative;
-        overflow:auto;
-        width:521px;
-        height:729px;
-        &-small{
-            width:30%;
-            height:100%;
-        }
-    }
-
-
-    &-responsive {
-        @media screen and (max-width: 481px) {
-            display:flex;
-            flex-direction: column-reverse;
-            justify-content: center;
-            padding:0;
-            width:90%;
-
-            .image-grid {
-                order:1;
+            @media screen and (max-width: 320px) {
+                font-size: 1.25rem;
             }
-            .history-title{
-                font-size:1.75rem;
 
+            @media screen and (max-width: 1360px) {
+                width: 70%;
             }
-            img{
-                flex-grow:3;
+
+            @media screen and (max-width: 481px) {
+                width: 100%;
             }
-            div{
-                width:100%;
+
+            margin:auto;
+        }
+
+        &-width {
+            width: 61%;
+        }
+
+        &-hr {
+            border: none;
+            background-color: $yellowbutton;
+            height: 1.5px;
+            width: 54%;
+
+            @media screen and (max-width: 481px) {
+                width: 90%;
             }
-            .history-img-small {
-            padding :0.25rem 0.25rem 3rem 0.25rem;
+
+        }
+
+        &-img {
+            position: relative;
+            overflow: auto;
+            width: 521px;
+            height: 729px;
+
+            &-small {
+                width: 30%;
+                height: 100%;
             }
         }
-    }
-}
 
-.space {
-    &-title {
-        font-size:2.5rem;
+
+        &-responsive {
+            @media screen and (max-width: 481px) {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                padding: 0;
+                width: 90%;
+
+                .image-grid {
+                    order: 1;
+                }
+
+                .history-title {
+                    font-size: 1.75rem;
+
+                }
+
+                img {
+                    flex-grow: 3;
+                }
+
+                div {
+                    width: 100%;
+                }
+
+                .history-img-small {
+                    padding: 0.25rem 0.25rem 3rem 0.25rem;
+                }
+            }
+        }
     }
 
-    &-width {
-        width:75%;
+    .space {
+        &-title {
+            font-size: 2.5rem;
+        }
+
+        &-width {
+            width: 75%;
+        }
     }
 }
