@@ -3,3 +3,4 @@
 *.sass.map
 *.scss.map
 dist/*
+dist/main.css
