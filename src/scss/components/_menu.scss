@@ -8,12 +8,30 @@
 }
 
 .ellipse {
-    width: 830px;
+    width: 60vw;
     height: 1096px;
     margin: 4% auto;
     shape-outside: ellipse(70% 20%);
     clip-path: ellipse(50% 50%);
     background: rgba(#DADADA, 0.25);
+
+    @media screen and (max-width: 600px) {
+        width: 375px;
+        height: 590px;
+        shape-outside: ellipse(90% 10%);
+        clip-path: ellipse(50% 50%);
+
+
+    }
+
+    @media screen and (max-width: 900px) {
+        width: 400px;
+        height: 620px;
+        shape-outside: ellipse(90% 10%);
+        clip-path: ellipse(50% 50%);
+
+
+    }
 }
 
 .text-menu {
@@ -23,6 +41,16 @@
     top: 50%;
     text-align: center;
     font-size: 1.5rem;
+
+
+
+    @media screen and (max-width: 900px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 1rem;
+    }
 }
 
 .title-menu {
@@ -32,6 +60,16 @@
     text-transform: uppercase;
     font-weight: $medium;
     transition: all 1s;
+
+
+
+    @media screen and (max-width: 900px) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 1.3rem;
+    }
 }
 
 .image-absolute-menu {
@@ -39,24 +77,48 @@
         position: absolute;
         top: 13%;
         left: 19%;
+
+        @media screen and (max-width: 600px) {
+            top: 13%;
+            left: 4%;
+
+        }
     }
 
     &-2 {
         position: absolute;
         top: 20%;
         right: 19%;
+
+        @media screen and (max-width: 600px) {
+            top: 20%;
+            right: 4%;
+
+        }
     }
 
     &-3 {
         position: absolute;
         top: 60%;
         right: 17%;
+
+        @media screen and (max-width: 600px) {
+            top: 60%;
+            right: 2%;
+
+        }
     }
 
     &-4 {
         position: absolute;
         top: 70%;
         left: 20%;
+
+        @media screen and (max-width: 600px) {
+            top: 70%;
+            left: 4%;
+
+        }
     }
 }
 
@@ -67,6 +129,7 @@
 .transparent {
     opacity: 0;
     transition: opacity 0.5s;
+
 }
 
 .visible {
