@@ -2,6 +2,10 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size: 1.5rem;
+    /* 24px */
+    line-height: 2rem;
+    /* 32px */
 
     @media screen and (max-width: 481px) {
         padding: 0 1rem;
@@ -28,12 +32,17 @@
             height: 100%;
         }
 
+        @media screen and (max-width: 750px) {
+            font-size: 1.3rem;
+        }
+
 
 
         @media screen and (max-width: 600px) {
             visibility: hidden;
 
             flex-direction: column;
+            width: 100px;
 
             &::before {
                 content: 'X';
