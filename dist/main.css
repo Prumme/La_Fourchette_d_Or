@@ -55,6 +55,21 @@ body {
   align-items: center;
   margin-top: 8%;
 }
+@media screen and (max-width: 700px) {
+  .container-carousel {
+    height: 165px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-carousel {
+    height: 155px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container-carousel {
+    height: 105px;
+  }
+}
 
 .images-carousel-container {
   width: 100%;
