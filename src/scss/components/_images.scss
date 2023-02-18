@@ -121,3 +121,17 @@
     aspect-ratio: 1/1;
     object-fit: cover;
 }
+
+.image-map {
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+
+    @media screen and (max-width: 600px) {
+        height: 50vh;
+    }
+
+    @media screen and (max-width: 600px) {
+        height: 40vh;
+    }
+}

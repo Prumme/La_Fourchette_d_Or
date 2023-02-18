@@ -6390,6 +6390,22 @@ body {
   object-fit: cover;
 }
 
+.image-map {
+  width: 100vw;
+  height: 60vh;
+  object-fit: cover;
+}
+@media screen and (max-width: 600px) {
+  .image-map {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  .image-map {
+    height: 40vh;
+  }
+}
+
 .menu {
   display: flex;
   width: 60%;
