@@ -6281,8 +6281,8 @@ body {
 }
 
 .image-decouverte {
-  width: 900px;
-  height: 480px;
+  width: 62.5vw;
+  aspect-ratio: 9/4.8;
 }
 @media screen and (max-width: 1025px) {
   .image-decouverte {
