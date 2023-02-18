@@ -6279,6 +6279,12 @@ body {
   width: 900px;
   height: 480px;
 }
+@media screen and (max-width: 1025px) {
+  .image-decouverte {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .logo-media-card {
   width: 60px;
@@ -10558,13 +10564,22 @@ body {
 
 .decouverte {
   display: flex;
-  flex-direction: row;
 }
 .decouverte-right {
   flex-direction: row;
 }
+@media screen and (max-width: 1025px) {
+  .decouverte-right {
+    flex-direction: column-reverse;
+  }
+}
 .decouverte-left {
   flex-direction: row-reverse;
+}
+@media screen and (max-width: 1025px) {
+  .decouverte-left {
+    flex-direction: column-reverse;
+  }
 }
 
 .decouverte-text {
@@ -10574,13 +10589,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1025px) {
+  .decouverte-text {
+    font-size: 0.8rem;
+  }
+}
 
 .decouverte-text > p {
   width: 75%;
 }
 
 .decouverte-text > button {
-  width: 40%;
+  width: auto;
 }
 
 .overflow-auto {
@@ -10765,6 +10785,31 @@ ul {
   transition: background 1s;
   overflow-y: hidden;
   position: relative;
+}
+@media screen and (max-width: 320px) {
+  .button-lightyellow {
+    font-size: 0.2rem;
+  }
+}
+@media screen and (max-width: 481px) {
+  .button-lightyellow {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .button-lightyellow {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .button-lightyellow {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1201px) {
+  .button-lightyellow {
+    font-size: 1.4rem;
+  }
 }
 .button-lightyellow::before {
   content: "";

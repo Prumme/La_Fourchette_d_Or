@@ -29,6 +29,27 @@
         padding: 1rem 2.5rem;
         border: solid 1px lightgrey;
         font-size: 1.2rem;
+
+        @media screen and (max-width: $breakpoint-mobile) {
+            font-size: 0.2rem;
+        }
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            font-size: 0.6rem;
+        }
+
+        @media screen and (max-width: $breakpoint-laptop) {
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            font-size: 1.2rem;
+        }
+
+        @media screen and (max-width: $breakpoint-extralarge) {
+            font-size: 1.4rem;
+        }
+
         font-weight: $bold;
         transition: 0.5s;
         transition: background 1s;
