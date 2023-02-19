@@ -156,6 +156,10 @@ body {
   background-color: #FFEB80;
 }
 
+.bg-red {
+  background-color: red;
+}
+
 .w-1-10 {
   width: 10%;
 }
@@ -666,6 +670,14 @@ body {
 
 .h-19-20 {
   height: 950%;
+}
+
+.h-2 {
+  height: 2rem;
+}
+
+.h-10 {
+  height: 10rem;
 }
 
 .h-full {
