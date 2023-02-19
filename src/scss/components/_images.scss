@@ -152,3 +152,28 @@
     height: 100px;
     padding: 0 0.5rem 0 0.5rem;
 }
+
+.image-main-history {
+    width: 36vw;
+    aspect-ratio: 521/729;
+
+    @media screen and (max-width: 750px) {
+        width: 100%;
+    }
+
+}
+
+.history-img-small {
+    width: 13vw;
+    aspect-ratio: 190/269;
+    object-fit: cover;
+
+    @media screen and (max-width: 750px) {
+        width: 30vw;
+    }
+}
+
+.img-comment {
+    width: 30%;
+    aspect-ratio: 1/1;
+}
