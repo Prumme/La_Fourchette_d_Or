@@ -10805,6 +10805,7 @@ body {
   justify-content: center !important;
   width: 100%;
   height: 100%;
+  margin-top: 0;
 }
 @media screen and (max-width: 750px) {
   .ul-header {
@@ -10818,12 +10819,9 @@ body {
     width: 100px;
   }
   .ul-header::before {
-    content: "X";
+    content: url("../src/images/burger-menu.svg");
     position: absolute;
-    top: 50%;
-    right: 3rem;
-    font-size: 4rem;
-    color: #ffffff;
+    top: 60%;
     z-index: 8;
     visibility: visible;
     cursor: pointer;
@@ -10862,6 +10860,9 @@ ul {
     visibility: hidden;
     opacity: 0;
   }
+}
+.nav-mobile-open div {
+  height: 10%;
 }
 .nav-mobile-open * > * {
   margin-bottom: 10%;
