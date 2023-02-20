@@ -6479,6 +6479,14 @@ body {
   width: 30%;
   aspect-ratio: 1/1;
 }
+@media screen and (max-width: 481px) {
+  .img-comment {
+    height: 100%;
+    margin-top: 5%;
+    width: 50%;
+    margin-left: 0;
+  }
+}
 
 .menu {
   display: flex;
@@ -11333,7 +11341,7 @@ ul {
   border: 1px solid black;
   border-radius: 1rem;
   padding: 2%;
-  min-width: 500px;
+  min-width: 100%;
   height: auto;
   margin-right: 5%;
 }
@@ -11348,6 +11356,65 @@ ul {
 .option-card p {
   text-align: left;
 }
+@media screen and (max-width: 481px) {
+  .option-card img {
+    width: 25px;
+    height: 25px;
+  }
+  .option-card h5 {
+    font-size: 1rem;
+  }
+  .option-card p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 481px) {
+  .option-card img {
+    width: 40px;
+    height: 40px;
+  }
+  .option-card h5 {
+    font-size: 1.5rem;
+  }
+  .option-card p {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .option-card img {
+    width: 50px;
+    height: 50px;
+  }
+  .option-card h5 {
+    font-size: 1.75rem;
+  }
+  .option-card p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .option-card img {
+    width: 60px;
+    height: 60px;
+  }
+  .option-card img h5 {
+    font-size: 1.5rem;
+  }
+  .option-card img p {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .option-card {
+    min-width: 50%;
+  }
+  .option-card h5 {
+    font-size: 1.5rem;
+  }
+  .option-card p {
+    font-size: 1.5rem;
+  }
+}
 
 .star {
   margin: 0;
@@ -11359,6 +11426,15 @@ ul {
 }
 .star-empty {
   color: #B9A3A3;
+}
+
+@media screen and (max-width: 481px) {
+  .opinion {
+    margin: 0;
+  }
+  .opinion h3 {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .header {

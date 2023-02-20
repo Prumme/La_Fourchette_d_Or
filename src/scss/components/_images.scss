@@ -176,4 +176,12 @@
 .img-comment {
     width: 30%;
     aspect-ratio: 1/1;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+        height:100%;
+        margin-top:5%;
+        width:50%;
+        margin-left:0;
+    }
+
 }
