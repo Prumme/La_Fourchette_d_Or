@@ -15,14 +15,25 @@
 
 .decouverte {
     display: flex;
-    flex-direction: row;
 
     &-right {
+
         flex-direction: row;
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            flex-direction: column-reverse;
+        }
+
     }
 
     &-left {
+
         flex-direction: row-reverse;
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            flex-direction: column-reverse;
+        }
+
     }
 }
 
@@ -33,6 +44,10 @@
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: $breakpoint-desktop) {
+        font-size: 1rem;
+    }
+
 }
 
 .decouverte-text>p {
@@ -40,5 +55,5 @@
 }
 
 .decouverte-text>button {
-    width: 40%;
+    width: auto;
 }

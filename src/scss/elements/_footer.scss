@@ -1,101 +1,77 @@
-footer {
-	background-color: #252525;
-	color: #FFFFFF;
-	padding: 1rem 0;
-	text-align: center;
+.footer-propagandes {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	color: $white;
+
+	@media screen and (max-width: 600px) {
+		flex-direction: column;
+
+		align-items: center;
+
+	}
 }
 
-body {
+.footer-prop {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 33%;
+	height: 100%;
+	white-space: nowrap;
+	font-size: 1.1rem;
 
-	footer {
-
-		nav {
-			width: 100%;
-			margin: auto;
-			margin-top: 0.5%;
-			padding: 1.5% 0 1.5% 0;
-		}
-
-		ul {
-			justify-content: center;
-		}
-
-		.foottext {
-			width: 100%;
-		}
-
-		.hyphen {
-			width: 100%;
-		}
-
-		a {
-			color: #FFFFFF;
-			font-size: 13px;
-		}
-
-		.news-media {
-			width: min-content;
-			display: flex;
-			flex-wrap: nowrap;
-
-			img {
-				margin-right: 0.6rem;
-			}
-
-			form {
-				display: flex;
-				margin: auto;
-				align-items: center;
-
-				input[type="email"] {
-					border: 1px solid #FFFFFF;
-					background: rgba(255, 255, 255, 0);
-					text-align: center;
-					height: 1.6rem;
-					font-size: 1em;
-					width: auto;
-					margin-right: 1.5rem;
-				}
-
-				input[type="submit"] {
-					height: auto;
-					border-radius: 3em;
-					width: 4rem;
-					border: 0;
-					padding: 4%;
-					background-color: #FFFFFF;
-				}
-			}
-		}
-
-		h5 {
-			font-size: 25px;
-			font-family: $main_police;
-			white-space: nowrap;
-			height: auto;
-			margin-right: 1.5rem;
-		}
-
-		.container {
-			display: flex;
-			align-items: center;
-		}
-
-		ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-		}
-
-		li {
-			a {
-				display: block;
-				text-decoration: none;
-				white-space: nowrap;
-			}
-		}
+	@media screen and (max-width: 900px) {
+		font-size: 1rem;
 
 	}
 
+	@media screen and (max-width: 800px) {
+		font-size: 0.8rem;
+		flex-direction: column;
+	}
+
+	>*+* {
+		margin-left: 1rem;
+	}
+}
+
+.footer-nav {
+	width: 90%;
+	color: $white;
+	text-decoration: none;
+	white-space: nowrap;
+	font-size: 0.7rem;
+
+	@media screen and (max-width: 900px) {
+		font-size: 0.6rem;
+	}
+
+	@media screen and (max-width: 700px) {
+		font-size: 0.5rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		font-size: 0.7rem;
+	}
+
+
+	ul {
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		@media screen and (max-width: 600px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+	}
 }

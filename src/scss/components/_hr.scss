@@ -5,6 +5,17 @@
         border: none;
         width: 90%;
         background-color: #FFFFFF;
+
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+    }
+
+    &-white-mini {
+        height: 2px;
+        border: none;
+        width: 45%;
+        background-color: #FFFFFF;
     }
 
     &-yellow {

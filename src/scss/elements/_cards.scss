@@ -1,32 +1,83 @@
-.cardlist {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+// .cardlist {
+//     display: flex;
+//     justify-content: space-evenly;
+//     align-items: center;
+//     overflow: hidden;
+//     text-overflow: clip;
 
-    &-element {
-        border: solid 1.5px $darkfont;
-        border-radius: 15px;
-        flex-direction: column;
-        width: 310px;
-        height: 460px;
-        transition: 0.5s;
+//     &-element {
+//         border: solid 1.5px $darkfont;
+//         border-radius: 15px;
+//         flex-direction: column;
+//         width: 28%;
+//         height: 460px;
+//         transition: 0.5s;
 
-        img:not(:first-child) {
-            width: 100%;
-            height: 265px;
-        }
+//         @media screen and (max-width: 1200px) {
+//             width: 30%;
+//             height: 400px;
+//         }
 
-        &:hover {
-            box-shadow: 0px 5px 12px $darkhover;
-        }
-    }
-}
+//         img:not(:first-child) {
+//             width: 100%;
+//             height: 265px;
+//         }
+
+//         &:hover {
+//             box-shadow: 0px 5px 12px $darkhover;
+//         }
+//     }
+// }
 
 .title {
     font-size: 1.6rem;
+    white-space: nowrap;
+    text-overflow: clip;
+
+    @media screen and (max-width: 900px) {
+        font-size: 1.2rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 0.8rem;
+    }
+}
+
+// .subtitle {
+//     text-overflow: ellipsis;
+//     font-weight: 400;
+// }
+
+.cardlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: hidden;
+    text-overflow: clip;
+    width: 33%;
+
+    border-radius: 3%;
+    border: 1px solid $darkfont;
+    transition: 0.5s;
+
+    &:hover {
+        box-shadow: 0px 5px 12px $darkhover;
+    }
+}
+
+.cardlist+.cardlist {
+    margin-left: 1rem;
 }
 
 .subtitle {
     text-overflow: ellipsis;
     font-weight: 400;
+
+    @media screen and (max-width: 900px) {
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 0.8rem;
+    }
 }

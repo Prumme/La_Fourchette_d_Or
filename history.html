@@ -6,24 +6,49 @@
     <title>A propos de nous</title>
     <link rel="stylesheet" href="dist/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./src/js/header.js"></script>
 </head>
 
 <body>
 
     <header class="z-5 sticky top-0 w-full ">
-        <div class="flex justify-between items-center w-full absolute top-0 bg-black-50">
+        <nav class="flex justify-between items-center w-full absolute top-0 bg-black-50">
             <a href="#" alt="logo-la_fourchette_d'or" class="cursor-pointer">
                 <img src="src/images/forks.svg" alt="">
             </a>
-            <nav>
-                <ul>
-                    <li><a href="./index.html" class="font-medium link link-yellow">Accueil</a></li>
-                    <li><a href="./menu.html" class="font-medium link link-yellow">La carte</a></li>
-                    <li><a href="./history.html" class="font-medium link link-yellow">A propos</a></li>
-                    <li><a class="li li-yellow font-medium" href="#">Réservation</a></li>
-                </ul>
-            </nav>
-        </div>
+
+            <ul onclick="openNav()" class="ul ul-header">
+                <li><a href="./index.html" class="font-medium link link-yellow link-default-white text-2xl">Accueil</a>
+                </li>
+                <li><a href="./menu.html" class="font-medium link link-yellow link-default-white text-2xl">La carte</a>
+                </li>
+                <li><a href="./history.html" class="font-medium link link-yellow link-default-white text-2xl">A
+                        propos</a></li>
+                <li>
+                    <div onclick="open_reservation()" class="button button-yellow" href="#">
+                        Réservation</div>
+                </li>
+            </ul>
+
+        </nav>
+
+        <nav id="nav-mobile" class="nav-mobile">
+            <div class="flex justify-end pr-5">            
+                <span class="white" onclick="closeNav()"><img src="./src/images/cross.svg" alt=""></span>
+            </div>
+            <ul class="ul-header-mobile">
+                <li><a href="./index.html" class="font-medium link link-yellow link-default-white ">Accueil</a>
+                </li>
+                <hr class="hr-white-mini">
+                <li><a href="./menu.html" class="font-medium link link-yellow link-default-white ">La carte</a>
+                </li>
+                <hr class="hr-white-mini">
+                <li><a href="./history.html" class="font-medium link link-yellow link-default-white ">A
+                        propos</a></li>
+                <hr class="hr-white-mini">
+                <li><a class="font-medium link link-yellow link-default-white " href="#">Réservation</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="w-full">
@@ -35,25 +60,33 @@
         </section>
 
         <section id="History">
-            <div class="flex justify-center w-full title pt-6">
-                <span class="history history-title p-9"><b>Notre histoire</b></span>
-            </div>
-            <div class="history history-width container-65 flex flex-column items-center pt-5 pl-7">
-                <span class="text-center history history-subtitle">Depuis nos débuts en janvier 2023 avec un espace
-                    situé dans le 12 arrondissement
-                    de paris,<br> la
-                    fouchette d’or est l’un des meilleurs restaurants gastronomique de France.</span>
+            <div class="">
+                <div class="flex justify-center w-full title pt-6">
+                    <p class="history history-title p-9"><b>Notre histoire</b></p>
+                </div>
+                <div class="container-85 flex items-center flex-column text-center text-lg relative">
+                    <p>Depuis nos débuts en janvier 2023 avec un espace
+                        situé dans le 12 arrondissement de paris, la fouchette d’or est l’un des meilleurs restaurants
+                        gastronomique de France.</p><br>
 
-                <span class="text-center history history-subtitle pt-7 pb-7">Présenté par le chef Frédéric Sananes, la
-                    fourchette d’or se concentre sur des
-                    plats de <br> qualités pour
-                    une clientèle de qualité. S’inspirant de la gastronomie classique française, vous allez découvrir
-                    des plats typique du terroir revisité à la sauce du chef. </span>
+                    <p>Présenté par le chef Frédéric Sananes,
+                        la
+                        fourchette d’or se concentre sur des
+                        plats de qualités pour
+                        une clientèle de qualité. S’inspirant de la gastronomie classique française, vous allez
+                        découvrir
+                        des plats typique du terroir revisité à la sauce du chef. </p>
+                    <br>
 
-                <span class="text-center history history-subtitle">Le développement de la fourchette d’or à été animé
-                    par l’amour pour la cuisine et
-                    le désir de vouloir
-                    satisfaire notre clientèle.</span>
+                    <p>Le développement de la fourchette d’or à été
+                        animé
+                        par l’amour pour la cuisine et
+                        le désir de vouloir satisfaire notre clientèle.</p>
+                    <br>
+
+                    <p class="inter-text inter-text-1">2023</p>
+                    <p class="inter-text inter-text-2">Oui chef !</p>
+                </div>
             </div>
         </section>
 
@@ -61,89 +94,111 @@
             <hr class="history history-hr">
         </div>
 
-        <section id="space">
-            <div class="container-85 pb-43">
-                <div class="flex">
-                    <div class="flex flex-column">
-                        <div class=" h-full flex flex-column ">
-                            <div class="pb-15">
-                                <span class="space space-title"><b>Notre espace</b></span>
-                            </div>
-                            <div>
-                                <span class="text-xl">Venez découvrir notre splendide restaurant situé dans le 12
-                                    arrondissement. Ce dernier
-                                    offre une vue sur la magnifique <br> école de l’esgi et son splendide Auchan qui
-                                    propose des
-                                    denrées alimentaires de type rare. </span>
-                                <p><span class="text-xl">Notre restaurant dispose également d’une terrasse pour ceux
-                                        <br> qui souhaitent mangés a
-                                        pleine air.</span></p>
-                            </div>
-                            <div></div>
-                        </div>
-                        <div class="flex flex-row justify-between pr-12">
-                            <img class="img img-small" src="src/images/history_page/history-decor(2).png" alt="">
-                            <img class="img img-small" src="src/images/history_page/history-decor.png" alt="">
-                            <img class="img img-small" src="src/images/history_page/history-decor(1).png" alt="">
-                        </div>
-                    </div>
+        <section class="history-container history-container-right">
+            <div class="history-text-container">
+
+                <div class="history-text-container">
+
                     <div>
-                        <img class="img" src="src/images/front1.png" alt="">
+                        <h2 class="text-4xl">Notre espace</h2>
+                        <br>
+                        <p class="text-xl">Venez découvrir notre splendide restaurant situé dans
+                            le 12 <br>
+                            arrondissement. Ce dernier
+                            offre une vue sur la magnifique <br> école de l’esgi et son splendide Auchan qui
+                            propose des <br> denrées alimentaires de type rare. </p>
+                        <p class="text-xl">Notre restaurant dispose également d’une terrasse pour
+                            ceux
+                            <br> qui souhaitent mangés a pleine air.
+                        </p>
                     </div>
                 </div>
+                <div class="flex flex-row justify-between history-container-image">
+                    <img class="history history-img history-img-small"
+                        src="src/images/history_page/history-decor(2).png" alt="">
+                    <img class="history history-img history-img-small" src="src/images/history_page/history-decor.png"
+                        alt="">
+                    <img class="history history-img history-img-small"
+                        src="src/images/history_page/history-decor(1).png" alt="">
+                </div>
+            </div>
+
+
+            <div class="flex items-end">
+                <img class="image-main-history" src="./src/images/history_page/history-front1.png" alt="">
+            </div>
             </div>
         </section>
 
+        <section class="history-container history-container-left">
 
-        <section id="cook">
-            <div class="container-85 pb-5">
-                <div class="flex flex-row-reverse">
-                    <div class="pl-7 flex flex-column">
-                        <div class="pr-8 h-full">
-                            <div class="pb-12">
-                                <span class="space space-title"><b>Notre cuisine</b></span>
-                            </div>
-                            <div>
-                                <div class="pb-2">
-                                    <span class="text-xl">Venez découvrir notre splendide restaurant situé dans le 12
-                                        arrondissement. Ce dernier
-                                        offre une vue sur la magnifique <br> école de l’esgi et son splendide Auchan qui
-                                        propose des
-                                        denrées alimentaires de type rare. </span>
-                                </div>
-                                <p><span class="text-xl">Notre restaurant dispose également d’une terrasse pour ceux
-                                        <br> qui souhaitent mangés a
-                                        pleine air.</span></p>
-                            </div>
-                            <div></div>
-                        </div>
-                        <div class="flex flex-row justify-between">
-                            <img class="img img-small" src="src/images/history_page/history-decor(3).jpg" alt="">
-                            <img class="img img-small" src="src/images/history_page/history-salade.png" alt="">
-                            <img class="img img-small" src="src/images/history_page/history-icecream.png" alt="">
-                        </div>
-                    </div>
-                    <div class="pr-9">
-                        <img class="img" src="src/images/history_page/history-eggs.jpg" alt="">
-                    </div>
+            <div class="history-text-container">
+                <div>
+                    <h2 class="text-4xl">Notre cuisine</h2>
+                    <br>
+
+                    <p class="text-xl">Venez découvrir notre splendide restaurant situé dans
+                        le 12 <br>
+                        arrondissement. Ce dernier
+                        offre une vue sur la magnifique <br> école de l’esgi et son splendide Auchan qui
+                        propose des <br> denrées alimentaires de type rare. </p>
+
+                </div>
+                <div class="flex flex-row justify-between history-container-image">
+                    <img class="history-img-small" src="src/images/history_page/history-decor(3).jpg" alt="">
+                    <img class="history-img-small" src="src/images/history_page/history-salade.png" alt="">
+                    <img class="history-img-small" src="src/images/history_page/history-icecream.png" alt="">
                 </div>
             </div>
+
+            </div>
+            <div class="flex items-end">
+                <img class="image-main-history" src="./src/images/history_page/history-eggs.jpg" alt="">
+            </div>
+
+
         </section>
 
         <div class="container-85">
             <h2 class="text-5xl text-center mgb-24">Venez découvrir nos chefs</h2>
             <div class="flex justify-center">
-                <img class="w-2-015" src="./src/images/chef1.png" alt="Le rôtisseur">
-                <img class="w-2-015 mgl-10 mgr-10" src="./src/images/chef2.png" alt="L'entremétier">
-                <img class="w-2-015" src="./src/images/chef3.png" alt="Le chef de cuisine">
+                <div class="chef-banner">
+                    <img class="w-2-015" src="./src/images/chef1.png" alt="Le rôtisseur">
+                    <div>
+                        <h3>
+                            <p class="font-bold">Le rôtisseur</p>
+                            <p>Youri Ghlis</p>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="chef-banner">
+                    <img class="w-2-015" src="./src/images/chef2.png" alt="L'entremétier">
+                    <div>
+                        <h3>
+                            <p class="font-bold">Le rôtisseur</p>
+                            <p>Youri Ghlis</p>
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="chef-banner">
+                    <img class="w-2-015" src="./src/images/chef3.png" alt="Le chef de cuisine">
+                    <div>
+                        <h3>
+                            <p class="font-bold">Le rôtisseur</p>
+                            <p>Youri Ghlis</p>
+                        </h3>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="container-85 flex justify-between mgt-40 mgb-40">
 
-            <img src="./src/images/bar.png" class="w-3-10" alt="Bar du restaurant">
+            <img src="./src/images/bar.png" class="img-comment" alt="Bar du restaurant">
 
-            <div class="w-6-10 mgl-12">
+            <div class="w-6-10 mgl-12 opinion">
                 <h3 class="text-5xl mgt-3 mgb-20">Vos avis</h3>
 
                 <div class="flex overflow-x-scroll noscrollbar">
@@ -240,39 +295,44 @@
 
     </main>
 
-    <footer>
+    <footer class="w-full bg-black flex flex-column items-center">
         <img src="./src/images/logo.svg" alt="logo">
-        <div class="container-90 flex justify-between">
-            <div class="news-media">
-                <h5>Suivez la fourchette d’or</h5>
-                <img src="./src/images/facebook.svg" alt="logo">
-                <img src="./src/images/instagram.svg" alt="logo">
-                <img src="./src/images/google.svg" alt="logo">
-                <img src="./src/images/twitter.svg" alt="logo">
+
+        <div class="footer-propagandes">
+            <div class="footer-prop">
+                <p>Suivez la fourchette d’or</p>
+                <div class="flex justify-around">
+                    <img src="./src/images/facebook.svg" class="logo-social-media cursor-pointer" alt="logo">
+                    <img src="./src/images/instagram.svg" class="logo-social-media  cursor-pointer" alt="logo">
+                    <img src="./src/images/google.svg" class="logo-social-media  cursor-pointer" alt="logo">
+                    <img src="./src/images/twitter.svg" class="logo-social-media  cursor-pointer" alt="logo">
+                </div>
             </div>
-            <div class="news-media">
-                <h5>Suivez la newsletter</h5>
-                <form action="">
+            <div class="footer-prop">
+                <p>Suivez la newsletter</p>
+                <div class="flex">
                     <input type="email" placeholder="Entrer votre e-mail">
                     <input type="submit" value="OK">
-                </form>
+                </div>
             </div>
         </div>
+
         <hr class="hr-white">
-        <div class="container-90">
+
+        <div class="footer-nav">
             <nav>
                 <ul>
-                    <li class="foottext"><a href="">La fourchette d’or, 2023</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">Politique de confidentialité</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">242 avenue du faubourd Saint-Antoine 75012</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">Gérer mes cookies</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">Mentions légal</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">Contact : Fourchetteor@gmail.com</a></li>
+                    <li><a href="">La fourchette d’or, 2023</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Politique de confidentialité</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">242 avenue du faubourd Saint-Antoine 75012</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Gérer mes cookies</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Mentions légal</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Contact : Fourchetteor@gmail.com</a></li>
                 </ul>
             </nav>
         </div>

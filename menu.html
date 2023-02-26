@@ -8,39 +8,63 @@
     <link rel="stylesheet" href="dist/main.css">
     <title>Notre carte</title>
     <script src="./src/js/menu.js"></script>
+    <script src="./src/js/header.js"></script>
 </head>
 
 <body>
     <header class="z-5 sticky top-0 w-full ">
-        <div class="flex justify-between items-center w-full absolute top-0 bg-black-50">
+        <nav class="flex justify-between items-center w-full absolute top-0 bg-black-50">
             <a href="#" alt="logo-la_fourchette_d'or" class="cursor-pointer">
                 <img src="src/images/forks.svg" alt="">
             </a>
-            <nav>
-                <ul>
-                    <li><a href="./index.html" class="font-medium link link-yellow">Accueil</a></li>
-                    <li><a href="./menu.html" class="font-medium link link-yellow">La carte</a></li>
-                    <li><a href="./history.html" class="font-medium link link-yellow">A propos</a></li>
-                    <li><a class="li li-yellow font-medium" href="#">Réservation</a></li>
-                </ul>
-            </nav>
-        </div>
+
+            <ul onclick="openNav()" class="ul ul-header">
+                <li><a href="./index.html" class="font-medium link link-yellow link-default-white text-2xl">Accueil</a>
+                </li>
+                <li><a href="./menu.html" class="font-medium link link-yellow link-default-white text-2xl">La carte</a>
+                </li>
+                <li><a href="./history.html" class="font-medium link link-yellow link-default-white text-2xl">A
+                        propos</a></li>
+                <li>
+                    <div class="button button-yellow" href="#">Réservation</div>
+                </li>
+            </ul>
+
+        </nav>
+
+        <nav id="nav-mobile" class="nav-mobile">
+            <div class="flex justify-end pr-5">            
+                <span class="white" onclick="closeNav()"><img src="./src/images/cross.svg" alt=""></span>
+            </div>
+            <ul class="ul-header-mobile">
+                <li><a href="./index.html" class="font-medium link link-yellow link-default-white ">Accueil</a>
+                </li>
+                <hr class="hr-white-mini">
+                <li><a href="./menu.html" class="font-medium link link-yellow link-default-white ">La carte</a>
+                </li>
+                <hr class="hr-white-mini">
+                <li><a href="./history.html" class="font-medium link link-yellow link-default-white ">A
+                        propos</a></li>
+                <hr class="hr-white-mini">
+                <li><a class="font-medium link link-yellow link-default-white " href="#">Réservation</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <section id="section1" class="w-full">
 
             <div class="w-full relative image-screen">
-                <img class="image-screen" src="src/images/menu/menu.png" alt="">
+                <img class="" src="src/images/menu/menu.png" alt="">
             </div>
         </section>
 
         <section>
             <div class="menu">
-                <p id="link-matin" class="uppercase link link-yellow text-3xl link-selected"
-                    onclick="change_menu('matin')">matin</p>
-                <p id="link-midi" class="uppercase link link-yellow text-3xl" onclick="change_menu('midi')">midi</p>
-                <p id="link-soir" class="uppercase link link-yellow text-3xl" onclick="change_menu('soir')">soir</p>
+                <p id="link-matin" class="link link-menu link-yellow  link-selected" onclick="change_menu('matin')">
+                    matin</p>
+                <p id="link-midi" class="link link-menu link-yellow " onclick="change_menu('midi')">midi</p>
+                <p id="link-soir" class="link link-menu link-yellow " onclick="change_menu('soir')">soir</p>
             </div>
 
             <div class="relative">
@@ -89,39 +113,44 @@
 
     </main>
 
-    <footer>
+    <footer class="w-full bg-black flex flex-column items-center">
         <img src="./src/images/logo.svg" alt="logo">
-        <div class="container-90 flex justify-between">
-            <div class="news-media">
-                <h5>Suivez la fourchette d’or</h5>
-                <img src="./src/images/facebook.svg" alt="logo">
-                <img src="./src/images/instagram.svg" alt="logo">
-                <img src="./src/images/google.svg" alt="logo">
-                <img src="./src/images/twitter.svg" alt="logo">
+
+        <div class="footer-propagandes">
+            <div class="footer-prop">
+                <p>Suivez la fourchette d’or</p>
+                <div class="flex justify-around">
+                    <img src="./src/images/facebook.svg" class="logo-social-media cursor-pointer" alt="logo">
+                    <img src="./src/images/instagram.svg" class="logo-social-media  cursor-pointer" alt="logo">
+                    <img src="./src/images/google.svg" class="logo-social-media  cursor-pointer" alt="logo">
+                    <img src="./src/images/twitter.svg" class="logo-social-media  cursor-pointer" alt="logo">
+                </div>
             </div>
-            <div class="news-media">
-                <h5>Suivez la newsletter</h5>
-                <form action="">
+            <div class="footer-prop">
+                <p>Suivez la newsletter</p>
+                <div class="flex">
                     <input type="email" placeholder="Entrer votre e-mail">
                     <input type="submit" value="OK">
-                </form>
+                </div>
             </div>
         </div>
+
         <hr class="hr-white">
-        <div class="container-90">
+
+        <div class="footer-nav">
             <nav>
                 <ul>
-                    <li class="foottext"><a href="">La fourchette d’or, 2023</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">Politique de confidentialité</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">242 avenue du faubourd Saint-Antoine 75012</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">Gérer mes cookies</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">Mentions légal</a></li>
-                    <li class="hyphen"><a href="">-</a></li>
-                    <li class="foottext"><a href="">Contact : Fourchetteor@gmail.com</a></li>
+                    <li><a href="">La fourchette d’or, 2023</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Politique de confidentialité</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">242 avenue du faubourd Saint-Antoine 75012</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Gérer mes cookies</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Mentions légal</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Contact : Fourchetteor@gmail.com</a></li>
                 </ul>
             </nav>
         </div>
