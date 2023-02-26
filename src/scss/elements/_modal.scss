@@ -1,0 +1,37 @@
+@media screen and (max-width: 768px) {
+    .modal {
+        flex-direction: column-reverse;
+        width: 100%;
+
+
+        position:absolute .mgt-15 {
+            margin-top: 2%;
+        }
+
+        .calendar {
+            width: 100%;
+            height: 70%;
+        }
+
+        .button-yellow {
+            margin-bottom: 2%;
+            transform: scale(1.2);
+        }
+    }
+
+    #modal_reservation {
+        overflow-y: scroll;
+    }
+
+
+
+    .image-banner-modal {
+        z-index: 6;
+        margin-bottom: 39vh;
+    }
+
+    .close-modal {
+        z-index: 7;
+        margin-bottom: 39vh;
+    }
+}

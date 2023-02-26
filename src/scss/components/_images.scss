@@ -53,7 +53,13 @@
 }
 
 .image-banner {
-    width: 100%;
+    width: 100vw;
+    height: 15%;
+    object-fit: cover
+}
+
+.image-banner-modal {
+    width: 90vw;
     height: 15%;
     object-fit: cover
 }

@@ -1,6 +1,6 @@
 const daysTag = document.querySelector(".days"),
     currentDate = document.querySelector(".current-date"),
-    prevNextIcon = document.querySelectorAll(".icons span");
+    prevNextIcon = document.querySelectorAll(".icons");
 
 // permet d'obtenir le jour, le mois, l'année et l'heure d'aujourd'hui
 let date = new Date(),
@@ -51,8 +51,8 @@ daysTag.addEventListener("click", (e) => {
     console.log(e.target.tagName);
     if (e.target.tagName === "LI") {
         let selectedDate = e.target.innerText;
-        document.querySelector('#date').innerText = selectedDate;
-        console.log("waf");
+        document.querySelector('#date').innerText = ' ' + selectedDate + ' ' + months[currMonth] + ' ' + currYear;
+
     }
 });
 
@@ -62,5 +62,5 @@ function close_reservation() {
 }
 
 function open_reservation() {
-    document.getElementById("modal_reservation").className = "w-screen flex  h-screen bg-black-50 fixed top-0 z-6 justify-center items-center";
+    document.getElementById("modal_reservation").className = "w-screen flex  h-screen bg-black-50 fixed top-0 z-5 justify-center items-center";
 }
