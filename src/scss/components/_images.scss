@@ -114,7 +114,7 @@
 .image-banner-modal {
     width: 90vw;
     height: 15%;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .logo-social-media {
@@ -184,10 +184,10 @@
     aspect-ratio: 1/1;
 
     @media screen and (max-width: $breakpoint-tablet) {
-        height:100%;
-        margin-top:5%;
-        width:50%;
-        margin-left:0;
+        height: 100%;
+        margin-top: 5%;
+        width: 50%;
+        margin-left: 0;
     }
 
 }

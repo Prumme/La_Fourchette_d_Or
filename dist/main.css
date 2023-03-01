@@ -10813,6 +10813,11 @@ body {
 .ul-header * > * {
   margin-left: 1rem;
 }
+@media screen and (max-width: 600px) {
+  .ul-header li {
+    display: none;
+  }
+}
 .ul-header-mobile {
   flex-direction: column !important;
   align-items: center !important;
@@ -10820,6 +10825,7 @@ body {
   width: 100%;
   height: 100%;
   margin-top: 0;
+  padding: 0;
 }
 @media screen and (max-width: 750px) {
   .ul-header {
@@ -11041,7 +11047,13 @@ ul {
     font-size: 1rem;
   }
 }
-.button-form {
+.button-text {
+  border: 0.5px solid;
+  border-radius: 0.3rem;
+  height: 2.8rem;
+  width: 100%;
+}
+.button-select {
   border: 0.5px solid;
   border-radius: 0.3rem;
   height: 2.8rem;
@@ -11445,25 +11457,38 @@ ul {
 
 @media screen and (max-width: 768px) {
   .modal {
+    display: flex;
     flex-direction: column-reverse;
     width: 100%;
-  }
-  .modal position:absolute .mgt-15 {
-    margin-top: 2%;
+    overflow-y: scroll;
+    height: 100%;
+    top: 0;
+    position: absolute;
   }
   .modal .calendar {
     width: 100%;
-    height: 70%;
+    height: 100%;
   }
   .modal .button-yellow {
     margin-bottom: 2%;
     transform: scale(1.2);
   }
-  #modal_reservation {
-    overflow-y: scroll;
+  .modal .close-modal {
+    top: 0;
+  }
+  .form {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+  }
+  .modal-background {
+    position: relative;
   }
   .image-banner-modal {
-    z-index: 6;
+    z-index: 1;
+    width: 100%;
+    height: 7%;
   }
   .close-modal {
     z-index: 7;

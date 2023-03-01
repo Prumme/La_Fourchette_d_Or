@@ -1,32 +1,51 @@
 @media screen and (max-width: 768px) {
     .modal {
+        display: flex;
         flex-direction: column-reverse;
         width: 100%;
+        overflow-y: scroll;
+        height: 100%;
+        top: 0;
 
-
-        position:absolute .mgt-15 {
-            margin-top: 2%;
-        }
+        position: absolute;
 
         .calendar {
             width: 100%;
-            height: 70%;
+            height: 100%;
         }
+
 
         .button-yellow {
             margin-bottom: 2%;
             transform: scale(1.2);
         }
+
+        .close-modal {
+            top: 0;
+        }
     }
 
-    #modal_reservation {
-        overflow-y: scroll;
+
+
+    .form {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    .modal-background {
+        position: relative;
     }
 
 
 
     .image-banner-modal {
-        z-index: 6;
+        z-index: 1;
+        width: 100%;
+        height: 7%;
     }
 
     .close-modal {

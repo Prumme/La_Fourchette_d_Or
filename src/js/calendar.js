@@ -64,3 +64,4 @@ function close_reservation() {
 function open_reservation() {
     document.getElementById("modal_reservation").className = "w-screen flex  h-screen bg-black-50 fixed top-0 z-5 justify-center items-center";
 }
+
