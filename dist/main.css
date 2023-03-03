@@ -11325,12 +11325,9 @@ ul {
   margin-top: 5rem;
 }
 
-.inter-text {
-  position: absolute;
-}
 .inter-text-1 {
   top: -12%;
-  left: 5%;
+  left: -20%;
   transform: rotate(-8deg);
   font-size: 1.4rem;
   border: 1px black dashed;
@@ -11340,7 +11337,7 @@ ul {
 }
 .inter-text-2 {
   top: 55%;
-  right: 2%;
+  right: -20%;
   transform: rotate(12deg);
   font-size: 1.4rem;
   border: 1px black dashed;
@@ -11354,6 +11351,25 @@ ul {
   margin-bottom: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .inter-text {
+    position: absolute;
+    position: .inter-text-1;
+    position-background-color: red;
+    position-font-size: 1.4rem;
+    position-border: 1px black dashed;
+    position-padding: 0.5rem;
+    position-border-radius: 0.4rem;
+    position-font-weight: 700;
+  }
+  .inter-text-2 {
+    font-size: 1.4rem;
+    border: 1px black dashed;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    font-weight: 700;
+  }
+}
 .option-card {
   background-color: rgba(218, 218, 218, 0.15);
   border: 1px solid black;

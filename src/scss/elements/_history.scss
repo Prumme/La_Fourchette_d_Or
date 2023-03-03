@@ -208,11 +208,11 @@
 }
 
 .inter-text {
-    position: absolute;
+
 
     &-1 {
         top: -12%;
-        left: 5%;
+        left: -20%;
         transform: rotate(-8deg);
         font-size: 1.4rem;
         border: 1px black dashed;
@@ -223,7 +223,7 @@
 
     &-2 {
         top: 55%;
-        right: 2%;
+        right: -20%;
         transform: rotate(12deg);
         font-size: 1.4rem;
         border: 1px black dashed;
@@ -237,4 +237,34 @@
 .history-title {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .inter-text {
+        position: absolute;
+
+        position: &-1 {
+
+            background-color: red;
+
+            font-size: 1.4rem;
+            border: 1px black dashed;
+            padding: 0.5rem;
+            border-radius: 0.4rem;
+            font-weight: $bold;
+        }
+
+        &-2 {
+
+
+            font-size: 1.4rem;
+            border: 1px black dashed;
+            padding: 0.5rem;
+            border-radius: 0.4rem;
+            font-weight: $bold;
+        }
+
+    }
+
 }
