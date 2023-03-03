@@ -11,289 +11,395 @@
 
 <body>
 
-    <h1 class="text-center text-4xl font-bold">DESIGN GUIDE</h1>
-    
-    <span class="text-5xl">TEXTS</span>
-    <div class="container-90 pb-10">
-        <p class="text-lg">text lg</p>
-        <p class="text-xl">text xl</p>
-        <p class="text-2xl">text 2xl</p>
-        <p class="text-3xl">text 3xl</p>
-        <p class="text-4xl">text 4xl</p>
-        <p class="text-5xl">text 5xl</p>
+    <header class="z-5 sticky top-0 w-full flex justify-center ">
+        <nav class="header">
+            <a href="#" alt="logo-la_fourchette_d'or" class="cursor-pointer">
+                <img src="src/images/forks.svg" class="logo-header" alt="">
+            </a>
 
-        <p class="font-light">font light</p>
-        <p class="font-regular">font regular</p>
-        <p class="font-medium">font medium</p>
-        <p class="font-bold">font bold</p>
-        <p class="font-extrabold">font extrabold</p>
+            <ul onclick="openNav()" class="ul ul-header">
+                <li><a href="./index.html" class="font-medium link link-yellow link-default-white">Accueil</a>
+                </li>
+                <li><a href="./menu.html" class="font-medium link link-yellow link-default-white">La carte</a>
+                </li>
+                <li><a href="./history.html" class="font-medium link link-yellow link-default-white">A
+                        propos</a></li>
+                <li>
+                    <div onclick="open_reservation()" class="button button-yellow" href="#">
+                        Réservation</div>
+                </li>
+            </ul>
+
+        </nav>
+
+        <nav id="nav-mobile" class="nav-mobile">
+            <div class="flex justify-end pr-5">
+                <span class="white" onclick="closeNav()"><img src="./src/images/cross.svg" alt=""></span>
+            </div>
+            <ul class="ul-header-mobile">
+                <li><a href="./index.html" class="font-medium link link-yellow link-default-white ">Accueil</a>
+                </li>
+                <hr class="hr-white-mini">
+                <li><a href="./menu.html" class="font-medium link link-yellow link-default-white ">La carte</a>
+                </li>
+                <hr class="hr-white-mini">
+                <li><a href="./history.html" class="font-medium link link-yellow link-default-white ">A
+                        propos</a></li>
+                <hr class="hr-white-mini">
+                <li><a class="font-medium link link-yellow link-default-white " href="#">Réservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <div style="width:50%;height:50%;background-color:white;position:fixed;z-index:10; border: solid 1px black;bottom:25%;transform:translateX(50%);"></div> -->
+
+    <main id="main" class="container-60">
+        <h1 class="text-4xl font-bold pt-25">DESIGN GUIDE</h1>
+        <h2 class="text-2xl font-regular pb-25 no-hover">Le guide utilisé pour répertorier nos components</h2>
+
+        <p class="text-5xl pb-5 font-bold no-hover">Typographie</p>
+        <div class="container-95 flex">
+            <div class="flex flex-column container-50 pb-10 justify-between no-hover">
+                <p class="text-sm">text sm</p>
+                <p class="text-md">text md</p>
+                <p class="text-lg">text lg</p>
+                <p class="text-xl">text xl</p>
+                <p class="text-2xl">text 2xl</p>
+                <p class="text-3xl">text 3xl</p>
+                <p class="text-4xl">text 4xl</p>
+                <p class="text-5xl">text 5xl</p>
+            </div>
+
+            <div class="flex flex-column pb-10 container-50 justify-around no-hover">
+                <h2 class="font-light">Cette police est light</h2>
+                <h2 class="font-regular">Cette police est regular</h2>
+                <h2 class="font-medium">Cette police est medium</h2>
+                <h2 class="font-bold">Cette police est bold</h2>
+                <h2 class="font-extrabold">Cette police est extrabold</h2>
+            </div>
+
+        </div>
+        <div class="flex flex-column pb-50 no-hover">
+            <p class="text-left bg-black-50 white">Ce texte est centré sur la gauche</p>
+            <p class="text-center bg-black-50 white">Ce texte est centré par rapport au centre de la page</p>
+            <p class="text-right bg-black-50 white">Ce texte est centré sur la droite</p>
+        </div>
 
 
-        <p class="text-left bg-black-50 white">text left</p>
-        <p class="text-center bg-black-50 white">text center</p>
-        <p class="text-right bg-black-50 white">text right</p>
-    </div>
+        <p class="text-5xl font-bold no-hover">HRs</p>
+        <div class="flex pb-50 no-hover">
+            <div class="container-65 flex flex-column no-hover">
+                <hr id="hr-menu-1" class="hr-menu">
+                <div class="bg-black-50 p-5 no-hover">
+                    <hr id="hr-white" class="hr-white">
+                </div>
+                <div class="container-100 no-hover">
+                    <hr id="hr-black" class="hr-black">
 
-    <span class="text-5xl">HRs</span>
-    <hr class=" hr-menu">
-    <hr class="hr-white">
-    <hr class="hr-black">
-    <div class="hr-menu"></div>
-    <hr class="hr-white-mini">
+                </div>
+                <div id="hr-menu-2" class="hr-menu no-hover"></div>
+                <hr class="hr-white-mini">
+            </div>
+
+            <div class="container-50 pl-35 no-hover flex flex-column justify-evenly no-hover">
+                <span id="hr-text-1" style="border:solid 1px black;"></span>
+                <span id="hr-text-2" style="border:solid 1px black;"></span>
+                <span id="hr-text-3" style="border:solid 1px black;"></span>
+                <span id="hr-text-4" style="border:solid 1px black;"></span>
+            </div>
+        </div>
 
 
-    <span class="text-5xl">CONTAINERS</span>
-    <div class="text-center pb-10">
-        <div class="container-10 bg-yellow h-2">container-10</div>
+
+        <p class="text-5xl pb-5 font-bold no-hover">Containers</p>
+        <div class="text-center pb-50 no-hover">
+            <div class="container-10 bg-yellow h-2">container-10</div>
+            <br>
+            <div class="container-15 bg-yellow h-2">container-15</div>
+            <br>
+            <div class="container-20 bg-yellow h-2">container-20</div>
+            <br>
+            <div class="container-25 bg-yellow h-2">container-25</div>
+            <br>
+            <div class="container-30 bg-yellow h-2">container-30</div>
+            <br>
+            <div class="container-35 bg-yellow h-2">container-35</div>
+            <br>
+            <div class="container-40 bg-yellow h-2">container-40</div>
+            <br>
+            <div class="container-45 bg-yellow h-2">container-45</div>
+            <br>
+            <div class="container-50 bg-yellow h-2">container-50</div>
+            <br>
+            <div class="container-55 bg-yellow h-2">container-55</div>
+            <br>
+            <div class="container-60 bg-yellow h-2">container-60</div>
+            <br>
+            <div class="container-65 bg-yellow h-2">container-65</div>
+            <br>
+            <div class="container-70 bg-yellow h-2">container-70</div>
+            <br>
+            <div class="container-75 bg-yellow h-2">container-75</div>
+            <br>
+            <div class="container-80 bg-yellow h-2">container-80</div>
+            <br>
+            <div class="container-85 bg-yellow h-2">container-85</div>
+            <br>
+            <div class="container-90 bg-yellow h-2">container-90</div>
+            <br>
+            <div class="container-95 bg-yellow h-2">container-95</div>
+        </div>
+
+        <p class="text-5xl pb-5 font-bold no-hover">Positions</p>
         <br>
-        <div class="container-15 bg-yellow h-2">container-15</div>
+        <div id="pos-1" class="container-60 bg-black-50 flex justify-center no-hover">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
         <br>
-        <div class="container-20 bg-yellow h-2">container-20</div>
+        <div id="pos-2" class="container-60 bg-black-50 flex justify-start no-hover">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
         <br>
-        <div class="container-25 bg-yellow h-2">container-25</div>
+
+        <div id="pos-3" class="container-60 bg-black-50 flex justify-end no-hover">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
         <br>
-        <div class="container-30 bg-yellow h-2">container-30</div>
+
+        <div id="pos-4" class="container-60 bg-black-50 flex justify-between no-hover">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
         <br>
-        <div class="container-35 bg-yellow h-2">container-35</div>
+
+        <div id="pos-5" class="container-60 bg-black-50 flex justify-around no-hover">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
         <br>
-        <div class="container-40 bg-yellow h-2">container-40</div>
+
+        <div id="pos-6" class="container-60 bg-black-50 flex justify-evenly no-hover">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+
+        </div>
+
         <br>
-        <div class="container-45 bg-yellow h-2">container-45</div>
+
+        <div id="pos-7" class="container-30 bg-black-50 h-10 flex flex-column justify-start no-hover">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
         <br>
-        <div class="container-50 bg-yellow h-2">container-50</div>
+
+        <div id="pos-8" class="container-30 bg-black-50 h-10 flex flex-column justify-between no-hover">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
         <br>
-        <div class="container-55 bg-yellow h-2">container-55</div>
+
+        <div id="pos-9" class="container-30 bg-black-50 h-10 flex flex-column justify-between items-center no-hover">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
         <br>
-        <div class="container-60 bg-yellow h-2">container-60</div>
+
+        <div id="pos-10" class="container-30 bg-black-50 h-10 flex flex-column justify-between items-end no-hover">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
         <br>
-        <div class="container-65 bg-yellow h-2">container-65</div>
+
+
+        <p class="text-5xl pb-5 font-bold no-hover">Width</p>
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-1-10">w-1-10</div>
+        </div>
+
         <br>
-        <div class="container-70 bg-yellow h-2">container-70</div>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-2-10">w-2-10</div>
+        </div>
+
         <br>
-        <div class="container-75 bg-yellow h-2">container-75</div>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-3-10">w-3-10</div>
+        </div>
+
         <br>
-        <div class="container-80 bg-yellow h-2">container-80</div>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-4-10">w-4-10</div>
+        </div>
+
         <br>
-        <div class="container-85 bg-yellow h-2">container-85</div>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-5-10">w-5-10</div>
+        </div>
+
         <br>
-        <div class="container-90 bg-yellow h-2">container-90</div>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-6-10">w-6-10</div>
+        </div>
+
         <br>
-        <div class="container-95 bg-yellow h-2">container-95</div>
-    </div>
 
-    <span class="text-5xl">POSITIONS</span>
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-7-10">w-7-10</div>
+        </div>
 
-    <br>
-    <div class="container-60 bg-black-50 flex justify-center">
-        <div class="bg-yellow h-2 w-1-10"></div>
-        <div class="bg-red h-2 w-1-10"></div>
-    </div>
+        <br>
 
-    <br>
-    <div class="container-60 bg-black-50 flex justify-start">
-        <div class="bg-yellow h-2 w-1-10"></div>
-        <div class="bg-red h-2 w-1-10"></div>
-    </div>
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-8-10">w-8-10</div>
+        </div>
 
-    <br>
+        <br>
 
-    <div class="container-60 bg-black-50 flex justify-end">
-        <div class="bg-yellow h-2 w-1-10"></div>
-        <div class="bg-red h-2 w-1-10"></div>
-    </div>
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-9-10">w-9-10</div>
+        </div>
 
-    <br>
+        <br>
 
-    <div class="container-60 bg-black-50 flex justify-between">
-        <div class="bg-yellow h-2 w-1-10"></div>
-        <div class="bg-red h-2 w-1-10"></div>
-    </div>
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-full">w-full</div>
+        </div>
 
-    <br>
+        <br>
 
-    <div class="container-60 bg-black-50 flex justify-around">
-        <div class="bg-yellow h-2 w-1-10"></div>
-        <div class="bg-red h-2 w-1-10"></div>
-    </div>
-
-    <br>
-
-    <div class="container-60 bg-black-50 flex justify-evenly">
-        <div class="bg-yellow h-2 w-1-10"></div>
-        <div class="bg-red h-2 w-1-10"></div>
-
-    </div>
-
-    <br>
-
-    <div class="container-30 bg-black-50 h-10 flex flex-column justify-start">
-        <div class="bg-yellow h-2 w-1-10"></div>
-        <div class="bg-red h-2 w-1-10"></div>
-    </div>
-
-    <br>
-
-    <div class="container-30 bg-black-50 h-10 flex flex-column justify-between">
-        <div class="bg-yellow h-2 w-1-10"></div>
-        <div class="bg-red h-2 w-1-10"></div>
-    </div>
-
-    <br>
-
-    <div class="container-30 bg-black-50 h-10 flex flex-column justify-between items-center">
-        <div class="bg-yellow h-2 w-1-10"></div>
-        <div class="bg-red h-2 w-1-10"></div>
-    </div>
-
-    <br>
-
-    <div class="container-30 bg-black-50 h-10 flex flex-column justify-between items-end">
-        <div class="bg-yellow h-2 w-1-10"></div>
-        <div class="bg-red h-2 w-1-10"></div>
-    </div>
-
-    <br>
+        <p class="text-5xl pt-50 font-bold no-hover">Buttons</p>
+        <div class="container-70 flex flex-column items-center text-center no-hover">
+            <div class="button button-lightyellow">Button</div>
+            <div class="button button-transparent">Button</div>
+            <div class="button button-yellow">Button</div>
+            <div class="button button-form">Button</div>
+        </div>
 
 
-    <span class="text-5xl">WIDTH</span>
-    <div class="container-60 bg-black-50">
-        <div class="bg-yellow h-2 w-1-10">w-1-10</div>
-    </div>
+        <br>
 
-    <br>
+        <p class="text-5xl pt-50 font-bold no-hover">Cursors</p>
 
-    <div class="container-60 bg-black-50">
-        <div class="bg-yellow h-2 w-2-10">w-2-10</div>
-    </div>
+        <div class="container-70 flex justify-around text-center no-hover no-hover">
+            <div class="w-1-10 h-10 cursor-pointer bg-black-50">Cursor pointer</div>
+            <div class="w-1-10 h-10 cursor-default bg-black-50">Cursor default</div>
+            <div class="w-1-10 h-10 cursor-help bg-black-50">Cursor help </div>
+            <div class="w-1-10 h-10 cursor-move bg-black-50">Cursor move</div>
+            <div class="w-1-10 h-10 cursor-not-allowed bg-black-50">Cursor not allowed</div>
+            <div class="w-1-10 h-10 cursor-text bg-black-50">Cursor text</div>
+            <div class="w-1-10 h-10 cursor-wait bg-black-50">Cursor wait</div>
+        </div>
 
-    <br>
+        <br>
 
-    <div class="container-60 bg-black-50">
-        <div class="bg-yellow h-2 w-3-10">w-3-10</div>
-    </div>
+        <p class="text-5xl pt-50 font-bold no-hover">Border-radius</p>
 
-    <br>
+        <div class="container-95 flex justify-around text-center no-hover">
+            <span class="text-3xl font-bold no-hover pt-15">All borders</span>
+            <div class=" w-1-2 h-10 bg-black-50 rounded-sm mg-5">Small</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-md mg-5"> medium
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-lg mg-5"> large</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-xl mg-5"> XL</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-2xl mg-5"> 2XL</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-3xl mg-5"> 3XL</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-full mg-5">Full</div>
+        </div>
+        <br>
+        <div class="container-95 flex justify-around text-center no-hover">
+            <span class="text-3xl font-bold no-hover pt-15">Top borders</span>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-sm mg-5"> small
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-md mg-5"> medium
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-lg mg-5"> large
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-xl mg-5"> XL</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-2xl mg-5"> 2XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-3xl mg-5"> 3XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-full mg-5"> full
+            </div>
+        </div>
+        <br>
+        <div class="container-95 flex justify-around text-center no-hover">
+            <span class="text-3xl font-bold no-hover pt-15">Bottom borders</span>
 
-    <div class="container-60 bg-black-50">
-        <div class="bg-yellow h-2 w-4-10">w-4-10</div>
-    </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-sm mg-5"> small
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-md mg-5"> medium
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-lg mg-5"> large
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-xl mg-5"> XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-2xl mg-5"> 2XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-3xl mg-5"> 3XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-full mg-5"> full
+            </div>
+        </div>
+        <br>
+        <div class="container-95 flex justify-around text-center no-hover">
+            <span class="text-3xl font-bold no-hover pt-15">Right borders</span>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-sm mg-5"> small
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-md mg-5"> medium
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-lg mg-5"> large
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-xl mg-5"> XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-2xl mg-5"> 2XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-3xl mg-5"> 3XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-full mg-5"> full
+            </div>
+        </div>
+        <br>
 
-    <br>
+        <div class="container-95 flex justify-around text-center no-hover">
+            <span class="text-3xl font-bold no-hover pt-15">Left borders</span>
 
-    <div class="container-60 bg-black-50">
-        <div class="bg-yellow h-2 w-5-10">w-5-10</div>
-    </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-sm mg-5"> small
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-md mg-5"> medium
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-lg mg-5"> large
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-xl mg-5"> XL</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-2xl mg-5"> 2XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-3xl mg-5"> 3XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-full mg-5"> full
+            </div>
+        </div>
+        <br>
+    </main>
 
-    <br>
+    <script src="src/js/design_guide.js"></script>
 
-    <div class="container-60 bg-black-50">
-        <div class="bg-yellow h-2 w-6-10">w-6-10</div>
-    </div>
-
-    <br>
-
-    <div class="container-60 bg-black-50">
-        <div class="bg-yellow h-2 w-7-10">w-7-10</div>
-    </div>
-
-    <br>
-
-    <div class="container-60 bg-black-50">
-        <div class="bg-yellow h-2 w-8-10">w-8-10</div>
-    </div>
-
-    <br>
-
-    <div class="container-60 bg-black-50">
-        <div class="bg-yellow h-2 w-9-10">w-9-10</div>
-    </div>
-
-    <br>
-
-    <div class="container-60 bg-black-50">
-        <div class="bg-yellow h-2 w-full">w-full</div>
-    </div>
-
-    <br>
-
-    <span class="text-5xl">BUTTONS</span>
-    <div class="container-70 flex flex-column items-center text-center">
-        <div class="button button-lightyellow">Button</div>
-        <div class="button button-transparent">Button</div>
-        <div class="button button-yellow">Button</div>
-        <div class="button button-form">Button</div>
-    </div>
-
-
-    <br>
-
-    <span class="text-5xl">CURSORS</span>
-
-    <div class="container-70 flex justify-around text-center">
-        <div class="w-1-10 h-10 cursor-pointer bg-black-50">Cursor pointer</div>
-        <div class="w-1-10 h-10 cursor-default bg-black-50">Cursor default</div>
-        <div class="w-1-10 h-10 cursor-help bg-black-50">Cursor help </div>
-        <div class="w-1-10 h-10 cursor-move bg-black-50">Cursor move</div>
-        <div class="w-1-10 h-10 cursor-not-allowed bg-black-50">Cursor not allowed</div>
-        <div class="w-1-10 h-10 cursor-text bg-black-50">Cursor text</div>
-        <div class="w-1-10 h-10 cursor-wait bg-black-50">Cursor wait</div>
-    </div>
-
-    <br>
-
-    <span class="text-5xl">BORDER-RADIUS</span>
-
-    <div class="container-70 flex justify-around text-center">
-        <div class=" w-1-10 h-10 bg-black white rounded-sm flex items-center justify-center">All borders small</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-md flex items-center justify-center">All borders medium</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-lg flex items-center justify-center">All borders large</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-xl flex items-center justify-center">All borders XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-2xl flex items-center justify-center">All borders 2XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-3xl flex items-center justify-center">All borders 3XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-full flex items-center justify-center">All borders full</div>
-    </div>
-    <br>
-    <div class="container-70 flex justify-around text-center">
-        <div class=" w-1-10 h-10 bg-black white rounded-t-sm flex items-center justify-center">Top borders small</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-t-md flex items-center justify-center">Top borders medium</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-t-lg flex items-center justify-center">Top borders large</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-t-xl flex items-center justify-center">Top borders XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-t-2xl flex items-center justify-center">Top borders 2XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-t-3xl flex items-center justify-center">Top borders 3XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-t-full flex items-center justify-center">Top borders full</div>
-    </div>
-    <br>
-    <div class="container-70 flex justify-around text-center">
-        <div class=" w-1-10 h-10 bg-black white rounded-b-sm flex items-center justify-center">Bottom borders small</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-b-md flex items-center justify-center">Bottom borders medium</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-b-lg flex items-center justify-center">Bottom borders large</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-b-xl flex items-center justify-center">Bottom borders XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-b-2xl flex items-center justify-center">Bottom borders 2XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-b-3xl flex items-center justify-center">Bottom borders 3XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-b-full flex items-center justify-center">Bottom borders full</div>
-    </div>
-    <br>
-    <div class="container-70 flex justify-around text-center">
-        <div class=" w-1-10 h-10 bg-black white rounded-r-sm flex items-center justify-center">Right borders small</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-r-md flex items-center justify-center">Right borders medium</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-r-lg flex items-center justify-center">Right borders large</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-r-xl flex items-center justify-center">Right borders XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-r-2xl flex items-center justify-center">Right borders 2XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-r-3xl flex items-center justify-center">Right borders 3XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-r-full flex items-center justify-center">Right borders full</div>
-    </div>
-    <br>
-
-    <div class="container-70 flex justify-around text-center">
-        <div class=" w-1-10 h-10 bg-black white rounded-l-sm flex items-center justify-center">Left borders small</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-l-md flex items-center justify-center">Left borders medium</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-l-lg flex items-center justify-center">Left borders large</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-l-xl flex items-center justify-center">Left borders XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-l-2xl flex items-center justify-center">Left borders 2XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-l-3xl flex items-center justify-center">Left borders 3XL</div>
-        <div class=" w-1-10 h-10 bg-black white rounded-l-full flex items-center justify-center">Left borders full</div>
-    </div>
-    <br>
 </body>
 
 </html>

@@ -183,11 +183,27 @@
     width: 30%;
     aspect-ratio: 1/1;
 
-    @media screen and (max-width: $breakpoint-tablet) {
+    @media screen and (min-width: $breakpoint-mobile) {
+        border-radius: 11% 11% 19% 21%;
         height: 100%;
-        margin-top: 5%;
-        width: 50%;
-        margin-left: 0;
+        width: 35%;
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        width: 30%;
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+        width: 32%;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: 35%;
+    }
+
+    @media screen and (min-width: $breakpoint-extralarge) {
+        width: 37%;
+        aspect-ratio: 3.5/3;
     }
 
 }
