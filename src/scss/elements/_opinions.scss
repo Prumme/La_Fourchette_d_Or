@@ -24,13 +24,37 @@
 
     @media screen and (min-width: $breakpoint-mobile) {
         img{
-            width: 20px;
-            height: 20px;
-            margin-top: 0.8rem;
+            width: 15px;
+            height: 15px;
+            margin-top: 0.5rem;
         }
 
-        h5{font-size:0.80rem;}
-        p{font-size:0.6rem;
+        h5{font-size:0.65rem;
+        line-height :1.25rem ;}
+        p{font-size:0.5rem;
+        line-height:1rem;}
+        div > p {
+            font-size:0.75rem;
+        }
+    }
+
+    @media screen and (min-width: 400px) {
+        p{font-size: 0.6rem;
+            line-height:1rem;}
+            div > p {
+                font-size:0.75rem;
+            }
+    }
+
+    @media screen and (min-width: 435px) {
+        img{
+            width: 20px;
+            height: 20px;
+        }
+
+        h5{font-size:0.75rem;
+        line-height :1.5rem ;}
+        p{font-size:0.8rem;
         line-height:1rem;}
         div > p {
             font-size:1rem;
@@ -43,28 +67,23 @@
             height: 30px;
         }
 
-        h5{font-size:1.2rem;}
+        h5{font-size:1rem;}
         p{font-size:0.8rem;
-        line-height:1.25rem;}
+        line-height:1.75rem;}
         div > p {
             font-size:1.5rem;
         }
     }
 
-    @media screen and (min-width: 600px) {
-        img{
-            width: 30px;
-            height: 30px;
-        }
+    @media screen and (min-width: 680px) {
 
-        h5{font-size:1.3rem;}
-        p{font-size:1rem;
-        line-height:1.5rem;}
+        h5{font-size:1rem;}
+        p{font-size:0.9rem;
+        line-height:2.25rem;}
         div > p {
-            font-size:1.5rem;
+            font-size:1.75rem;
         }
     }
-
 
     @media screen and (min-width: $breakpoint-laptop) {
         img{
@@ -117,7 +136,7 @@
 
 .opinion {
 
-    @media screen and (min-width: $breakpoint-mobile) {
+    @media screen and (max-width: $breakpoint-mobile) {
         margin-bottom:3rem;
         margin-top:5rem;
         div {
@@ -126,12 +145,15 @@
 
         span {
             font-size:0.65rem;
+            margin: 0;
+            line-height: 0.75rem;
             font-weight:700;
         }
 
         h3 {
-            margin: 0.5rem 0.1rem;
-            font-size:1.2rem;
+            padding: 0.25rem 0;
+            margin: 0;
+            font-size:1rem;
             line-height:0;
             font-weight: 900;
             padding: 1rem 0;
@@ -139,15 +161,62 @@
 
     }
 
+    @media screen and (min-width: $breakpoint-mobile) {
+        margin-bottom:3rem;
+        margin-top:5rem;
+        div {
+            margin: 0 0.1rem;
+        }
+
+        span {
+            font-size:0.6rem;
+            margin: 0;
+            line-height: 0rem;
+            font-weight:700;
+        }
+
+        h3 {
+            padding: 0.25rem 0;
+            margin: 0;
+            font-size:1rem;
+            line-height:0;
+            font-weight: 900;
+            // padding: 1rem 0;
+        }
+
+    }
+
+    @media screen and (min-width: 400px) {
+        span {
+            font-size: 0.7rem;
+        }
+
+        h3{
+            font-size: 1rem;
+            padding: 1.1rem 0;
+        }
+    }
+
+    @media screen and (min-width: 435px) {
+        span {
+            font-size: 0.8rem;
+        }
+
+        h3{
+            padding: 1rem 0;
+        }
+    }
+
+
     @media screen and (min-width: $breakpoint-tablet) {
         h3 {
-            font-size:1.5rem;
+            font-size:1.2rem;
             line-height:0;
             padding: 1rem 0;
         }
 
         span {
-            font-size:1rem;
+            font-size:0.9rem;
         }
 
         div .opiniontitle{
@@ -158,12 +227,23 @@
     
     @media screen and (min-width: 600px) {
         h3 {
-            font-size:1.75rem;
-            line-height:1rem;
+            font-size:1.4rem;
+            line-height:1.5rem;
         }
 
         span {
-            font-size:1.2rem;
+            font-size:1rem;
+        }
+    }
+
+    @media screen and (min-width: 680px) {
+        h3 {
+            font-size:1.75rem;
+            line-height:2rem;
+        }
+
+        span {
+            font-size:1.3rem;
         }
     }
 

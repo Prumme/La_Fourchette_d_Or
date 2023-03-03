@@ -186,23 +186,26 @@
     @media screen and (min-width: $breakpoint-mobile) {
         border-radius: 11% 11% 19% 21%;
         height: 100%;
-        width: 35%;
-    }
-
-    @media screen and (min-width: $breakpoint-tablet) {
-        width: 30%;
+        width: 40%;
     }
 
     @media screen and (min-width: $breakpoint-laptop) {
-        width: 32%;
+        width: 37%;
     }
 
-    @media screen and (min-width: $breakpoint-desktop) {
+    @media screen and (min-width: 850px) {
         width: 35%;
     }
 
-    @media screen and (min-width: $breakpoint-extralarge) {
+    @media screen and (min-width: 910px) {
+        width: 30%;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
         width: 37%;
+    }
+
+    @media screen and (min-width: $breakpoint-extralarge) {
         aspect-ratio: 3.5/3;
     }
 
