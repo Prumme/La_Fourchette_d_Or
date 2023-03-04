@@ -6478,7 +6478,32 @@ body {
 }
 @media screen and (max-width: 750px) {
   .history-img-small {
-    width: 30vw;
+    width: 29vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .history-img-small {
+    width: 28vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .history-img-small {
+    width: 27vw;
+  }
+}
+@media screen and (max-width: 415px) {
+  .history-img-small {
+    width: 26vw;
+  }
+}
+@media screen and (max-width: 355px) {
+  .history-img-small {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  .history-img-small {
+    width: 23vw;
   }
 }
 
