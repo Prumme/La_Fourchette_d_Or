@@ -23,7 +23,7 @@ document.onmouseover = function (e) {
             //SECTION Où SERA PLACÉ LE CODE
             var code_section = document.createElement("div");
             code_section.id = "code_section";
-            code_section.style.cssText = "z-index:10; position: fixed; top: 15%; right: 15%; border: solid 1px black; width:75%; height:75%; background-color:white; display: flex; flex-direction: column; align-items: center;";
+            code_section.style.cssText = "z-index:10; position: fixed; top: 15%; right: 15%; border: solid 1px black; width:75%; height:75%; background-color:white; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: auto";
             document.body.appendChild(code_section);
 
 
@@ -32,17 +32,20 @@ document.onmouseover = function (e) {
             cross_section.innerHTML = "<img src='./src/images/cross_black.svg' onclick='close_section()'>";
             cross_section.style.display = "flex";
             cross_section.style.justifyContent = "flex-end";
+            cross_section.style.cssText = "position: absolute; top: 0; right: 3rem; width: 2rem; height: 2rem; cursor: pointer";
             code_section.appendChild(cross_section);
 
             //SECTION DE CODE
-            var codebg = document.createElement("div");
+            var codebg = document.createElement("code");
             codebg.classList.add("no-hover");
             codebg.style.width = "75%";
-            codebg.style.height = "75%";
+            codebg.style.height = "min-content";
             codebg.style.display = "flex";
             codebg.style.justifyContent = "center";
             codebg.style.backgroundColor = "#272822";
+            codebg.style.padding = "1rem";
             code_section.appendChild(codebg);
+
 
             // Créer une nouvelle variable pour stocker l'élément de code
             var code = target.cloneNode(true);
