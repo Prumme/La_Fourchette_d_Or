@@ -6484,7 +6484,32 @@ body {
 }
 @media screen and (max-width: 750px) {
   .history-img-small {
-    width: 30vw;
+    width: 29vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .history-img-small {
+    width: 28vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .history-img-small {
+    width: 27vw;
+  }
+}
+@media screen and (max-width: 415px) {
+  .history-img-small {
+    width: 26vw;
+  }
+}
+@media screen and (max-width: 355px) {
+  .history-img-small {
+    width: 25vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  .history-img-small {
+    width: 23vw;
   }
 }
 
@@ -6496,27 +6521,31 @@ body {
   .img-comment {
     border-radius: 11% 11% 19% 21%;
     height: 100%;
-    width: 35%;
-  }
-}
-@media screen and (min-width: 481px) {
-  .img-comment {
-    width: 30%;
+    width: 40%;
   }
 }
 @media screen and (min-width: 769px) {
   .img-comment {
-    width: 32%;
+    width: 37%;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 850px) {
   .img-comment {
     width: 35%;
   }
 }
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 910px) {
+  .img-comment {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 1025px) {
   .img-comment {
     width: 37%;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .img-comment {
     aspect-ratio: 3.5/3;
   }
 }
@@ -11406,15 +11435,42 @@ ul {
 }
 @media screen and (min-width: 320px) {
   .option-card img {
-    width: 20px;
-    height: 20px;
-    margin-top: 0.8rem;
+    width: 15px;
+    height: 15px;
+    margin-top: 0.5rem;
   }
   .option-card h5 {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
+    line-height: 1.25rem;
   }
   .option-card p {
+    font-size: 0.5rem;
+    line-height: 1rem;
+  }
+  .option-card div > p {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 400px) {
+  .option-card p {
     font-size: 0.6rem;
+    line-height: 1rem;
+  }
+  .option-card div > p {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (min-width: 435px) {
+  .option-card img {
+    width: 20px;
+    height: 20px;
+  }
+  .option-card h5 {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+  }
+  .option-card p {
+    font-size: 0.8rem;
     line-height: 1rem;
   }
   .option-card div > p {
@@ -11427,30 +11483,26 @@ ul {
     height: 30px;
   }
   .option-card h5 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .option-card p {
     font-size: 0.8rem;
-    line-height: 1.25rem;
+    line-height: 1.75rem;
   }
   .option-card div > p {
     font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 600px) {
-  .option-card img {
-    width: 30px;
-    height: 30px;
-  }
+@media screen and (min-width: 680px) {
   .option-card h5 {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .option-card p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 2.25rem;
   }
   .option-card div > p {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 @media screen and (min-width: 769px) {
@@ -11504,7 +11556,7 @@ ul {
   color: #B9A3A3;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .opinion {
     margin-bottom: 3rem;
     margin-top: 5rem;
@@ -11514,24 +11566,66 @@ ul {
   }
   .opinion span {
     font-size: 0.65rem;
+    margin: 0;
+    line-height: 0.75rem;
     font-weight: 700;
   }
   .opinion h3 {
-    margin: 0.5rem 0.1rem;
-    font-size: 1.2rem;
+    padding: 0.25rem 0;
+    margin: 0;
+    font-size: 1rem;
     line-height: 0;
     font-weight: 900;
     padding: 1rem 0;
   }
 }
+@media screen and (min-width: 320px) {
+  .opinion {
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+  }
+  .opinion div {
+    margin: 0 0.1rem;
+  }
+  .opinion span {
+    font-size: 0.6rem;
+    margin: 0;
+    line-height: 0rem;
+    font-weight: 700;
+  }
+  .opinion h3 {
+    padding: 0.25rem 0;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 0;
+    font-weight: 900;
+  }
+}
+@media screen and (min-width: 400px) {
+  .opinion span {
+    font-size: 0.7rem;
+  }
+  .opinion h3 {
+    font-size: 1rem;
+    padding: 1.1rem 0;
+  }
+}
+@media screen and (min-width: 435px) {
+  .opinion span {
+    font-size: 0.8rem;
+  }
+  .opinion h3 {
+    padding: 1rem 0;
+  }
+}
 @media screen and (min-width: 481px) {
   .opinion h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 0;
     padding: 1rem 0;
   }
   .opinion span {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .opinion div .opiniontitle {
     padding-bottom: 1rem;
@@ -11539,11 +11633,20 @@ ul {
 }
 @media screen and (min-width: 600px) {
   .opinion h3 {
-    font-size: 1.75rem;
-    line-height: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
   }
   .opinion span {
-    font-size: 1.2rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 680px) {
+  .opinion h3 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+  .opinion span {
+    font-size: 1.3rem;
   }
 }
 @media screen and (min-width: 769px) {

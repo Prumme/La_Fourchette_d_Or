@@ -181,7 +181,27 @@
     object-fit: cover;
 
     @media screen and (max-width: 750px) {
-        width: 30vw;
+        width: 29vw;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 28vw;
+    }
+
+    @media screen and (max-width: 500px) {
+        width: 27vw;
+    }
+
+    @media screen and (max-width: 415px) {
+        width: 26vw;
+    }
+
+    @media screen and (max-width: 355px) {
+        width: 25vw;
+    }
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        width: 23vw;
     }
 }
 
@@ -192,23 +212,26 @@
     @media screen and (min-width: $breakpoint-mobile) {
         border-radius: 11% 11% 19% 21%;
         height: 100%;
-        width: 35%;
-    }
-
-    @media screen and (min-width: $breakpoint-tablet) {
-        width: 30%;
+        width: 40%;
     }
 
     @media screen and (min-width: $breakpoint-laptop) {
-        width: 32%;
+        width: 37%;
     }
 
-    @media screen and (min-width: $breakpoint-desktop) {
+    @media screen and (min-width: 850px) {
         width: 35%;
     }
 
-    @media screen and (min-width: $breakpoint-extralarge) {
+    @media screen and (min-width: 910px) {
+        width: 30%;
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
         width: 37%;
+    }
+
+    @media screen and (min-width: $breakpoint-extralarge) {
         aspect-ratio: 3.5/3;
     }
 
