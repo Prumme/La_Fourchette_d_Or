@@ -4,6 +4,7 @@ document.onmouseover = function (e) {
     if (target.tagName === "DIV" && !target.classList.contains("no-hover") || target.tagName === "P" && !target.classList.contains("no-hover") || target.tagName === "H2" && !target.classList.contains("no-hover")) {
         // console.log("Oui");
         var btn = document.createElement("button");
+        btn.id = "button_code";
         btn.innerHTML = "Open Code";
         btn.style.backgroundColor = "#FFD700";
         btn.style.position = "absolute";
@@ -72,7 +73,7 @@ document.onmouseover = function (e) {
         target.addEventListener("mouseout", function (event) {
             var isChild = target.contains(event.relatedTarget);
             if (!isChild) {
-                var btn = target.querySelector("button");
+                var btn = target.querySelector("#button_code");
                 if (btn) {
                     target.removeChild(btn);
                     switchBtn = false;
