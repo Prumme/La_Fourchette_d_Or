@@ -35,6 +35,19 @@ document.onmouseover = function (e) {
             cross_section.style.cssText = "position: absolute; top: 0; right: 3rem; width: 2rem; height: 2rem; cursor: pointer";
             code_section.appendChild(cross_section);
 
+            // Créer une nouvelle variable pour stocker l'élément de code
+            var code = target.cloneNode(true);
+            //BOUTON ET STYLE EN TROP, ON RETIRE
+            code.removeAttribute("style");
+            code.querySelector("button").remove();
+
+            // TITRE DE LA SECTION
+            var title_section = document.createElement("h2");
+            title_section.style.cssText = "text-align: center; margin: 0; padding: 0";
+            title_section.textContent = code.innerHTML;
+            code_section.appendChild(title_section);
+
+
             //SECTION DE CODE
             var codebg = document.createElement("code");
             codebg.classList.add("no-hover");
@@ -47,11 +60,7 @@ document.onmouseover = function (e) {
             code_section.appendChild(codebg);
 
 
-            // Créer une nouvelle variable pour stocker l'élément de code
-            var code = target.cloneNode(true);
-            //BOUTON ET STYLE EN TROP, ON RETIRE
-            code.removeAttribute("style");
-            code.querySelector("button").remove();
+            //AJOUTE LE CODE DANS LA SECTION
             var displayCode = document.createElement("p");
             displayCode.style.cssText = "color: white; display: flex; justify-content: center";
             displayCode.className = "no-hover container-75";
@@ -69,7 +78,7 @@ document.onmouseover = function (e) {
                 switchBtn = true;
             }
         }
-        console.log(switchBtn);
+
 
 
         //RETIRE LE BOUTON SI ON SORT DE L'ELEMENT
