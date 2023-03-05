@@ -1,7 +1,8 @@
+var switchBtn = false;
 document.onmouseover = function (e) {
     var target = (e.target) ? e.target : e.srcElement;
     if (target.tagName === "DIV" && !target.classList.contains("no-hover") || target.tagName === "P" && !target.classList.contains("no-hover") || target.tagName === "H2" && !target.classList.contains("no-hover")) {
-        console.log("Oui");
+        // console.log("Oui");
         var btn = document.createElement("button");
         btn.innerHTML = "Open Code";
         btn.style.backgroundColor = "#FFD700";
@@ -17,50 +18,72 @@ document.onmouseover = function (e) {
 
         btn.addEventListener("click", function () {
             // console.log(target.outerHTML);
+
+            //SECTION Où SERA PLACÉ LE CODE
             var code_section = document.createElement("div");
-            code_section.id = "code_section"
-            code_section.style.zIndex=10;
-            code_section.style.position = "fixed";
-            code_section.style.top = "25%";
-            code_section.style.transfrom = "translateX(50%)";
-            code_section.style.border="solid 1px black";
-            code_section.style.width = "50%";
-            code_section.style.height = "50%";
-            code_section.style.backgroundColor="white";
+            code_section.id = "code_section";
+            code_section.style.cssText = "z-index:10; position: fixed; top: 15%; right: 15%; border: solid 1px black; width:75%; height:75%; background-color:white; display: flex; flex-direction: column; align-items: center;";
             document.body.appendChild(code_section);
 
 
+            //CROIX POUR FERMER LE CODE SOURCE
             var cross_section = document.createElement("span");
             cross_section.innerHTML = "<img src='./src/images/cross_black.svg' onclick='close_section()'>";
             cross_section.style.display = "flex";
             cross_section.style.justifyContent = "flex-end";
             code_section.appendChild(cross_section);
-            console.log(code_section);
-            // document.body.appendChild(code_section);
+
+            //SECTION DE CODE
+            var codebg = document.createElement("div");
+            codebg.classList.add("no-hover");
+            codebg.style.width = "75%";
+            codebg.style.height = "75%";
+            codebg.style.display = "flex";
+            codebg.style.justifyContent = "center";
+            codebg.style.backgroundColor = "#272822";
+            code_section.appendChild(codebg);
+
+            // Créer une nouvelle variable pour stocker l'élément de code
+            var code = target.cloneNode(true);
+            //BOUTON ET STYLE EN TROP, ON RETIRE
+            code.removeAttribute("style");
+            code.querySelector("button").remove();
+            var displayCode = document.createElement("p");
+            displayCode.style.cssText = "color: white; display: flex; justify-content: center";
+            displayCode.className = "no-hover container-75";
+            displayCode.textContent = code.outerHTML;
+            code.classList.add("no-hover");
+            codebg.appendChild(displayCode);
         });
 
+        //AJOUTE LE BOUTON SI ON RENTRE DEDANS
         code = document.getElementById("code_section");
-
-        if(target != code) {
+        if (target != code && target != btn) {
             target.style.position = "relative";
-            target.appendChild(btn);
-
+            if (switchBtn === false) {
+                target.appendChild(btn);
+                switchBtn = true;
+            }
         }
+        console.log(switchBtn);
 
-        target.addEventListener("mouseout", function(event) {
+
+        //RETIRE LE BOUTON SI ON SORT DE L'ELEMENT
+        target.addEventListener("mouseout", function (event) {
             var isChild = target.contains(event.relatedTarget);
             if (!isChild) {
-              var btn = target.querySelector("button");
-              if (btn) {
-                target.removeChild(btn);
-              }
+                var btn = target.querySelector("button");
+                if (btn) {
+                    target.removeChild(btn);
+                    switchBtn = false;
+                }
             }
-          });
+        });
     }
 }
 
 
-close_section = function() {
+close_section = function () {
     section = document.getElementById("code_section");
     document.body.removeChild(section);
 }
