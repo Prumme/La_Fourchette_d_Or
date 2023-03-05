@@ -25,6 +25,8 @@ document.onmouseover = function (e) {
             code_section.style.transfrom = "translateX(50%)";
             code_section.style.border="solid 1px black";
             code_section.style.width = "50%";
+            code_section.style.left = "50%"; // Ajout de la propriété left
+    code_section.style.transform = "translateX(-50%)";
             code_section.style.height = "50%";
             code_section.style.backgroundColor="white";
             document.body.appendChild(code_section);
