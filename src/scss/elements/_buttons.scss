@@ -11,28 +11,84 @@
         border-radius: 4px;
         margin: 0 0.8rem;
         transition: 0.5s;
+        width: min;
+        padding: 0, 1rem;
 
         &:hover {
             border-radius: 4px;
-            color: $lightcolor;
+            color: $yellow;
             background-color: $darkfont;
         }
     }
 
     &-lightyellow {
-        background-color: $lightyellowbutton;
+        // background-color: $lightyellowbutton;
+        background: rgba(255, 215, 0, 0);
+
         color: $darkcolor;
         padding: 1rem 2.5rem;
         border: solid 1px lightgrey;
-        font-size: 1em;
-        font-weight: 800;
-        transition: 0.5s;
+        font-size: 1.2rem;
 
+        @media screen and (max-width: $breakpoint-mobile) {
+            font-size: 0.2rem;
+        }
+
+        @media screen and (max-width: $breakpoint-tablet) {
+            font-size: 0.6rem;
+        }
+
+        @media screen and (max-width: $breakpoint-laptop) {
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            font-size: 1.2rem;
+        }
+
+        @media screen and (max-width: $breakpoint-extralarge) {
+            font-size: 1.4rem;
+        }
+
+        font-weight: $bold;
+        transition: 0.5s;
+        transition: background 1s;
+        overflow-y: hidden;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            background: rgba(0, 0, 0, 1);
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.5s;
+            transform: translateX(-100%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background: rgba(255, 215, 0, 1);
+            top: 0;
+            z-index: -2;
+            width: 100%;
+            height: 100%;
+            left: 0;
+        }
 
         &:hover {
-            background-color: $darkcolor;
-            color: $yellowbutton;
+            &::before {
+                transform: translateX(0);
+            }
+
+            color: $yellow;
         }
+
+
 
     }
 
@@ -44,21 +100,46 @@
     }
 
     &-transparent {
-        width: 244px;
+        width: 314px;
+        height: 70px;
+        backdrop-filter: blur(5px);
         background-color: $transparent;
         color: $lightcolor;
         border: solid 1px $lightcolor;
         border-radius: 20px;
-        font-size: 2rem;
+        // font-size: 2rem;
         z-index: 3;
         padding: 1rem 2rem;
         transition: 0.5s;
         font-family: Bespoke Slab;
+        background: rgba(255, 215, 0, 0);
 
         &:hover {
             background-color: $lightbutton;
             color: $darkcolor;
         }
+
+        @media screen and (max-width: 600px) {
+            width: 214px;
+            height: 50px;
+            font-size: 1rem;
+        }
+    }
+
+    &-text {
+        border: 0.5px solid;
+        border-radius: 0.3rem;
+        height: 2.8rem;
+        width: 100%;
+
+    }
+
+    &-select {
+        border: 0.5px solid;
+        border-radius: 0.3rem;
+        height: 2.8rem;
+        width: 100%;
+
     }
 
 }

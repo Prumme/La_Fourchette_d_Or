@@ -1,0 +1,12 @@
+.landing-cta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+
+    @media screen and (max-width: 600px) {
+        bottom: 5%;
+    }
+}

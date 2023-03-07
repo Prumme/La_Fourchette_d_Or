@@ -1,0 +1,280 @@
+.option-card {
+
+    background-color: $opinioncard;
+    // border: 1px solid $black;
+    border:none;
+    border-radius: 1rem;
+    padding: 2%;
+    min-width: 100%;
+    height: auto;
+    margin-right: 5%;
+
+    img {
+        width: 55px;
+        height: 55px;
+        border: 1px solid $black;
+        -moz-border-radius: 26px;
+        -webkit-border-radius: 26px;
+        border-radius: 26px;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    @media screen and (min-width: $breakpoint-mobile) {
+        img{
+            width: 15px;
+            height: 15px;
+            margin-top: 0.5rem;
+        }
+
+        h5{font-size:0.65rem;
+        line-height :1.25rem ;}
+        p{font-size:0.5rem;
+        line-height:1rem;}
+        div > p {
+            font-size:0.75rem;
+        }
+    }
+
+    @media screen and (min-width: 400px) {
+        p{font-size: 0.6rem;
+            line-height:1rem;}
+            div > p {
+                font-size:0.75rem;
+            }
+    }
+
+    @media screen and (min-width: 435px) {
+        img{
+            width: 20px;
+            height: 20px;
+        }
+
+        h5{font-size:0.75rem;
+        line-height :1.5rem ;}
+        p{font-size:0.8rem;
+        line-height:1rem;}
+        div > p {
+            font-size:1rem;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        img{
+            width: 30px;
+            height: 30px;
+        }
+
+        h5{font-size:1rem;}
+        p{font-size:0.8rem;
+        line-height:1.75rem;}
+        div > p {
+            font-size:1.5rem;
+        }
+    }
+
+    @media screen and (min-width: 680px) {
+
+        h5{font-size:1rem;}
+        p{font-size:0.9rem;
+        line-height:2.25rem;}
+        div > p {
+            font-size:1.75rem;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+        img{
+            width: 40px;
+            height: 40px;
+            margin-top: 0.5rem;
+        }
+
+        h5{font-size:1.3rem;}
+        p{font-size:1.3rem;
+        line-height:2rem;}
+        div > p {
+            font-size:1.8rem;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        img{
+            width: 50px;
+            height: 50px;
+            margin-top: 0;
+        }
+        h5{font-size:1.5rem;}
+        p{font-size:1.7rem;
+        padding-bottom:1rem;}
+        div > p {
+            font-size:2.3rem;
+            line-height:3rem;
+        }
+        min-width:60%;
+    }
+
+}
+
+.star {
+
+    margin: 0;
+    font-size: 35px;
+    margin-top: -6.5%;
+
+    &-filled {
+        color: $yellowstar;
+    }
+
+    &-empty {
+        color: $greystart;
+    }
+
+}
+
+.opinion {
+
+    @media screen and (max-width: $breakpoint-mobile) {
+        margin-bottom:3rem;
+        margin-top:5rem;
+        div {
+            margin: 0 0.1rem;
+        }
+
+        span {
+            font-size:0.65rem;
+            margin: 0;
+            line-height: 0.75rem;
+            font-weight:700;
+        }
+
+        h3 {
+            padding: 0.25rem 0;
+            margin: 0;
+            font-size:1rem;
+            line-height:0;
+            font-weight: 900;
+            padding: 1rem 0;
+        }
+
+    }
+
+    @media screen and (min-width: $breakpoint-mobile) {
+        margin-bottom:3rem;
+        margin-top:5rem;
+        div {
+            margin: 0 0.1rem;
+        }
+
+        span {
+            font-size:0.6rem;
+            margin: 0;
+            line-height: 0rem;
+            font-weight:700;
+        }
+
+        h3 {
+            padding: 0.25rem 0;
+            margin: 0;
+            font-size:1rem;
+            line-height:0;
+            font-weight: 900;
+            // padding: 1rem 0;
+        }
+
+    }
+
+    @media screen and (min-width: 400px) {
+        span {
+            font-size: 0.7rem;
+        }
+
+        h3{
+            font-size: 1rem;
+            padding: 1.1rem 0;
+        }
+    }
+
+    @media screen and (min-width: 435px) {
+        span {
+            font-size: 0.8rem;
+        }
+
+        h3{
+            padding: 1rem 0;
+        }
+    }
+
+
+    @media screen and (min-width: $breakpoint-tablet) {
+        h3 {
+            font-size:1.2rem;
+            line-height:0;
+            padding: 1rem 0;
+        }
+
+        span {
+            font-size:0.9rem;
+        }
+
+        div .opiniontitle{
+            padding-bottom: 1rem;
+        }
+    }
+
+    
+    @media screen and (min-width: 600px) {
+        h3 {
+            font-size:1.4rem;
+            line-height:1.5rem;
+        }
+
+        span {
+            font-size:1rem;
+        }
+    }
+
+    @media screen and (min-width: 680px) {
+        h3 {
+            font-size:1.75rem;
+            line-height:2rem;
+        }
+
+        span {
+            font-size:1.3rem;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-laptop) {
+
+        span {
+            font-size:1.4rem;
+        }
+
+
+    }
+
+    @media screen and (min-width: $breakpoint-desktop) {
+        margin-bottom:10rem;
+        margin-top:12rem;
+
+        div.w-6-10{
+            margin-left:3rem;
+        }
+
+        h3 {
+            font-size:2.5rem;
+            line-height:2.75rem;
+        }
+
+        span {
+            font-size:1.5rem;
+        }
+
+        div .opiniontitle{
+            padding-bottom: 4rem;
+        }
+    }
+}

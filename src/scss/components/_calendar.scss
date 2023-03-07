@@ -1,0 +1,33 @@
+.calendar {
+    ul {
+
+        flex-wrap: wrap;
+        list-style: none;
+        text-align: center;
+        cursor: default;
+        padding-inline-start: 0px;
+    }
+
+    li {
+        color: #333;
+        font-size: 1.07rem;
+        width: calc(100%/7);
+        margin-top: 2REM;
+    }
+
+    button {
+        background-color: #FFEB80;
+        border: none;
+    }
+
+    .days li {
+        cursor: pointer;
+    }
+
+}
+
+
+
+.closed {
+    display: none;
+}

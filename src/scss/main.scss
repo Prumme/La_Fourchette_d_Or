@@ -3,6 +3,7 @@
 @import "partials/variables";
 @import "partials/functions";
 @import "partials/globals";
+@import "partials/responsive";
 
 //Components
 @import "components/colors";
@@ -14,11 +15,32 @@
 @import "components/position";
 @import "components/cursor";
 @import "components/font";
+@import "components/border_radius";
+@import "components/padding";
+@import "components/margin";
+@import "components/container";
+@import "components/text-align";
+@import "components/hr";
+@import "components/links";
+@import "components/text";
+@import "components/images";
+@import "components/menu";
+@import "components/margin";
+@import "components/padding";
+@import "components/decouverte";
+@import "components/overflow";
+@import "components/calendar";
+@import "components/liste";
+@import "components/landing";
+@import "components/chef";
 
 //Elements
-@import "elements/globals";
 @import "elements/buttons";
 @import "elements/footer";
 @import "elements/menus";
 @import "elements/footer";
-@import "elements/cards"
+@import "elements/cards";
+@import "elements/history";
+@import "elements/opinions";
+@import "elements/modal";
+@import "elements/header";

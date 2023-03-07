@@ -1,0 +1,36 @@
+.chef-banner {
+    position: relative;
+
+    >img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    >div {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        transition: opacity 0.5s;
+
+        @media screen and (max-width: 600px) {
+            opacity: 1;
+        }
+
+
+    }
+
+    &:hover {
+        >div {
+            opacity: 1;
+        }
+    }
+}
+
+.chef-banner+.chef-banner {
+    margin-left: 2rem;
+}

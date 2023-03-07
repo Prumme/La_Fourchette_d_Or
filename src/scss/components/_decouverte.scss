@@ -1,0 +1,60 @@
+.container-decouverte {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+
+}
+
+.container-decouverte>*+* {
+    margin-top: 7rem;
+}
+
+.decouverte {
+    display: flex;
+
+    &-right {
+
+        flex-direction: row;
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            flex-direction: column-reverse;
+        }
+
+    }
+
+    &-left {
+
+        flex-direction: row-reverse;
+
+        @media screen and (max-width: $breakpoint-desktop) {
+            flex-direction: column-reverse;
+
+        }
+
+    }
+}
+
+.decouverte-text {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $breakpoint-desktop) {
+        font-size: 1rem;
+    }
+
+}
+
+.decouverte-text>p {
+    width: 75%;
+}
+
+.decouverte-text>button {
+    width: auto;
+}

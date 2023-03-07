@@ -1,0 +1,31 @@
+.overflow-auto {
+    overflow: auto;
+}
+
+.noscrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+}
+
+.overflow-x-scroll {
+    overflow-x: scroll;
+}
+
+.overflow-visible {
+    overflow: visible;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.tfrm-rot-90 {
+    transform: rotate(90deg);
+}
+
+.tfrm-rot--90 {
+    transform: rotate(-90deg);
+}

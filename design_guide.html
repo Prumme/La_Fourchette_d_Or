@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/main.css">
+    <script src="./src/js/calendar.js" defer></script>
+    
+    <title>Design Guide</title>
+</head>
+
+<body>
+
+
+    
+                        
+    
+    <!-- <div style="width:50%;height:50%;background-color:white;position:fixed;z-index:10; border: solid 1px black;bottom:25%;transform:translateX(50%);"></div> -->
+
+    <main id="main" class="container-60">
+        <h1 class="text-4xl font-bold pt-25">DESIGN GUIDE</h1>
+        <h2 class="text-2xl font-regular pb-25 no-hover">Le guide utilisé pour répertorier nos components</h2>
+
+        <p class="text-5xl pb-5 font-bold no-hover">Typographie</p>
+        <div class="container-95 flex">
+            <div class="flex flex-column container-50 pb-10 justify-between no-hover">
+                <p class="text-sm">text sm</p>
+                <p class="text-md">text md</p>
+                <p class="text-lg">text lg</p>
+                <p class="text-xl">text xl</p>
+                <p class="text-2xl">text 2xl</p>
+                <p class="text-3xl">text 3xl</p>
+                <p class="text-4xl">text 4xl</p>
+                <p class="text-5xl">text 5xl</p>
+            </div>
+
+            <div class="flex flex-column pb-10 container-50 justify-around no-hover">
+                <h2 class="font-light">Cette police est light</h2>
+                <h2 class="font-regular">Cette police est regular</h2>
+                <h2 class="font-medium">Cette police est medium</h2>
+                <h2 class="font-bold">Cette police est bold</h2>
+                <h2 class="font-extrabold">Cette police est extrabold</h2>
+            </div>
+
+        </div>
+        <div class="flex flex-column pb-50 no-hover">
+            <p class="text-left bg-black-50 white">Ce texte est centré sur la gauche</p>
+            <p class="text-center bg-black-50 white">Ce texte est centré par rapport au centre de la page</p>
+            <p class="text-right bg-black-50 white">Ce texte est centré sur la droite</p>
+        </div>
+
+
+        <p class="text-5xl font-bold no-hover">HRs</p>
+        <div class="flex pb-50 no-hover">
+            <div class="container-100 flex flex-column no-hover">
+
+                <div class="flex items-center">
+                    <hr class="hr-menu">
+                </div>
+
+                <div class="bg-black-50 p-5">
+                    <hr class="hr-white">
+                </div>
+
+                <div class="container-100">
+                    <hr class="hr-black">
+                </div>
+
+                <div class="hr-menu"></div>
+
+                <div class="bg-black-50 flex items-center">
+                    <hr class="hr-white-mini">
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <p class="text-5xl pb-5 font-bold no-hover">Containers</p>
+        <div class="text-center pb-50 no-hover">
+            <div class="container-10 bg-yellow h-2">container-10</div>
+            <br>
+            <div class="container-15 bg-yellow h-2">container-15</div>
+            <br>
+            <div class="container-20 bg-yellow h-2">container-20</div>
+            <br>
+            <div class="container-25 bg-yellow h-2">container-25</div>
+            <br>
+            <div class="container-30 bg-yellow h-2">container-30</div>
+            <br>
+            <div class="container-35 bg-yellow h-2">container-35</div>
+            <br>
+            <div class="container-40 bg-yellow h-2">container-40</div>
+            <br>
+            <div class="container-45 bg-yellow h-2">container-45</div>
+            <br>
+            <div class="container-50 bg-yellow h-2">container-50</div>
+            <br>
+            <div class="container-55 bg-yellow h-2">container-55</div>
+            <br>
+            <div class="container-60 bg-yellow h-2">container-60</div>
+            <br>
+            <div class="container-65 bg-yellow h-2">container-65</div>
+            <br>
+            <div class="container-70 bg-yellow h-2">container-70</div>
+            <br>
+            <div class="container-75 bg-yellow h-2">container-75</div>
+            <br>
+            <div class="container-80 bg-yellow h-2">container-80</div>
+            <br>
+            <div class="container-85 bg-yellow h-2">container-85</div>
+            <br>
+            <div class="container-90 bg-yellow h-2">container-90</div>
+            <br>
+            <div class="container-95 bg-yellow h-2">container-95</div>
+        </div>
+
+        <p class="text-5xl pb-5 font-bold no-hover">Positions</p>
+        <br>
+        <div class="container-60 bg-black-50 flex justify-center">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
+        <br>
+        <div class="container-60 bg-black-50 flex justify-start">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
+        <br>
+
+        <div class="container-60 bg-black-50 flex justify-end">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
+        <br>
+
+        <div class="container-60 bg-black-50 flex justify-between">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
+        <br>
+
+        <div class="container-60 bg-black-50 flex justify-around">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
+        <br>
+
+        <div class="container-60 bg-black-50 flex justify-evenly">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+
+        </div>
+
+        <br>
+
+        <div class="container-30 bg-black-50 h-10 flex flex-column justify-start">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
+        <br>
+
+        <div class="container-30 bg-black-50 h-10 flex flex-column justify-between">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
+        <br>
+
+        <div class="container-30 bg-black-50 h-10 flex flex-column justify-between items-center">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
+        <br>
+
+        <div class="container-30 bg-black-50 h-10 flex flex-column justify-between items-end">
+            <div class="bg-yellow h-2 w-1-10 no-hover"></div>
+            <div class="bg-red h-2 w-1-10 no-hover"></div>
+        </div>
+
+        <br>
+
+
+        <p class="text-5xl pb-5 font-bold no-hover">Width</p>
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-1-10">w-1-10</div>
+        </div>
+
+        <br>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-2-10">w-2-10</div>
+        </div>
+
+        <br>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-3-10">w-3-10</div>
+        </div>
+
+        <br>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-4-10">w-4-10</div>
+        </div>
+
+        <br>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-5-10">w-5-10</div>
+        </div>
+
+        <br>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-6-10">w-6-10</div>
+        </div>
+
+        <br>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-7-10">w-7-10</div>
+        </div>
+
+        <br>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-8-10">w-8-10</div>
+        </div>
+
+        <br>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-9-10">w-9-10</div>
+        </div>
+
+        <br>
+
+        <div class="container-60 bg-black-50 no-hover">
+            <div class="bg-yellow h-2 w-full">w-full</div>
+        </div>
+
+        <br>
+
+        <p class="text-5xl pt-50 font-bold no-hover">Buttons</p>
+        <div class="container-70 flex flex-column items-center text-center no-hover">
+            <div class="button button-lightyellow">Button</div>
+            <div class="button button-transparent">Button</div>
+            <div class="button button-yellow">Button</div>
+            <div class="button button-form">Button</div>
+        </div>
+
+
+        <br>
+
+        <p class="text-5xl pt-50 font-bold no-hover">Cursors</p>
+
+        <div class="container-70 flex justify-around text-center no-hover no-hover">
+            <div class="w-1-10 h-10 cursor-pointer bg-black-50">Cursor pointer</div>
+            <div class="w-1-10 h-10 cursor-default bg-black-50">Cursor default</div>
+            <div class="w-1-10 h-10 cursor-help bg-black-50">Cursor help </div>
+            <div class="w-1-10 h-10 cursor-move bg-black-50">Cursor move</div>
+            <div class="w-1-10 h-10 cursor-not-allowed bg-black-50">Cursor not allowed</div>
+            <div class="w-1-10 h-10 cursor-text bg-black-50">Cursor text</div>
+            <div class="w-1-10 h-10 cursor-wait bg-black-50">Cursor wait</div>
+        </div>
+
+        <br>
+
+        <p class="text-5xl pt-50 font-bold no-hover">Border-radius</p>
+
+        <div class="container-95 flex justify-around text-center no-hover">
+            <span class="text-3xl font-bold no-hover pt-15">All borders</span>
+            <div class=" w-1-2 h-10 bg-black-50 rounded-sm mg-5">Small</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-md mg-5"> medium
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-lg mg-5"> large</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-xl mg-5"> XL</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-2xl mg-5"> 2XL</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-3xl mg-5"> 3XL</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-full mg-5">Full</div>
+        </div>
+        <br>
+        <div class="container-95 flex justify-around text-center no-hover">
+            <span class="text-3xl font-bold no-hover pt-15">Top borders</span>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-sm mg-5"> small
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-md mg-5"> medium
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-lg mg-5"> large
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-xl mg-5"> XL</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-2xl mg-5"> 2XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-3xl mg-5"> 3XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-t-full mg-5"> full
+            </div>
+        </div>
+        <br>
+        <div class="container-95 flex justify-around text-center no-hover">
+            <span class="text-3xl font-bold no-hover pt-15">Bottom borders</span>
+
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-sm mg-5"> small
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-md mg-5"> medium
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-lg mg-5"> large
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-xl mg-5"> XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-2xl mg-5"> 2XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-3xl mg-5"> 3XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-b-full mg-5"> full
+            </div>
+        </div>
+        <br>
+        <div class="container-95 flex justify-around text-center no-hover">
+            <span class="text-3xl font-bold no-hover pt-15">Right borders</span>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-sm mg-5"> small
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-md mg-5"> medium
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-lg mg-5"> large
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-xl mg-5"> XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-2xl mg-5"> 2XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-3xl mg-5"> 3XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-r-full mg-5"> full
+            </div>
+        </div>
+        <br>
+
+        <div class="container-95 flex justify-around text-center no-hover">
+            <span class="text-3xl font-bold no-hover pt-15">Left borders</span>
+
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-sm mg-5"> small
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-md mg-5"> medium
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-lg mg-5"> large
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-xl mg-5"> XL</div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-2xl mg-5"> 2XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-3xl mg-5"> 3XL
+            </div>
+            <div class=" w-1-2 h-10 bg-black-50  rounded-l-full mg-5"> full
+            </div>
+        </div>
+        <br>
+        <p class="text-5xl pt-50 font-bold no-hover">Formulaire</p>
+        <div class="flex flex-row justify-evenly">
+        <div class="flex flex-column w-4-10">
+            <label for="">Input Text</label>
+            <input class="button-text" id="" type="text">
+        </div>
+        <div class="flex flex-column w-4-10">
+            <label for="">Input select</label>
+            <select name="" class="button-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        </div>
+    </div>
+    <br>
+
+    <p class="text-5xl pt-50 font-bold no-hover">Calendrier</p>
+    <div class="bg-yellow w-9-10 flex flex-column justify-center calendar">
+        <div class=" flex flex-row container justify-center items-center">
+            <button id="prev" class="favorite styled mgt-2" type="button">
+                <img class="h-1-10 mg-3 cursor-pointer icons" id="prev"
+                    src="./src/images/calendar/Arrow_left.png">
+            </button>
+            <h1 class="text-center font-medium current-date"></h1>
+
+            <button class="favorite styled mg-3 mgt-6" type="button">
+                <img class="h-1-10 cursor-pointer icons" id="next"
+                    src="./src/images/calendar/Arrow_right.png">
+            </button>
+        </div>
+
+        <ul class="flex flex-wrap weeks">
+            <li>L</li>
+            <li>M</li>
+            <li>M</li>
+            <li>J</li>
+            <li>V</li>
+            <li>S</li>
+            <li>D</li>
+        </ul>
+        <ul class="days flex flex-wrap text-center mgb-25">
+        </ul>
+        <br>
+        <div class="flex flex-column w-4-10 justify-center">
+            <p class>La date : <br><span id="date" class="font-bold"></span></p>
+        </div>
+    </div>
+
+    <br>
+    
+    </main>
+
+    <script src="src/js/design_guide.js"></script>
+
+</body>
+
+</html>
+

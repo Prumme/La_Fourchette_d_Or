@@ -4,14 +4,257 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="dist/main.css">
-    <title>Document</title>
+    <title>Notre carte</title>
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/header.js"></script>
+    <script src="./src/js/calendar.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 </head>
 
 <body>
-    <p>Test font</p>
+    <header class="z-5 sticky top-0 w-full flex justify-center ">
+        <nav class="header">
+            <a href="#" alt="logo-la_fourchette_d'or" class="cursor-pointer">
+                <img src="src/images/forks.svg" class="logo-header" alt="">
+            </a>
 
+            <ul onclick="openNav()" class="ul ul-header">
+                <li><a href="./index.html" class="font-medium link link-yellow link-default-white">Accueil</a>
+                </li>
+                <li><a href="./menu.html" class="font-medium link link-yellow link-default-white">La carte</a>
+                </li>
+                <li><a href="./history.html" class="font-medium link link-yellow link-default-white">A
+                        propos</a></li>
+                <li>
+                    <div onclick="open_reservation()" class="button button-yellow" href="#">
+                        Réservation</div>
+                </li>
+            </ul>
+
+        </nav>
+
+        <nav id="nav-mobile" class="nav-mobile">
+            <div class="flex justify-end pr-5">
+                <span class="white" onclick="closeNav()"><img src="./src/images/cross.svg" alt=""></span>
+            </div>
+            <ul class="ul-header-mobile">
+                <li><a href="./index.html" class="font-medium link link-yellow link-default-white ">Accueil</a>
+                </li>
+                <hr class="hr-white-mini">
+                <li><a href="./menu.html" class="font-medium link link-yellow link-default-white ">La carte</a>
+                </li>
+                <hr class="hr-white-mini">
+                <li><a href="./history.html" class="font-medium link link-yellow link-default-white ">A
+                        propos</a></li>
+                <hr class="hr-white-mini">
+                <li>
+                    <div onclick="open_reservation()" class="font-medium link link-yellow link-default-white" href="#">
+                        Réservation</div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="modal_reservation" class="closed">
+            <div class="bg-white h-9-10 w-9-10 flex modal relative">
+                <div onclick="close_reservation()" class="close-modal">X</div>
+                <div class="flex flex-column w-full">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg"
+                        class="image-banner-modal">
+                    <div class="flex h-full form">
+                        <div class="bg-white flex flex-column w-6-10 justify-evenly form">
+                            <form>
+                                <h1 class="text-center ">Réservation</h1>
+                                <div>
+                                    <div class=" flex flex-row container justify-evenly mgt-15">
+                                        <div class="flex flex-column w-4-10 ">
+                                            <label for="nom">Nom</label>
+                                            <input class="button-text " id="nom" type="text">
+                                        </div>
+                                        <div class="flex flex-column w-4-10">
+                                            <label for="prenom">Prénom</label>
+                                            <input class="button-text" id="prenom" type="text">
+                                        </div>
+                                    </div>
+                                    <div class=" flex f lex-row container mgt-12 justify-evenly">
+                                        <div class="flex flex-column w-4-10">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="button-text" id="email" type="email">
+                                        </div>
+                                        <div class="flex flex-column w-4-10">
+                                            <label for="telephone">Téléphone</label>
+                                            <input class="button-text" id="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class=" flex flex-row container mgt-12 justify-evenly">
+                                        <div class="flex flex-column w-4-10">
+                                            <label for="nb">Nombre de personnes</label>
+                                            <select name="nb" class="button-select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                            </select>
+                                        </div>
+                                        <div class="flex flex-column w-4-10 justify-center">
+                                            <p class>La date : <br><span id="date" class="font-bold"></span></p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex justify-center mgt-10">
+                                    <button class="button-yellow w-1-4" type="button">
+                                        Réserver
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="bg-yellow w-4-10 flex flex-column justify-center calendar">
+                            <div class=" flex flex-row container justify-center items-center">
+                                <button id="prev" class="favorite styled mgt-2" type="button">
+                                    <img class="h-1-10 mg-3 cursor-pointer icons" id="prev"
+                                        src="./src/images/calendar/Arrow_left.png">
+                                </button>
+                                <h1 class="text-center font-medium current-date"></h1>
+
+                                <button class="favorite styled mg-3 mgt-6" type="button">
+                                    <img class="h-1-10 cursor-pointer icons" id="next"
+                                        src="./src/images/calendar/Arrow_right.png">
+                                </button>
+                            </div>
+                            <div class="">
+                                <ul class="flex flex-wrap weeks">
+                                    <li>L</li>
+                                    <li>M</li>
+                                    <li>M</li>
+                                    <li>J</li>
+                                    <li>V</li>
+                                    <li>S</li>
+                                    <li>D</li>
+                                </ul>
+                                <ul class="days flex flex-wrap text-center mgb-25">
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <section id="section1" class="w-full">
+
+            <div class="w-full relative image-screen">
+                <img class="" src="src/images/menu/menu.png" alt="">
+            </div>
+        </section>
+
+        <section>
+            <div class="menu">
+                <p id="link-matin" class="link link-menu link-yellow  link-selected" onclick="change_menu('matin')">
+                    matin</p>
+                <p id="link-midi" class="link link-menu link-yellow " onclick="change_menu('midi')">midi</p>
+                <p id="link-soir" class="link link-menu link-yellow " onclick="change_menu('soir')">soir</p>
+            </div>
+
+            <div class="relative">
+                <div class="ellipse">
+                </div>
+
+                <img id="image-menu-1" class="image-absolute-menu-1 image-carré-menu"
+                    src="src/images/menu/wartermelon-juice.jpg">
+                <img id="image-menu-2" class="image-absolute-menu-2 image-rond-menu"
+                    src="src/images/menu/fruit-salade.jpg">
+                <img id="image-menu-3" class="image-absolute-menu-3 image-carré-menu"
+                    src="src/images/menu/lemon pie.jpg">
+                <img id="image-menu-4" class="image-absolute-menu-4 image-rond-menu" src="src/images/menu/ham.jpg">
+
+                <div class="text-menu">
+                    <div>
+                        <h2 id="title-menu-1" class="title-menu">Nos Boissson</h2>
+                        <p id="food-menu-1">Le jus de fruit du jour <span class="price-menu">11</span></p>
+                        <p id="food-menu-2">Le café tonic <span class="price-menu">9</span></p>
+                        <p id="food-menu-3">Le thé fruité de la saison <span class="price-menu">8</span></p>
+                    </div>
+
+                    <div class="hr-menu"></div>
+
+                    <div>
+                        <h2 id="title-menu-2" class="title-menu">Nos plats sucres</h2>
+                        <p id="food-menu-4">Notre moelleux au chocolat <span class="price-menu">21</span></p>
+                        <p id="food-menu-5">La salade de fruits de saison <span class="price-menu">28</span></p>
+                        <p id="food-menu-6">Le tarte au citron <span class="price-menu">18</span></p>
+
+                    </div>
+
+                    <div class="hr-menu"></div>
+
+                    <div>
+                        <h2 id="title-menu-3" class="title-menu">Nos plat sales</h2>
+                        <p id="food-menu-7">Notre foie gras végétal <span class="price-menu">13</span></p>
+                        <p id="food-menu-8">Le déjeuner anglais <span class="price-menu">28</span></p>
+                        <p id="food-menu-9">Le plateau de charcuterie <span class="price-menu">39</span></p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="w-full bg-black flex flex-column items-center">
+        <img src="./src/images/logo.svg" alt="logo">
+
+        <div class="footer-propagandes">
+            <div class="footer-prop">
+                <p>Suivez la fourchette d’or</p>
+                <div class="flex justify-around">
+                    <img src="./src/images/facebook.svg" class="logo-social-media cursor-pointer" alt="logo">
+                    <img src="./src/images/instagram.svg" class="logo-social-media  cursor-pointer" alt="logo">
+                    <img src="./src/images/google.svg" class="logo-social-media  cursor-pointer" alt="logo">
+                    <img src="./src/images/twitter.svg" class="logo-social-media  cursor-pointer" alt="logo">
+                </div>
+            </div>
+            <div class="footer-prop">
+                <p>Suivez la newsletter</p>
+                <div class="flex">
+                    <input type="email" placeholder="Entrer votre e-mail">
+                    <input type="submit" value="OK">
+                </div>
+            </div>
+        </div>
+
+        <hr class="hr-white">
+
+        <div class="footer-nav">
+            <nav>
+                <ul>
+                    <li><a href="">La fourchette d’or, 2023</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Politique de confidentialité</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">242 avenue du faubourd Saint-Antoine 75012</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Gérer mes cookies</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Mentions légal</a></li>
+                    <li><a href="">-</a></li>
+                    <li><a href="">Contact : Fourchetteor@gmail.com</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
 </body>
 
 </html>
